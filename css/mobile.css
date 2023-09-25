@@ -17,7 +17,7 @@ header {
 }
 
 header .header {
-	max-width: 768px;
+	max-width: 1024px;
 }
 
 header .logo {
@@ -61,7 +61,7 @@ header .btn_menu .icon-bottom {
 
 main .main {
 	width: 100%;
-	max-width: 768px;
+	max-width: 1024px;
 	min-width: 335px;
 }
 
@@ -75,7 +75,7 @@ div.main {
 
 .about .section_1 {
 	position: relative; /* 위치 지정을 위해 상대 위치 설정 */
-	padding: 0 50px;
+	padding: 0 20px;
 	max-width: 768px;
 	margin: 0 auto;
 	z-index: 3;
@@ -93,7 +93,7 @@ div.main {
 
 .about .section_1 .group1 .title {
   font-family: HanwhaGothic-B_OTF;
-  font-size: 10vw;
+  font-size: 50px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -106,8 +106,8 @@ div.main {
 .about .section_1 .group1 .txt1 {
 	margin-top: 15px;
 	font-family: HanwhaGothic-EL_OTF;
-  font-size: 3vw;
-  line-height: 1.39;
+  font-size: 18px;
+  line-height: 1.33;
   letter-spacing: normal;
   color: #000;
 
@@ -123,6 +123,8 @@ div.main {
 }
 
 .about .section_1 .group2 .img1 {
+  width: 100%;
+  height: 100%;
   overflow: hidden; /* 이미지가 컨테이너를 벗어나지 않게 합니다. */
 	border-radius: 7px 147px 157px 7px;
 }
@@ -138,10 +140,10 @@ div.main {
 }
 
 .about .section_1 .group2 .title {
-	margin-top: 36px;
-	padding-right: 8vw;
+  width: 100%;
+	margin-top: 38px;
 	font-family: HanwhaGothic-R_OTF;
-  font-size: 31px;
+  font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -153,9 +155,10 @@ div.main {
 
 
 .about .section_1 .group2 .txt1 {
-	margin: 26px 8vw 0 0;
+  width: 100%;
+	margin: 20px 0 0 0;
 	font-family: HanwhaGothic-EL_OTF;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -166,13 +169,12 @@ div.main {
 }
 
 .about .section_1 .group3 {
-	margin-top: 80px;
-	padding: 0 0 0 0;
+	margin-top: 70px;
 }
 
 .about .section_1 .group3 .txt1 {
 	font-family: HanwhaGothic-EL_OTF;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -183,9 +185,9 @@ div.main {
 }
 
 .about .section_1 .group3 .txt2 {
-	margin-top: 50px;
+	margin-top: 30px;
 	font-family: HanwhaGothic-R_OTF;
-  font-size: 42px;
+  font-size: 30px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -200,47 +202,47 @@ div.main {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-end;
-	margin: 58px 0 0 0;
-	padding-right: 0;
+	margin: 30px 0 0 0;
 }
 
 .about .section_1 .group4 img {
-	width: 271px;
-  height: 357px;
+  width: 157px;
+  height: 207px;
   object-fit: contain;
   border-radius: 20px;
 }
 
 .about .section_2 {
 	margin-top: 90px;
-  padding: 152px 50px 8vw;
+  padding: 90px 20px 19px;
   background-color: #f0e6de;
 }
 
 .about .section_2 .row {
 	display: flex;
 	flex-direction: column;
+  align-items: center;
 	gap: 40px;
 }
 
 .about .section_2 .row .box {
 	position: relative;
-	width: 100%;
-  margin: 0 0 0 0;
-  padding: 4vh 6vw 34vh 6vw;
-  border-radius: 1vw 4vw 4vw 4vw;
+  width: 296px;
+  height: 413px;
+  padding: 41px 0 0 39px;
+  border-radius: 10px 60px 60px 60px;
   border: solid 1px #000;
 }
 
 
 .about .section_2 .row .mission {
-	top: 4vw;
-	transition: top 1s linear; /* 애니메이션 효과 */
+	top: 0;
+  margin: 40px 0 0 0;
 }
 
 .about .section_2 .row .box .title{
 	font-family: HanwhaGothic-B_OTF;
-  font-size: 14vw;
+  font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -252,9 +254,9 @@ div.main {
 
 .about .section_2 .row .box .txt1 {
 	width: 100%;
-	margin-top: 4vh;
+	margin-top: 10px;
 	font-family: HanwhaGothic-EL_OTF;
-  font-size: 3vw;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -266,15 +268,15 @@ div.main {
 
 .about .section_2 .row img {
 	position:absolute;
-	bottom: -2vh;
-	right: -4vw;
-	width: 45vw;
-  height: 32vh;
+	bottom: -5px;
+	right: -5px;
+  width: 156px;
+  height: 200px;
   object-fit: fill;
 }
 
 .about .section_2 .column {
-	margin-top: 90px;
+	margin-top: 95px;
 }
 
 .about .section_2 .column .title_top {
@@ -327,7 +329,7 @@ div.main {
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.4;
+  line-height: 81px;
   letter-spacing: normal;
   text-align: center;
   color: #000;
@@ -346,11 +348,11 @@ div.main {
 .about .section_2 .column .list .thumb .title {
 	margin-top: 8px;
 	font-family: HanwhaGothic-B_OTF;
-  font-size: 5vw;
+  font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.46;
+  line-height: 1.71;
   letter-spacing: normal;
   text-align: left;
   color: #000;
@@ -358,14 +360,18 @@ div.main {
 
 .about .section_2 .column .list .thumb .txt {
 	font-family: HanwhaGothic-B_OTF;
-  font-size: 3.4vw;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.46;
+  line-height: 1.5;
   letter-spacing: normal;
   text-align: left;
   color: #000;
+}
+
+.about .section_2 .column .list .img {
+  display: block;
 }
 
 .about .section_2 .column .img {
@@ -401,26 +407,26 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	padding: 50px 50px 40px;
+  height: auto;
+	padding: 50px 20px 50px;
 	background-color: #000;
 }
 
 footer .column {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 }
 
 footer .address {
-	margin-top: 190px;
-	padding-top: 0;
+	margin-top: 36px;
+	padding-top: 200px;
 	opacity: 0.7;
   font-family: HanwhaGothic-L_OTF;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.6;
+  line-height: 1.71;
   letter-spacing: normal;
   text-align: left;
   color: #fff;
@@ -429,8 +435,8 @@ footer .address {
 
 footer .column1 .sitemap {
 	position: absolute;
-	top: 115px;
-	left: 50px;
+	top: 128px;
+	left: 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 0;
@@ -453,7 +459,9 @@ footer .column1 .sitemap a {
 footer .column1 .link {
 	display: flex;
 	justify-content: flex-start;
+  width: 100%;
 	height: auto;
+  margin: 40px 0 0 0;
 }
 
 footer .column1 .link .select_wrap {

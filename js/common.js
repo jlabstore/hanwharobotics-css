@@ -33,8 +33,9 @@ function boxPositionUp() {
 function imgShowHide(ele, height) {
   const element = document.querySelectorAll(ele);
   const vhInPixels = window.innerHeight / 100; // 1vh의 픽셀 값
-  const fiftyVHInPixels = vhInPixels * 49; // 50vh의 픽셀 값
-  const rootHeight = height/4;
+  const fiftyVHInPixels = vhInPixels * 48; // 50vh의 픽셀 값
+  // const fiftyVHInPixels = 100; // 50vh의 픽셀 값
+  const rootHeight = height/4.5;
   
   for(let i = 0; i < element.length; i++) {
     // Intersection Observer 옵션 설정
@@ -146,17 +147,16 @@ $(window).on("load resize", function (e) {
     
     AOS.init({
       disable: function() {
-        var maxWidth = 768;
+        var maxWidth = 1024;
         return window.innerWidth > maxWidth;
       }
     });
     
-    if (win.width() <= 768) {
+    if (win.width() <= 1024) {
       $("body").attr("class", "mobile");
       stopObservingAll('.section_2 .list');
-    } else if (win.width() <= 1024) {
+    } else if (win.width() <= 1500) {
       $("body").attr("class", "tablet");
-      
       boxPositionUp();
       imgShowHide('.section_2 .list', win.height());
     } else {
