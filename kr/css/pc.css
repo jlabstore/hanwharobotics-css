@@ -27,7 +27,7 @@ header .menu .disabled a {
 }
 
 header .menu a {
-	font-family: HanwhaGothic-B_OTF;
+	font-family: HanwhaGothicB_OTF;
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -43,6 +43,49 @@ header .btn_menu .icon-top {
 
 header .btn_menu .icon-bottom {
   background-color: #fff;
+}
+
+header .gnb_menu .header__nav__items {
+	margin: 169px 0 0 115px;
+}
+
+header .gnb_menu .header__nav__items .strike {
+	position: absolute;
+	top: 46%;
+	left: 0;
+	width: 211px;
+  height: 1px;
+	margin: 0;
+  background-color: #707070;
+}
+header .gnb_menu .header__nav__items .txt {
+	margin: 0 27px 38px 0;
+	opacity: 0.3;
+	font-size: 50px;
+}
+
+header .gnb_menu .header__nav__items .temp {
+	top: 18px;
+	left: 220px;
+  font-size: 18px;
+}
+header .gnb_menu .header__nav__items a {
+	display: block;
+	height: 58px;
+	margin: 38px 49px 0 0;
+	font-size: 50px;
+}
+
+header .gnb_menu .btn_close{
+	cursor: pointer;
+	position: absolute;
+	top: 31px;
+	right: 40px;
+}
+
+header .gnb_menu .footer {
+	bottom: 135px;
+	left: 118px;
 }
 
 main.about {
@@ -72,7 +115,7 @@ main .main {
 }
 
 .about .section_1 .group1 .title {
-  font-family: HanwhaGothic-B_OTF;
+  font-family: HanwhaGothicB_OTF;
   font-size: 113px;
   font-weight: bold;
   font-stretch: normal;
@@ -85,7 +128,7 @@ main .main {
 
 .about .section_1 .group1 .txt1 {
 	margin-top: 15px;
-	font-family: HanwhaGothic-EL_OTF;
+	font-family: HanwhaGothicEL_OTF;
   font-size: 31px;
   line-height: 1.39;
   letter-spacing: normal;
@@ -124,7 +167,7 @@ main .main {
   align-self: flex-start;
   width: 800px;
 	margin-top: 70px;
-	font-family: HanwhaGothic-R_OTF;
+	font-family: HanwhaGothicR_OTF;
   font-size: 31px;
   font-weight: bold;
   font-stretch: normal;
@@ -141,7 +184,7 @@ main .main {
   align-self: flex-start;
   width: 800px;
 	margin: 32px 0 0 0;
-	font-family: HanwhaGothic-EL_OTF;
+	font-family: HanwhaGothicEL_OTF;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -159,7 +202,7 @@ main .main {
 }
 
 .about .section_1 .group3 .txt1 {
-	font-family: HanwhaGothic-EL_OTF;
+	font-family: HanwhaGothicEL_OTF;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -173,7 +216,7 @@ main .main {
 .about .section_1 .group3 .txt2 {
   
 	margin-top: 50px;
-	font-family: HanwhaGothic-R_OTF;
+	font-family: HanwhaGothicR_OTF;
   font-size: 42px;
   font-weight: normal;
   font-stretch: normal;
@@ -189,35 +232,41 @@ main .main {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-end;
-	margin: -200px 0 0 0;
+	margin: -287px 0 0 0;
 	padding-right: 210px;
 }
 
 .about .section_1 .group4 img {
-	width: 271px;
-  height: 357px;
+  width: 370px;
+  height: 487px;
   object-fit: contain;
   border-radius: 20px;
 }
 
 .about .section_2 {
 	margin-top: 250px;
-  padding: 238px 260px 209px;
+  padding: 238px 0 209px;
   background-color: #f0e6de;
+}
+
+.about .section_2_inner {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .about .section_2 .row {
 	display: flex;
 	flex-direction: row;
-	gap: 25px;
+  padding-bottom: 121px;
+	gap: 55px;
 }
 
 .about .section_2 .row .box {
 	position: relative;
-  width: 670px;
+  width: 50%;
   height: 756px;
   margin: 0 0 0 0;
-  padding: 88px 0 0 84px;
+  padding: 78px 0 0 84px;
   border-radius: 20px 100px 100px 100px;
   border: solid 1px #000;
 }
@@ -225,11 +274,11 @@ main .main {
 
 .about .section_2 .row .mission {
 	top: 100px;
-	transition: top 1.5s linear; /* 애니메이션 효과 */
+	transition: top 0.5s linear; /* 애니메이션 효과 */
 }
 
 .about .section_2 .row .box .title{
-	font-family: HanwhaGothic-B_OTF;
+	font-family: HanwhaGothicB_OTF;
   font-size: 81px;
   font-weight: bold;
   font-stretch: normal;
@@ -242,8 +291,8 @@ main .main {
 
 .about .section_2 .row .box .txt1 {
 	width: 287px;
-	margin-top: 26px;
-	font-family: HanwhaGothic-EL_OTF;
+	margin-top: 15px;
+	font-family: HanwhaGothicEL_OTF;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -268,7 +317,7 @@ main .main {
 }
 
 .about .section_2 .column .title_top {
-	font-family: HanwhaGothic-B_OTF;
+	font-family: HanwhaGothicB_OTF;
   font-size: 81px;
   font-weight: bold;
   font-stretch: normal;
@@ -311,7 +360,7 @@ main .main {
 	display: flex;
 	width: 177px;
 	height: 177px;
-	font-family: HanwhaGothic-B_OTF;
+	font-family: HanwhaGothicB_OTF;
   font-size: 81px;
   font-weight: bold;
   font-stretch: normal;
@@ -335,7 +384,7 @@ main .main {
 }
 
 .about .section_2 .column .list .thumb .title {
-	font-family: HanwhaGothic-B_OTF;
+	font-family: HanwhaGothicB_OTF;
   font-size: 28px;
   font-weight: bold;
   font-stretch: normal;
@@ -347,7 +396,7 @@ main .main {
 }
 
 .about .section_2 .column .list .thumb .text {
-	font-family: HanwhaGothic-B_OTF;
+	font-family: HanwhaGothicB_OTF;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -406,7 +455,7 @@ footer .column {
 footer .address {
 	margin-top: 39px;
 	opacity: 0.7;
-  font-family: HanwhaGothic-L_OTF;
+  font-family: HanwhaGothicL_OTF;
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -430,7 +479,7 @@ footer .column1 .sitemap {
   gap: 3px;
 }
 footer .column1 .sitemap a {
-	font-family: HanwhaGothic-R_OTF;
+	font-family: HanwhaGothicR_OTF;
   font-size: 15px;
   font-weight: normal;
   font-stretch: normal;
@@ -455,7 +504,7 @@ footer .column1 .link .select_wrap {
 
 footer .column1 .link .select_wrap select {
 	padding-right: 50px;
-  font-family: HanwhaGothic-R_OTF;
+  font-family: HanwhaGothicR_OTF;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;

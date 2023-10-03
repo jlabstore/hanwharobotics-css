@@ -68,7 +68,6 @@ header .header {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	max-width: 1920px;
 	margin: 0 auto;
 }
 
@@ -76,6 +75,35 @@ header .logo {
 	display: flex;
 	width: 200px;
 	height: 50px;
+}
+
+header .logo a span {
+	display: none;
+}
+.pc .main_header .logo a {
+	display: block;
+	width: 194px;
+	height: 50px;
+	background: url('../images/pc/logo.svg') no-repeat 0 0;
+	object-fit: contain;
+	text-indent: -1000000;
+}
+.pc .sub_header .logo a {
+	display: block;
+	width: 194px;
+	height: 50px;
+	background: url('../images/pc/sub_logo.svg') no-repeat 0 0;
+	object-fit: contain;
+	text-indent: -1000000vw;
+}
+
+.mobile  .main_header .logo a {
+	width: 135px;
+	height: 35px;
+}
+.mobile  .sub_header .logo a {
+	width: 135px;
+	height: 35px;
 }
 
 header .btn_menu {
@@ -137,7 +165,7 @@ header .gnb_menu .header__nav__items .strike {
 header .gnb_menu .header__nav__items .txt {
 	margin: 0 1vw 3vh 0;
 	opacity: 0.3;
-	font-family: HanwhaGothic-EL_OTF;
+	font-family: HanwhaGothicEL_OTF;
 	font-size: 6vw;
 	font-weight: normal;
 	font-stretch: normal;
@@ -152,7 +180,7 @@ header .gnb_menu .header__nav__items .temp {
 	position: absolute;
 	top: 2vh;
 	left: 28vw;
-  font-family: HanwhaGothic-R_OTF;
+  font-family: HanwhaGothicR_OTF;
   font-size: 3vw;
   font-weight: normal;
   font-stretch: normal;
@@ -166,7 +194,7 @@ header .gnb_menu .header__nav__items a {
 	display: block;
 	height: 58px;
 	margin: 38px 49px 0 0;
-	font-family: HanwhaGothic-EL_OTF;
+	font-family: HanwhaGothicEL_OTF;
 	font-size: 6vw;
 	font-weight: normal;
 	font-stretch: normal;
@@ -184,7 +212,7 @@ header .gnb_menu .btn_close{
 	right: 8vw;
 	width: 63px;
 	height: 30px;
-	font-family: HanwhaGothic-EL_OTF;
+	font-family: HanwhaGothicEL_OTF;
 	font-size: 26px;
 	font-weight: normal;
 	font-stretch: normal;
@@ -203,7 +231,7 @@ header .gnb_menu .footer {
 header .gnb_menu .footer a {
 	display: block;
 	padding: 0 0 0 49px;
-	font-family: HanwhaGothic-EL_OTF;
+	font-family: HanwhaGothicEL_OTF;
   font-size: 26px;
   font-weight: normal;
   font-stretch: normal;
@@ -226,4 +254,8 @@ header .gnb_layer.active {
   width: 100%;
   height: 100vh;
 	background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer select {
+	font-family: 'Nanum Gothic', 'serif' !important;
 }

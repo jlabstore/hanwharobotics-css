@@ -2,7 +2,22 @@ let lastScrollY = window.scrollY;
 let imgObservers = [];
 let resizeTimeout = null;
 
-function boxPositionUp() {
+function pcBoxPositionUp() {
+  // const $aboutSection2Row = $('.about .section_2 .row');
+  const $missionBox = $('.about .section_2 .mission');
+
+  $missionBox
+  .on('mouseover', function() {
+    $missionBox.css('top', '0');
+  });
+
+  $missionBox
+  .on('mouseleave', function() {
+    $missionBox.css('top', '100px');
+  });
+}
+
+function padBoxPositionUp() {
   const element = document.querySelector('.section_2 .mission');
 
   // Intersection Observer 옵션 설정
@@ -34,8 +49,8 @@ function imgShowHide(ele, height) {
   const element = document.querySelectorAll(ele);
   const vhInPixels = window.innerHeight / 100; // 1vh의 픽셀 값
   const fiftyVHInPixels = vhInPixels * 48; // 50vh의 픽셀 값
-  // const fiftyVHInPixels = 100; // 50vh의 픽셀 값
-  const rootHeight = height/4.5;
+  const rootHeightResult = $('body').hasClass('pc') ? 3 : 2.7;
+  const rootHeight = height/rootHeightResult;
   
   for(let i = 0; i < element.length; i++) {
     // Intersection Observer 옵션 설정
@@ -76,7 +91,7 @@ function imgShowHide(ele, height) {
           }
 
         } else {
-          const eleLength = i+1 <  $img.length ? i+1 : $img.length-1;
+          const eleLength = i <=  $img.length ? i+1 : $img.length;
           
           if((eleLength%2) === 0) {
             $img.eq(i)
@@ -88,10 +103,6 @@ function imgShowHide(ele, height) {
           } else {
             if(i > 0) {
               $img.eq(i)
-              .closest('.imageScroll_inner').css({
-                'transform': 'translate(-12%)',
-              })
-              .end()
               .removeClass('hideTop hideBottom').addClass(className);
             } else {
               $img.eq(i)
@@ -153,38 +164,14 @@ $(window).on("load resize", function (e) {
     });
     
     if (win.width() <= 1024) {
-      $("body").attr("class", "mobile");
       stopObservingAll('.section_2 .list');
     } else if (win.width() <= 1500) {
-      $("body").attr("class", "tablet");
-      boxPositionUp();
-      imgShowHide('.section_2 .list', win.height());
+      padBoxPositionUp();
+      imgShowHide('.about .section_2 .list', win.height());
     } else {
-      $("body").attr("class", "pc");
-      boxPositionUp();
-      imgShowHide('.section_2 .list', win.height());
+      pcBoxPositionUp();
+      imgShowHide('.about .section_2 .list', win.height());
     }
   }, 200); // 250ms delay
 });
 
-$(document).ready(async function() {
-  $('header .btn_menu button').on('click', function() {
-    const gnb = $('.gnb_menu, .gnb_layer');
-
-    $('header .gnb_layer').addClass('active');
-    $(this).addClass('active');
-    gnb.addClass('active');
-    $('html').addClass('scroll-lock');
-  });
-
-  $('header .gnb_layer, header .gnb_menu .btn_close').on('click', function(e) {
-    e.stopPropagation();
-
-    $(this).removeClass('active');
-    $('header .btn_menu button').removeClass('active');
-    $('.gnb_menu, .gnb_layer').removeClass('active');
-    $('html').removeClass('scroll-lock');
-  });
-
-});
-  
