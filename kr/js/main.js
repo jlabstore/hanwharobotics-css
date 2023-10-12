@@ -199,25 +199,25 @@ function imagePosition() {
       // $fixedLine.css('transform', `translateY(${yFixed}px)`);
       
       // 애니메이션이 진행 중이라면 반환
-      // if(isAnimating) return;
+      if(isAnimating) return;
       
-      // const rect = targetElements[1].getBoundingClientRect();
+      const rect = targetElements[1].getBoundingClientRect();
       
-      // if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-      //   // console.log("Entering viewport:", targetElement);
+      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+        // console.log("Entering viewport:", targetElement);
         
-      //   isAnimating = true;
+        isAnimating = true;
         
-      //   targetElements[1].scrollIntoView({
-      //     behavior: 'smooth',
-      //     block: 'start'
-      //   });
+        targetElements[1].scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
 
-      //   setTimeout(() => {
-      //     isAnimating = false;
-      //   }, 200);
+        setTimeout(() => {
+          isAnimating = false;
+        }, 200);
           
-      // }
+      }
 
       // targetElements.forEach((targetElement, index) => {
       //   if(index === 0 || index === 2) return;
@@ -277,7 +277,7 @@ function imageAnimation() {
           scrollTrigger: {
             trigger: img.previousElementSibling,
             start: 'top top',
-            end: `+=${($(window).width()/270)*100}`,
+            end: `+=${($(window).width()/250)*100}`,
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {
@@ -299,7 +299,7 @@ function imageAnimation() {
           scrollTrigger: {
             trigger: img.previousElementSibling,
             start: 'top top',
-            end: `+=${($(window).width()/1900)*100}`,
+            end: `+=${($(window).width()/1600)*100}`,
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {
