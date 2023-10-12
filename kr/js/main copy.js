@@ -3,8 +3,9 @@ let pcImageScrollTriggers = [];
 let pcObserver = null;
 let tabletSectionScrollTriggers = [];
 let translateYValues = {};
+let isInViewport = [];
 let lastScrollY = window.scrollY;
-let isAnimating = false;
+
 
 // pc, table, mobile 占싼됵옙
 $(window).on("load", function (e) {
@@ -36,8 +37,9 @@ $(window).on("load", function (e) {
       $('html').removeClass('scroll-lock');
       $(".main .pc").css('visibility', 'visible');
       hideHeader();
-      imagePosition();
       imageAnimation();
+      stopElementScroll();
+      imagePosition();
     }, 500);
 
   }
@@ -73,22 +75,18 @@ $(window).on("resize", function (e) {
     }, 200);
 
   } else {
-    // killAllScrollTriggers();
-    $('html').addClass('scroll-lock');
+    killAllScrollTriggers();
     $("body").attr("class", "pc");
     $(".main .pc").css('visibility', 'visible');
     $(".main .tablet, .main .mobile").css('visibility', 'hidden');
     
     setTimeout(function() {
-      $('.main .pc .img').css('transform', '');
-      $('.main .pc .img .image').css('transform', '');
-
       $(window).scrollTop(0);
-      $('html').removeClass('scroll-lock');
       hideHeader();
-      imagePosition(); 
       imageAnimation();
-    }, 330);
+      imagePosition();
+      stopElementScroll();
+    }, 200);
   }
 
   $("header").css('visibility', 'visible');
@@ -147,114 +145,112 @@ function hideHeader() {
     }
   });
 }
+function updatePosition() {
+  const sections = document.querySelectorAll('.main .pc .section');
+  const title = sections[sections.length-1].querySelector('.title');
+  const imgElements = document.querySelectorAll('.main .pc .img');
+  const line = document.querySelector('.main .pc .line');
+  const sectionWrapperHeight = $('.main .pc .section_wrapper').height();
+
+  imgElements.forEach(img => {
+    const rect = img.getBoundingClientRect();
+    let calculatedTop = lastScrollY + rect.top;
+
+    calculatedTop = Math.min(calculatedTop, sectionWrapperHeight - rect.height);
+
+    img.style.position = 'absolute';
+    img.style.top = `${calculatedTop}px`;
+  });
+      
+  const titleHeight = title.offsetHeight;
+  const titleTop = title.getBoundingClientRect().top + lastScrollY;
+  const lineHeight = line.offsetHeight;
+
+  line.style.position = 'absolute';
+  line.style.top = `${titleTop + (titleHeight - lineHeight) / 1.6}px`;
+}
+
+function handleIntersect(entries) {
+
+	const imgElements = document.querySelectorAll('.main .pc .img');
+	const line = document.querySelector('.main .pc .line');
+
+  entries.forEach(entry => {
+    
+    if (entry.isIntersecting) {
+      lastScrollY = window.scrollY;
+      requestAnimationFrame(updatePosition);
+    } else {
+      imgElements.forEach(img => {
+        img.style.position = 'fixed';
+        img.style.top = ``;
+      });
+
+      line.style.position = 'fixed';
+      line.style.top = ``;
+      line.style.left = ``;
+    }
+  });
+}
 
 function imagePosition() {
   const vhInPixels = window.innerWidth / 100;
-  const fiftyVHInPixels = vhInPixels * 17;
+  const fiftyVHInPixels = vhInPixels * 1;
+
+  const debouncedScrollHandler = debounce(handleIntersect, 60);
+
+  pcObserver = new IntersectionObserver(debouncedScrollHandler, {
+    root: null,
+    rootMargin: `0px 0px 0px 0px`, 
+    threshold: 0
+  });
+
+  pcObserver.observe(document.querySelector('.main .pc .about'));
+    
+
+}
+function stopElementScroll() {
   const targetElements = document.querySelectorAll('.main .pc .section');
-  const $fixed = $('.main .pc .fixed');
-  const $fixedLine = $fixed.find('.line');
-  const imgElements = document.querySelectorAll('.main .pc .img');
-  const pixels = [vhInPixels * 6.4, vhInPixels * -6, vhInPixels * 28];
-  const fixedTop = $fixed.offset().top;
-  const fixedHeight = $fixed.outerHeight();
-  const maxTranslate = fixedTop + fixedHeight - fiftyVHInPixels;
 
-  $(window).on('scroll', debounce(function() {
-    requestAnimationFrame(() => {
-      const scrollTop = $(this).scrollTop();
+  for (let i = 0; i < targetElements.length; i++) {
+      isInViewport[i] = false;
+  }
+
+
+  const debouncedScrollHandler = debounce(() => {
+    targetElements.forEach((targetElement, index) => {
+      const rect = targetElement.getBoundingClientRect();
       
-      const translateY = Math.min(scrollTop, maxTranslate);
-      let yFixed = 0;
-
-      if (scrollTop <= maxTranslate) {
-        yFixed = translateY;
-
-        $fixedLine.css({
-          'position': 'fixed',
-          'top': `17vw`
-        });
+      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+        isInViewport[index] = true;
+        // console.log("Entering viewport:", targetElement);
         
-        imgElements.forEach((img, index) => {
-          img.style.position = 'fixed';
-          img.style.top = '';
-          // img.style.transform = `translateY(${translateY + pixels[index]}px)`;
-          // img.style.top = `${translateY + pixels[index]}px`;
-        });
-      } else {
-        yFixed = maxTranslate;
-        
-        $fixedLine.css({
-          'position': 'absolute',
-          'top': `${yFixed}px`
-        });
-
-        imgElements.forEach((img, index) => {
-          img.style.position = 'absolute';
-          // img.style.transform = `translateY(${translateY + pixels[index]}px)`;
-          img.style.top = `${yFixed + pixels[index]}px`;
-        });
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          
+      } else if ((rect.top < 0 || rect.bottom > window.innerHeight)) {
+        isInViewport[index] = false;
+        // console.log('Exiting viewport:', targetElement);
       }
-
-      // $fixedLine.css('transform', `translateY(${yFixed}px)`);
-      
-      // 애니메이션이 진행 중이라면 반환
-      // if(isAnimating) return;
-      
-      // const rect = targetElements[1].getBoundingClientRect();
-      
-      // if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-      //   // console.log("Entering viewport:", targetElement);
-        
-      //   isAnimating = true;
-        
-      //   targetElements[1].scrollIntoView({
-      //     behavior: 'smooth',
-      //     block: 'start'
-      //   });
-
-      //   setTimeout(() => {
-      //     isAnimating = false;
-      //   }, 200);
-          
-      // }
-
-      // targetElements.forEach((targetElement, index) => {
-      //   if(index === 0 || index === 2) return;
-
-      //   const rect = targetElement.getBoundingClientRect();
-        
-      //   if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-      //     // console.log("Entering viewport:", targetElement);
-          
-      //     isAnimating = true;
-          
-      //     setTimeout(() => {
-      //       targetElement.scrollIntoView({
-      //         behavior: 'smooth',
-      //         block: 'start'
-      //       });
-
-      //       isAnimating = false;
-      //     }, 200);
-            
-      //   }
-      // });
     });
+  }, 90);
 
-  }, 10));
+  window.addEventListener('scroll', debouncedScrollHandler);
 }
 
 function imageAnimation() {
   document.querySelectorAll('.main .pc .img1 .image:nth-child(2)').forEach((img, index, array) => {
     ScrollTrigger.matchMedia({
       "(min-width: 1025px)": function() {
+        // 筌뤴뫀諭� 占쎈�占쏙쭪占� 域밸챶竊숋옙占� 占쏙옙占쏙옙 獄쏆꼶�э옙�몃빍占쏙옙.
         const animation = gsap.to(img, {
           ease: "none",
           scrollTrigger: {
             trigger: img.previousElementSibling,
             start: 'top top',
-            end: `+=${($(window).width()/370)*100}`,
+            end: `+=${($(window).width()/364)*100}`,
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {
@@ -277,7 +273,7 @@ function imageAnimation() {
           scrollTrigger: {
             trigger: img.previousElementSibling,
             start: 'top top',
-            end: `+=${($(window).width()/270)*100}`,
+            end: `+=${($(window).width()/248)*100}`,
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {
@@ -294,12 +290,13 @@ function imageAnimation() {
   document.querySelectorAll('.main .pc .img3 .image:nth-child(2)').forEach((img, index, array) => {
     ScrollTrigger.matchMedia({
       "(min-width: 1025px)": function() {
+        // 筌뤴뫀諭� 占쎈�占쏙쭪占� 域밸챶竊숋옙占� 占쏙옙占쏙옙 獄쏆꼶�э옙�몃빍占쏙옙.
         const animation = gsap.to(img, {
           ease: "none",
           scrollTrigger: {
             trigger: img.previousElementSibling,
             start: 'top top',
-            end: `+=${($(window).width()/1900)*100}`,
+            end: `+=${($(window).width()/1600)*100}`,
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {
@@ -314,9 +311,11 @@ function imageAnimation() {
     });
   });
 
+  // 揶쏉옙 占쎈�占쏙쭪占쏙옙占� 占쏙옙占쏙옙 占쎌쥓�뀐쭖遺우뵠占쎌꼷�� 占쎌빘苑�옙�몃빍占쏙옙.
   document.querySelectorAll('.main .pc .img1 .image:nth-child(3)').forEach((img, index, array) => {
     ScrollTrigger.matchMedia({
       "(min-width: 1025px)": function() {
+        // 筌뤴뫀諭� 占쎈�占쏙쭪占� 域밸챶竊숋옙占� 占쏙옙占쏙옙 獄쏆꼶�э옙�몃빍占쏙옙.
         const animation = gsap.to(img, {
           ease: "none",
           scrollTrigger: {
@@ -326,6 +325,7 @@ function imageAnimation() {
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {
+              // 占쏙옙占싸삳쭆 筌욊쑵六양몴醫롮뱽 占싼딆뒠占쎌꼷肉� y揶쏅��� 占썬끉��
               translateYValues[index] = (1 - self.progress) * 200;
               gsap.set(img, { y: `${translateYValues[index]}%` });
             }
@@ -339,15 +339,17 @@ function imageAnimation() {
   document.querySelectorAll('.main .pc .img2 .image:nth-child(3)').forEach((img, index, array) => {
     ScrollTrigger.matchMedia({
       "(min-width: 1025px)": function() {
+        // 筌뤴뫀諭� 占쎈�占쏙쭪占� 域밸챶竊숋옙占� 占쏙옙占쏙옙 獄쏆꼶�э옙�몃빍占쏙옙.
         const animation = gsap.to(img, {
           ease: "none",
           scrollTrigger: {
             trigger: img.previousElementSibling,
             start: 'top top',
-            end: `+=${($(window).width()/154)*100}`,
+            end: `+=${($(window).width()/148)*100}`,
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {
+              // 占쏙옙占싸삳쭆 筌욊쑵六양몴醫롮뱽 占싼딆뒠占쎌꼷肉� y揶쏅��� 占썬끉��
               translateYValues[index] = (1 - self.progress) * 580;
               gsap.set(img, { y: `${translateYValues[index]}%` });
             }
@@ -367,7 +369,7 @@ function imageAnimation() {
           scrollTrigger: {
             trigger: img.previousElementSibling,
             start: 'top top',
-            end: `+=${($(window).width()/258)*100}`,
+            end: `+=${($(window).width()/252)*100}`,
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {

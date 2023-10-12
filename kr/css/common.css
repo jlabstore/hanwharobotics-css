@@ -33,14 +33,15 @@
 
 
 /* ---------- css reset ---------- */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, button, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {box-sizing: border-box; margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline;box-sizing: border-box;}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, button, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {box-sizing: border-box; margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline;box-sizing: border-box;word-break: keep-all;}
 body {
 	font-family: "Inter", "Pretendard", sans-serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: none;
+	word-break: keep-all;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu,n av, section {display: block;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu,n av, section {display: block;word-break: keep-all;}
 ul li{list-style:none;}
 a {margin: 0; padding: 0; border: 0; vertical-align: baseline; background: transparent; text-decoration: none; color: inherit; display: inline-block; cursor: pointer;}
 /* img {vertical-align: bottom;} */
@@ -55,6 +56,7 @@ html.scroll-lock, html.scroll-lock body {
 }
 
 header {
+	visibility: hidden;
 	z-index: 4;
 	position: fixed;
 	display: flex;
@@ -63,7 +65,14 @@ header {
 	height: 90px;
 	padding: 20px 50px;
 }
-
+.mobile header {
+	height: 70px;
+	padding: 18px 20px;
+}
+.tablet header {
+	padding: 18px 20px;
+	padding: 20px 30px;
+}
 header .header {
 	display: flex;
 	justify-content: space-between;
@@ -80,15 +89,15 @@ header .logo {
 header .logo a span {
 	display: none;
 }
-.pc .main_header .logo a {
+.main_header .logo a {
 	display: block;
 	width: 194px;
 	height: 50px;
 	background: url('../images/pc/logo.svg') no-repeat 0 0;
 	object-fit: contain;
-	text-indent: -1000000;
+	text-indent: -1000000vw;
 }
-.pc .sub_header .logo a {
+.sub_header .logo a {
 	display: block;
 	width: 194px;
 	height: 50px;
@@ -100,10 +109,12 @@ header .logo a span {
 .mobile  .main_header .logo a {
 	width: 135px;
 	height: 35px;
+	background-size: 135px 35px;
 }
 .mobile  .sub_header .logo a {
 	width: 135px;
 	height: 35px;
+	background-size: 135px 35px;
 }
 
 header .btn_menu {
@@ -125,6 +136,19 @@ header .btn_menu .icon-bottom {
   width: 36px;
   height: 2px;
   margin: 16px 0 0;
+  background-color: #000;
+}
+
+.mobile header .btn_menu .icon-top {
+  width: 28px;
+  height: 1px;
+  background-color: #000;
+}
+
+.mobile header .btn_menu .icon-bottom {
+  width: 28px;
+  height: 1px;
+  margin: 11px 0 0;
   background-color: #000;
 }
 

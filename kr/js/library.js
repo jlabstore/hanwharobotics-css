@@ -45,7 +45,7 @@ function vhToPercent(vh) {
 
 function vwvhAverage(vwPercent, vhPercent) {
   // vwPercent와 vhPercent의 평균을 계산
-  const averagePercent = (vwPercent + vhPercent) * 0.56;
+  const averagePercent = (vwPercent + vhPercent) / 0.2;
   return averagePercent;
 }
 
@@ -56,4 +56,22 @@ function debounce(func, wait) {
       clearTimeout(timeout);
       timeout = setTimeout(() => func.apply(context, args), wait);
   };
+}
+
+// 쓰로틀링 함수
+function throttle(func, delay) {
+  let lastCall = 0;
+  return function(...args) {
+    const now = new Date().getTime();
+    if (now - lastCall < delay) return;
+    lastCall = now;
+    return func(...args);
+  };
+}
+
+function smoothScrollTo(element, duration = 600) {
+  const top = $(element).offset().top;
+  $('html, body').animate({
+      scrollTop: top
+  }, duration);
 }

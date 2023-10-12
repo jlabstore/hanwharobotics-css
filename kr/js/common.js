@@ -9,6 +9,7 @@ $(window).on("load resize", function (e) {
   } else {
     $("body").attr("class", "pc");
   }
+  $("header").css('visibility', 'visible');
 });
 
 

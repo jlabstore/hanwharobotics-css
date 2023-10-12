@@ -32,6 +32,48 @@ header .gnb_menu .header__nav__items a {
 	overflow: hidden;
 }
 
+/* @media (min-width: 1700px) {
+	#section3 {
+		padding-bottom: 15px;
+	}
+}
+
+@media (min-width: 1600px) {
+	#section3 {
+		padding-bottom: 14px;
+	}
+}
+
+@media (min-width: 1500px) {
+	#section3 {
+		padding-bottom: 13px;
+	}
+}
+
+@media (min-width: 1400px) {
+	#section3 {
+		padding-bottom: 12px;
+	}
+}
+
+@media (min-width: 1300px) {
+	#section3 {
+		padding-bottom: 11px;
+	}
+}
+
+@media (min-width: 1200px) {
+	#section3 {
+		padding-bottom: 10px;
+	}
+}
+
+@media (min-width: 1100px) {
+	#section3 {
+		padding-bottom: 9px;
+	}
+} */
+
 @media (min-width: 1025px) {
 	.main .tablet {
 		visibility: hidden;
@@ -53,15 +95,26 @@ header .gnb_menu .header__nav__items a {
 		padding: 0 60px 0;
 	}
 
-	.fixed {}
+	.fixed {
+		position: absolute;
+		top: 17vw;
+		left: 0;
+		width: 100%;
+		height: 101vw;
+		/* background:red; */
+	}
 	.fixed .line {
 		z-index: 3;
-		position: fixed;
-		top: 17vw;
+		position: absolute;
+		top: 0;
 		left: 4vw;
 		width: 68vw;
 		height: 3px;
 		background-color: #000;
+		will-change: transform;
+		transform: translateY(0%);
+		backface-visibility: hidden;
+		perspective: 1000;
 	}
 	.fixed .line .txt {
 		visibility: hidden;
@@ -70,21 +123,18 @@ header .gnb_menu .header__nav__items a {
 		font-weight: bold;
 	}
 
-	.fixed .line {
-		z-index: 1;
-		position: fixed;
-		width: 68vw;
-		height: 3px;
-		overflow: hidden;
-	}
-
 	.fixed
 	.img {
 			z-index: 1;
 			position: fixed;
+			top: 0;
 			width: 100%;
 			height: 100vh;
 			overflow: hidden;
+			will-change: transform;
+			transform: translateY(0%);
+			backface-visibility: hidden;
+			perspective: 1000;
 	}
 
 	.fixed .img .image {
@@ -92,7 +142,10 @@ header .gnb_menu .header__nav__items a {
 		top: 0;
 		left: 0;
 		object-fit: contain;
+		will-change: transform;
 		transform: translateY(0%);
+		backface-visibility: hidden;
+		perspective: 1000;
 	}
 	.fixed .img1 .image:nth-child(2) {
 		transform: translateY(100%);
@@ -143,8 +196,8 @@ header .gnb_menu .header__nav__items a {
 	}
 
 	.fixed .img3 {
-		width: 24vw;
-		height: 15vw;
+		width: 27vw;
+		height: 17vw;
 		top: 44vw;
 		left: 46vw;
 		border-radius: 5vw;
@@ -161,8 +214,6 @@ header .gnb_menu .header__nav__items a {
 		padding: 0 0 0 0;
 	}
 
-	.section:not(:first-child) {
-	}
 	.section .title {
 		padding-top: 6vw;
 		font-family: HanwhaGothicB_OTF;
@@ -188,16 +239,12 @@ header .gnb_menu .header__nav__items a {
 		color: #eaeaea;
 	}
 
-	/* #section2 {
-		margin-top: 12vw;
-	}
-
 	#section3 {
-		margin-top: 12vw;
-	} */
-
+		padding-bottom: 12vw;
+	}
+	
 	.about {
-		margin: 15vw 0 0 10vw;
+		padding: 5vw 0 0 10vw;
 		font-family: HanwhaGothicB_OTF;
 		font-size: 40px;
 		font-weight: normal;
@@ -223,7 +270,7 @@ header .gnb_menu .header__nav__items a {
 		display: flex;
 		justify-content: space-between;
 		height: 263px;
-		margin-top: 8vw;
+		margin-top: 10vw;
 		padding: 52px 64px 52px;
 		background-color: #000;
 	}
@@ -323,7 +370,7 @@ header .gnb_menu .header__nav__items a {
 
 	footer .address {
 		font-size: 15px;
-		margin-top: 77px;
+		/* margin-top: 77px; */
 	}
 	footer .column1 .sitemap a {
 		font-size: 15px;
@@ -500,7 +547,7 @@ header .gnb_menu .header__nav__items a {
 	}
 
 	footer .address {
-		margin-top: 77px;
+		/* margin-top: 77px; */
 		opacity: 0.7;
 		font-family: HanwhaGothicL_OTF;
 		font-size: 1.5vw;
@@ -685,7 +732,7 @@ header .gnb_menu .header__nav__items a {
 
 	footer .address {
 		margin-top: 36px;
-		padding-top: 200px;
+		/* padding-top: 200px; */
 		opacity: 0.7;
 		font-family: HanwhaGothicL_OTF;
 		font-size: 14px;
