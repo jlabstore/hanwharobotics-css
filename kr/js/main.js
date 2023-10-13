@@ -5,6 +5,7 @@ let tabletSectionScrollTriggers = [];
 let translateYValues = {};
 let lastScrollY = window.scrollY;
 let isAnimating = false;
+let scrollEventHandler = null;
 
 // pc, table, mobile 占싼됵옙
 $(window).on("load", function (e) {
@@ -36,7 +37,7 @@ $(window).on("load", function (e) {
       $('html').removeClass('scroll-lock');
       $(".main .pc").css('visibility', 'visible');
       hideHeader();
-      imagePosition();
+      initializeImagePositioning();
       imageAnimation();
     }, 500);
 
@@ -73,22 +74,21 @@ $(window).on("resize", function (e) {
     }, 200);
 
   } else {
-    // killAllScrollTriggers();
+    killAllScrollTriggers();
     $('html').addClass('scroll-lock');
     $("body").attr("class", "pc");
     $(".main .pc").css('visibility', 'visible');
     $(".main .tablet, .main .mobile").css('visibility', 'hidden');
+    $('.main .pc .img').css('transform', '');
+    $('.main .pc .img .image').css('transform', '');
     
     setTimeout(function() {
-      $('.main .pc .img').css('transform', '');
-      $('.main .pc .img .image').css('transform', '');
-
       $(window).scrollTop(0);
-      $('html').removeClass('scroll-lock');
       hideHeader();
-      imagePosition(); 
+      initializeImagePositioning(); 
       imageAnimation();
-    }, 330);
+      $('html').removeClass('scroll-lock');
+    }, 600);
   }
 
   $("header").css('visibility', 'visible');
@@ -107,11 +107,6 @@ function killAllScrollTriggers() {
     tabletSectionScrollTriggers = [];
   }
   gsap.globalTimeline.clear();
-
-  if(pcObserver) {
-    pcObserver.unobserve(document.querySelector('.main .pc .about'));
-    pcObserver = null;
-  }
 
   const imgElements = document.querySelectorAll('.main .pc .img');
   imgElements.forEach(img => {
@@ -148,42 +143,48 @@ function hideHeader() {
   });
 }
 
-function imagePosition() {
-  const vhInPixels = window.innerWidth / 100;
-  const fiftyVHInPixels = vhInPixels * 17;
+function initializeImagePositioning() {
+  // If we've attached the event before, remove it
+  if (scrollEventHandler) {
+    $(window).off('scroll', scrollEventHandler);
+  }
+
   const targetElements = document.querySelectorAll('.main .pc .section');
   const $fixed = $('.main .pc .fixed');
   const $fixedLine = $fixed.find('.line');
   const imgElements = document.querySelectorAll('.main .pc .img');
-  const pixels = [vhInPixels * 6.4, vhInPixels * -6, vhInPixels * 28];
+  const vhInPixels = window.innerWidth / 100;
+  const fiftyVHInPixels = vhInPixels * 17;
+  const pixels = [vhInPixels * 6.2, vhInPixels * -6.8, vhInPixels * 26.8];
   const fixedTop = $fixed.offset().top;
   const fixedHeight = $fixed.outerHeight();
   const maxTranslate = fixedTop + fixedHeight - fiftyVHInPixels;
+  let yFixed = 0;
 
-  $(window).on('scroll', debounce(function() {
+  // Attach the event (re-calculating any necessary variables)
+  scrollEventHandler = throttle(function() {
     requestAnimationFrame(() => {
       const scrollTop = $(this).scrollTop();
-      
       const translateY = Math.min(scrollTop, maxTranslate);
-      let yFixed = 0;
 
-      if (scrollTop <= maxTranslate) {
+      if (scrollTop < maxTranslate) {
+        
         yFixed = translateY;
 
         $fixedLine.css({
           'position': 'fixed',
-          'top': `17vw`
+          'top': `17vw`,
+          'transform': 'translateY(0)'
         });
         
         imgElements.forEach((img, index) => {
           img.style.position = 'fixed';
           img.style.top = '';
-          // img.style.transform = `translateY(${translateY + pixels[index]}px)`;
-          // img.style.top = `${translateY + pixels[index]}px`;
         });
       } else {
+
         yFixed = maxTranslate;
-        
+      
         $fixedLine.css({
           'position': 'absolute',
           'top': `${yFixed}px`
@@ -191,12 +192,10 @@ function imagePosition() {
 
         imgElements.forEach((img, index) => {
           img.style.position = 'absolute';
-          // img.style.transform = `translateY(${translateY + pixels[index]}px)`;
           img.style.top = `${yFixed + pixels[index]}px`;
         });
       }
 
-      // $fixedLine.css('transform', `translateY(${yFixed}px)`);
       
       // 애니메이션이 진행 중이라면 반환
       if(isAnimating) return;
@@ -218,31 +217,10 @@ function imagePosition() {
         }, 200);
           
       }
-
-      // targetElements.forEach((targetElement, index) => {
-      //   if(index === 0 || index === 2) return;
-
-      //   const rect = targetElement.getBoundingClientRect();
-        
-      //   if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-      //     // console.log("Entering viewport:", targetElement);
-          
-      //     isAnimating = true;
-          
-      //     setTimeout(() => {
-      //       targetElement.scrollIntoView({
-      //         behavior: 'smooth',
-      //         block: 'start'
-      //       });
-
-      //       isAnimating = false;
-      //     }, 200);
-            
-      //   }
-      // });
     });
-
-  }, 10));
+  }, 6);
+  
+  $(window).on('scroll', scrollEventHandler);
 }
 
 function imageAnimation() {
@@ -277,7 +255,7 @@ function imageAnimation() {
           scrollTrigger: {
             trigger: img.previousElementSibling,
             start: 'top top',
-            end: `+=${($(window).width()/250)*100}`,
+            end: `+=${($(window).width()/248)*100}`,
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {
@@ -344,7 +322,7 @@ function imageAnimation() {
           scrollTrigger: {
             trigger: img.previousElementSibling,
             start: 'top top',
-            end: `+=${($(window).width()/154)*100}`,
+            end: `+=${($(window).width()/148)*100}`,
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {
@@ -367,7 +345,7 @@ function imageAnimation() {
           scrollTrigger: {
             trigger: img.previousElementSibling,
             start: 'top top',
-            end: `+=${($(window).width()/258)*100}`,
+            end: `+=${($(window).width()/250)*100}`,
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {
