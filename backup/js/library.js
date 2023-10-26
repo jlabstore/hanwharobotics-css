@@ -57,15 +57,3 @@ function debounce(func, wait) {
       timeout = setTimeout(() => func.apply(context, args), wait);
   };
 }
-
-// 쓰로틀링 함수
-function throttle(func, delay) {
-  let lastCall = 0;
-  return function(...args) {
-    const now = new Date().getTime();
-    if (now - lastCall < delay) return;
-    lastCall = now;
-    return func(...args);
-  };
-}
-

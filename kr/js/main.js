@@ -7,7 +7,7 @@ let lastScrollY = window.scrollY;
 let isAnimating = false;
 let scrollEventHandler = null;
 
-// pc, table, mobile 占싼됵옙
+// pc, table, mobile
 $(window).on("load", function (e) {
   const win = $(this); //this = window
     
@@ -48,62 +48,60 @@ $(window).on("load", function (e) {
 
 
 $(window).on("resize", function (e) {
-  const win = $(this); //this = window
+  throttle(function() {
+    const win = $(this); //this = window
 
-  if (win.width() <= 743) {
-    killAllScrollTriggers();
-    $("body").attr("class", "mobile");
-    $(".main .mobile").css('visibility', 'visible');
-    $(".main .pc, .main .tablet").css('visibility', 'hidden');
-    hideHeader();
-
-  } else if (win.width() < 1026) {
-    killAllScrollTriggers();
-    $("body").attr("class", "tablet");
-    $(".main .tablet").css('visibility', 'visible');
-    $(".main .pc, .main .mobile").css('visibility', 'hidden');
-
-    setTimeout(function() {
-      $(window).scrollTop(0);
-      if(tabletSectionScrollTriggers.length > 0) {
-        tabletSectionScrollTriggers.forEach(st => st.refresh());
-      } else {
-
-        tabletAnimation();
-      }
-    }, 200);
-
-  } else {
-    killAllScrollTriggers();
-    $('html').addClass('scroll-lock');
-    $("body").attr("class", "pc");
-    $(".main .pc").css('visibility', 'visible');
-    $(".main .tablet, .main .mobile").css('visibility', 'hidden');
-    $('.main .pc .img').css('transform', '');
-    $('.main .pc .img .image').css('transform', '');
-    
-    setTimeout(function() {
-      $(window).scrollTop(0);
+    if (win.width() <= 743) {
+      killAllScrollTriggers();
+      $("body").attr("class", "mobile");
+      $(".main .mobile").css('visibility', 'visible');
+      $(".main .pc, .main .tablet").css('visibility', 'hidden');
       hideHeader();
-      initializeImagePositioning(); 
-      imageAnimation();
-      $('html').removeClass('scroll-lock');
-    }, 600);
-  }
 
-  $("header").css('visibility', 'visible');
+    } else if (win.width() < 1026) {
+      killAllScrollTriggers();
+      $("body").attr("class", "tablet");
+      $(".main .tablet").css('visibility', 'visible');
+      $(".main .pc, .main .mobile").css('visibility', 'hidden');
+
+      setTimeout(function() {
+        $(window).scrollTop(0);
+        tabletAnimation();
+      }, 500);
+
+    } else {
+      killAllScrollTriggers();
+      $('html').addClass('scroll-lock');
+      $("body").attr("class", "pc");
+      $(".main .pc").css('visibility', 'visible');
+      $(".main .tablet, .main .mobile").css('visibility', 'hidden');
+      $('.main .pc .img').css('transform', '');
+      $('.main .pc .img .image').css('transform', '');
+      
+      setTimeout(function() {
+        $(window).scrollTop(0);
+        hideHeader();
+        initializeImagePositioning(); 
+        imageAnimation();
+        $('html').removeClass('scroll-lock');
+      }, 600);
+    }
+
+    $("header").css('visibility', 'visible');
+  }, 200)();
 });
 
 
 function killAllScrollTriggers() {
+
   // ScrollTrigger.getAll().forEach(st => st.kill());
   if(pcImageScrollTriggers.length > 0) {
-    pcImageScrollTriggers.forEach(st => st.kill());
+    pcImageScrollTriggers.forEach(st => st.scrollTrigger.kill());
     pcImageScrollTriggers = [];
   }
   // headerScrollTrigger && headerScrollTrigger.kill();
   if(tabletSectionScrollTriggers.length > 0) {
-    tabletSectionScrollTriggers.forEach(st => st.kill());
+    tabletSectionScrollTriggers.forEach(st => st.scrollTrigger.kill());
     tabletSectionScrollTriggers = [];
   }
   gsap.globalTimeline.clear();
@@ -115,6 +113,18 @@ function killAllScrollTriggers() {
   });
   const title = document.querySelector('.main .pc #section3 .title');
   title.style.left = ``;
+
+  // const $fixedLine = $('.main .pc .fixed .line');
+  // $fixedLine.css({
+  //   'position': 'fixed',
+  //   'top': `17vw`,
+  //   'transform': 'translateY(0)'
+  // });
+  
+  imgElements.forEach((img, index) => {
+    img.style.position = 'fixed';
+    img.style.top = '';
+  });
 }
 
 function hideHeader() {
@@ -122,11 +132,11 @@ function hideHeader() {
 
   const $header = $("#header");
 
-  // ScrollTrigger 占쎌빘苑�
+  // ScrollTrigger
   headerScrollTrigger = ScrollTrigger.create({
-    trigger: "#header", // 占쎈챶�곩쳞占� 占쎈뗄��
-    start: "top top", // 占썬끋寃뺞에占� 占쎌뮇�� 筌욑옙占쏙옙
-    end: "+=100%", // 100% 占쎄쑬�믤틦��옙
+    trigger: "#header",
+    start: "top top",
+    end: "+=100%",
     onRefreshInit: function(self) {
       lastScrollPos = self.scroll();
     },
@@ -149,78 +159,80 @@ function initializeImagePositioning() {
     $(window).off('scroll', scrollEventHandler);
   }
 
-  const targetElements = document.querySelectorAll('.main .pc .section');
-  const $fixed = $('.main .pc .fixed');
-  const $fixedLine = $fixed.find('.line');
-  const imgElements = document.querySelectorAll('.main .pc .img');
-  const vhInPixels = window.innerWidth / 100;
-  const fiftyVHInPixels = vhInPixels * 17;
-  const pixels = [vhInPixels * 6.2, vhInPixels * -6.8, vhInPixels * 26.8];
-  const fixedTop = $fixed.offset().top;
-  const fixedHeight = $fixed.outerHeight();
-  const maxTranslate = fixedTop + fixedHeight - fiftyVHInPixels;
-  let yFixed = 0;
+  if ($('body').hasClass('pc')) {
 
-  // Attach the event (re-calculating any necessary variables)
-  scrollEventHandler = throttle(function() {
-    requestAnimationFrame(() => {
-      const scrollTop = $(this).scrollTop();
-      const translateY = Math.min(scrollTop, maxTranslate);
-
-      if (scrollTop < maxTranslate) {
-        
-        yFixed = translateY;
-
-        $fixedLine.css({
-          'position': 'fixed',
-          'top': `17vw`,
-          'transform': 'translateY(0)'
-        });
-        
-        imgElements.forEach((img, index) => {
-          img.style.position = 'fixed';
-          img.style.top = '';
-        });
-      } else {
-
-        yFixed = maxTranslate;
-      
-        $fixedLine.css({
-          'position': 'absolute',
-          'top': `${yFixed}px`
-        });
-
-        imgElements.forEach((img, index) => {
-          img.style.position = 'absolute';
-          img.style.top = `${yFixed + pixels[index]}px`;
-        });
-      }
-
-      
-      // 애니메이션이 진행 중이라면 반환
-      if(isAnimating) return;
-      
-      const rect = targetElements[1].getBoundingClientRect();
-      
-      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-        // console.log("Entering viewport:", targetElement);
-        
-        isAnimating = true;
-        
-        targetElements[1].scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-
-        setTimeout(() => {
-          isAnimating = false;
-        }, 200);
-          
-      }
-    });
-  }, 6);
+    // const targetElements = document.querySelectorAll('.main .pc .section');
+    const $fixed = $('.main .pc .fixed');
+    // const $fixedLine = $('.main .pc .fixed .line');
+    const imgElements = document.querySelectorAll('.main .pc .img');
+    const vhInPixels = window.innerWidth / 100;
+    const fiftyVHInPixels = vhInPixels * 17;
+    const pixels = [vhInPixels * 6.2, vhInPixels * -6.8, vhInPixels * 26.8];
+    const fixedTop = $fixed.offset().top;
+    const fixedHeight = $fixed.outerHeight();
+    const maxTranslate = fixedTop + fixedHeight - fiftyVHInPixels;
+    let yFixed = 0;
   
-  $(window).on('scroll', scrollEventHandler);
+    // Attach the event (re-calculating any necessary variables)
+    scrollEventHandler = throttle(function() {
+      requestAnimationFrame(() => {
+        const scrollTop = $(this).scrollTop();
+        const translateY = Math.min(scrollTop, maxTranslate);
+  
+        if (scrollTop < maxTranslate) {
+          
+          yFixed = translateY;
+  
+          // $fixedLine.css({
+          //   'position': 'fixed',
+          //   'top': `17vw`,
+          //   'transform': 'translateY(0)'
+          // });
+          
+          imgElements.forEach((img, index) => {
+            img.style.position = 'fixed';
+            img.style.top = '';
+          });
+        } else {
+  
+          yFixed = maxTranslate;
+        
+          // $fixedLine.css({
+          //   'position': 'absolute',
+          //   'top': `${yFixed}px`
+          // });
+  
+          imgElements.forEach((img, index) => {
+            img.style.position = 'absolute';
+            img.style.top = `${yFixed + pixels[index]}px`;
+          });
+        }
+  
+        
+        // 애니메이션이 진행 중이라면 반환
+        // if(isAnimating) return;
+        
+        // const rect = targetElements[1].getBoundingClientRect();
+        
+        // if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+          
+        //   isAnimating = true;
+          
+        //   targetElements[1].scrollIntoView({
+        //     behavior: 'smooth',
+        //     block: 'start'
+        //   });
+  
+        //   setTimeout(() => {
+        //     isAnimating = false;
+        //   }, 200);
+            
+        // }
+      });
+    }, 6);
+    
+    $(window).on('scroll', scrollEventHandler);
+  }
 }
 
 function imageAnimation() {
@@ -339,7 +351,6 @@ function imageAnimation() {
   document.querySelectorAll('.main .pc .img3 .image:nth-child(3)').forEach((img, index, array) => {
     ScrollTrigger.matchMedia({
       "(min-width: 1025px)": function() {
-        // 筌뤴뫀諭� 占쎈�占쏙쭪占� 域밸챶竊숋옙占� 占쏙옙占쏙옙 獄쏆꼶�э옙�몃빍占쏙옙.
         const animation = gsap.to(img, {
           ease: "none",
           scrollTrigger: {
@@ -349,7 +360,6 @@ function imageAnimation() {
             scrub: true,
             invalidateOnRefresh: true,
             onUpdate: self => {
-              // 占쏙옙占싸삳쭆 筌욊쑵六양몴醫롮뱽 占싼딆뒠占쎌꼷肉� y揶쏅��� 占썬끉��
               translateYValues[index] = (1 - self.progress) * 200;
               gsap.set(img, { y: `${translateYValues[index]}%` });
             }
@@ -363,6 +373,11 @@ function imageAnimation() {
 }
 
 function tabletAnimation() {
+  if(tabletSectionScrollTriggers.length > 0) {
+    tabletSectionScrollTriggers.forEach(st => st.scrollTrigger.kill());
+    tabletSectionScrollTriggers = [];
+  }
+
   let lastScrollPos = 0;
   const $header = $("#header");
   
@@ -381,10 +396,8 @@ function tabletAnimation() {
           const currentScrollPos = self.scroll();
           
           if (currentScrollPos > lastScrollPos) {
-            // �ㅽ겕濡ㅼ쓣 �꾨옒濡� �� �� �ㅻ뜑 �④린湲�
             $header.css('opacity', 0);
           } else {
-            // �ㅽ겕濡ㅼ쓣 �꾨줈 �� �� �ㅻ뜑 蹂댁씠湲�
             $header.css('opacity', 1);
           }
           lastScrollPos = currentScrollPos;
