@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+    <g data-name="그룹 506" style="opacity:.2">
+        <g data-name="타원 50" style="stroke:#000;fill:#fff">
+            <circle cx="18.5" cy="18.5" r="18.5" style="stroke:none"/>
+            <circle cx="18.5" cy="18.5" r="18" style="fill:none"/>
+        </g>
+        <g data-name="그룹 449">
+            <path data-name="패스 912" d="M0 0h8.036v8.035" transform="rotate(-135 14.38 8.288)" style="stroke-linejoin:round;stroke-linecap:round;fill:none;stroke:#000"/>
+        </g>
+        <path data-name="선 50" transform="translate(13.437 18.635)" style="stroke-linecap:round;fill:none;stroke:#000" d="M13.313 0H0"/>
+    </g>
+</svg>

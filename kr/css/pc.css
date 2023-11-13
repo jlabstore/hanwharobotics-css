@@ -88,6 +88,132 @@ header .gnb_menu .footer {
 	left: 118px;
 }
 
+
+header .gnb_menu{
+  display: flex;
+}
+
+header .logo {
+  width: auto;
+}
+
+header .logo .txt {
+  display: flex;
+}
+
+header .logo .txt a {
+  display: flex;
+  align-items: center;
+  margin-left: 58px;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 16px;
+  color: #fff;
+}
+
+header .logo .txt span {
+  display: flex;
+  align-items: center;
+  margin: -4px 0 0 13px;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 20px;
+  color: #fff;
+}
+
+header .logo .txt span strong {
+  display: flex;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  margin: 5px 0 3px 7px;
+  object-fit: contain;
+  background: url('../images/pc/ic_sub_more.svg') no-repeat 0 0;
+}
+
+header .btn_menu {
+  display: none;
+}
+
+header .gnb_menu {
+  visibility: visible;
+  z-index: 1;
+  position: static;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  transform: translateX(0%);
+  background-color: transparent;
+}
+
+header .gnb_menu .header__nav__items {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  gap: 40px;
+  align-items: center;
+}
+
+header .gnb_menu .header__nav__items li.inquiry {
+  display: block;
+}
+
+header .gnb_menu .header__nav__items a {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: HanwhaGothicL_OTF;
+  font-size: 19px;
+  color: #fff;
+}
+
+header button.inquiry {
+	cursor: pointer;
+	width: 130px;
+	height: 42px;
+	padding: 11px 0 12px;
+	font-family: HanwhaGothicB_OTF;
+	font-size: 16px;
+	color: #fff;
+	justify-content: center;
+	border-radius: 21px;
+	background-color: #000;
+	box-sizing: border-box;
+}
+
+header .more_btn a, header button.inquiry {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  width: 102px;
+  height: 37px;
+  padding: 11px 18px;
+  border-radius: 18.5px;
+  background-color: #000;
+	opacity: 1;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  text-align: center;
+  color: #fff;
+	box-sizing: border-box;
+}
+
+header .more_btn  a.distributor {
+	background-color: #000;
+}
+
+header .more_btn {
+  display: none;
+}
+
+header .btn_close {
+  display: none;
+}
+
 main.about {
 	padding: 230px 0 0 0;
 }
@@ -274,7 +400,8 @@ main .main {
 
 .about .section_2 .row .mission {
 	top: 100px;
-	transition: top 0.5s linear; /* 애니메이션 효과 */
+	/* transition: top 0.5s linear;  */
+  /* 애니메이션 효과 */
 }
 
 .about .section_2 .row .box .title{
@@ -435,92 +562,4 @@ main .main {
 
 .about .section_2 .column .list .img {
   display: none;
-}
-
-footer {
-	display: flex;
-	justify-content: space-between;
-  height: 263px;
-	padding: 52px 64px 52px;
-	background-color: #000;
-}
-
-footer .column {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100%;
-}
-
-footer .address {
-	margin-top: 39px;
-	opacity: 0.7;
-  font-family: HanwhaGothicL_OTF;
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.6;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fff;
-  white-space: pre;
-}
-
-footer .column1 {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-}
-
-footer .column1 .sitemap {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-footer .column1 .sitemap a {
-	font-family: HanwhaGothicR_OTF;
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.67;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fff;
-}
-
-footer .column1 .link {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100%;
-	margin-left: 65px;
-}
-
-footer .column1 .link .select_wrap {
-	border-bottom: 1px solid #fff;
-}
-
-footer .column1 .link .select_wrap select {
-	padding-right: 50px;
-  font-family: HanwhaGothicR_OTF;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.5;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fff;
-	outline: 0;
-	border: 0;
-	background: url('../images/pc/ico_arrow_down.svg') no-repeat 100% 38%;
-	background-size: 12px;
-}
-
-footer .column1 .sns {
-	display: flex;
-	flex-direction: row;
-	gap: 20px;
 }

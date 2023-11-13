@@ -8,41 +8,44 @@ function pcBoxPositionUp() {
 
   $missionBox
   .on('mouseover', function() {
-    $missionBox.css('top', '0');
+    $missionBox.stop().animate({'top': '0'});
   });
 
   $missionBox
   .on('mouseleave', function() {
-    $missionBox.css('top', '100px');
+    $missionBox.stop().animate({'top': '100px'});
   });
 }
 
 function padBoxPositionUp() {
-  const element = document.querySelector('.section_2 .mission');
+  const element = document.querySelector('.about .section_2 .mission');
 
-  // Intersection Observer 옵션 설정
-  const options = {
-    root: null, // 뷰포트를 기준으로 합니다
-    rootMargin: '400px 0px -100px 0px', // 50px 상단에서 감시를 시작합니다
-    threshold: 0 // 대상 요소가 뷰포트에 진입할 때 콜백 함수를 호출합니다
-  };
-  
-  // Intersection Observer 콜백 함수
-  const observerCallback = (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-          element.style.top = '0';
-      } else {
-          element.style.top = '4vw';
-      }
-    });
-  };
+  if(element) {
 
-  // Intersection Observer 인스턴스 생성
-  const observer = new IntersectionObserver(observerCallback, options);
-  
-  // 감시할 요소를 Observer에 연결
-  observer.observe(element);
+    // Intersection Observer 옵션 설정
+    const options = {
+      root: null, // 뷰포트를 기준으로 합니다
+      rootMargin: '400px 0px -100px 0px', // 50px 상단에서 감시를 시작합니다
+      threshold: 0 // 대상 요소가 뷰포트에 진입할 때 콜백 함수를 호출합니다
+    };
+    
+    // Intersection Observer 콜백 함수
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            element.style.top = '0';
+        } else {
+            element.style.top = '4vw';
+        }
+      });
+    };
+
+    // Intersection Observer 인스턴스 생성
+    const observer = new IntersectionObserver(observerCallback, options);
+    
+    // 감시할 요소를 Observer에 연결
+    observer.observe(element);
+  }
 } 
 
 function imgShowHide(ele, height) {

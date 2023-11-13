@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="572" height="229" viewBox="0 0 572 229">
+    <defs>
+        <linearGradient id="rr595mat4a" x1=".389" y1="1.235" x2=".258" y2=".156" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#e3dc9c"/>
+            <stop offset="1" stop-color="#ff7f00"/>
+        </linearGradient>
+    </defs>
+    <g data-name="그룹 490" transform="translate(-58 -3548)">
+        <rect width="572" height="229" rx="15" transform="translate(58 3548)" style="fill:url(#rr595mat4a)"/>
+        <text transform="translate(115 3635)" style="font-size:34px;letter-spacing:.03em;fill:#fff;font-family:HanwhaGothicBOTF,HanwhaGothic"><tspan x="0" y="0">RECRUIT</tspan></text>
+        <text data-name="한화로보틱스와 함께 로봇산업을 이끌어 갈 패기와 열정을 가진 여러분을 환영합니다." transform="translate(115 3679)" style="font-size:18px;fill:#fff;font-family:HanwhaGothicBOTF,HanwhaGothic"><tspan x="0" y="0">한화로보틱스와 함께 로봇산업을 이끌어 갈</tspan><tspan x="0" y="30">패기와 열정을 가진 여러분을 환영합니다.</tspan></text>
+    </g>
+</svg>
