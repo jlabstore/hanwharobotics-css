@@ -448,13 +448,18 @@
   }
     
   .board-type1 .board_list .thead .th {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .board-type1 .board_list .tbody .td {
     width: 60%;
     padding-right: 6px;
     font-size: 12px;
+  }
+
+  .board-type1 .board_list .tbody .td .download img {
+    width: 14px;
+    height: 14px;
   }
 
   .board-type1 .board_list .tbody .td:last-child {
