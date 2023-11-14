@@ -1,4 +1,11 @@
 
+.fixed-position {
+	position: fixed;
+}
+.absolute-position {
+	position: fixed;
+}
+
 header.main_header {
 	background-color: transparent;
 }
@@ -87,23 +94,29 @@ header .more_btn  a.distributor {
 
 .section1 {
 	position: relative;
-	max-width: 2440px;
+	max-width: 1920px;
 	min-width: 335px;
-	height: 1180px;
+	margin: 0 auto;
+	/* height: 1180px; */
+}
+
+.section1 .bg_section {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
 	background: url('../images/pc/main_section1_bg@3x.jpg') no-repeat 50% 50%;
 	background-size: cover;
+  /* background-attachment: fixed; */
 }
 
 .section1 .contents {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
-	height: 100%;
-	max-width: 1920px;
+	height: 100vh;
 	padding: 97px 60px 0;
 }
 
@@ -193,12 +206,15 @@ header .more_btn  a.distributor {
 }
 
 .section2 {
+	position: relative;
+	z-index: 2;
 	display: flex;
 	flex-direction: row;
 	max-width: 1920px;
-	margin: 75px auto 0;
-	padding: 0 60px;
+	margin: 0 auto 0;
+	padding: 75px 60px 0;
 	gap: 60px;
+	background-color: #fff;
 }
 
 .section2 .box {
@@ -305,11 +321,14 @@ header .more_btn  a.distributor {
 }
 
 .section3 {
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
 	display: flex;
 	flex-direction: row;
 	max-width: 1920px;
-	margin: 290px auto 0;
-	padding: 0 60px;
+	margin: 0 auto 0;
+	padding: 290px 60px 150px;
 	gap: 45px;
 }
 
@@ -500,8 +519,8 @@ header .more_btn  a.distributor {
 	.section3 {
 		flex-direction: column;
 		max-width: none;
-		margin: 50px auto 0;
-		padding: 0 15px;
+		margin: 0 auto 0;
+		padding: 50px 15px 60px;
 		gap: 0;
 	}
 
@@ -562,8 +581,8 @@ header .more_btn  a.distributor {
 	.section2 {
 		flex-direction: column;
 		max-width: none;
-		margin: 20px auto 0;
-		padding: 0 15px;
+		margin: 0 auto 0;
+		padding: 20px 15px 0;
 		gap: 10px;
 	}
 
@@ -708,7 +727,7 @@ header .more_btn  a.distributor {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
-		margin-top: 10vw;
+		margin-top: 0;
 		padding: 52px 64px 52px;
 		background-color: #000;
 	}
@@ -1046,7 +1065,7 @@ header .more_btn  a.distributor {
 	.fixed {display:none;}
 
 	.section1 {
-		height: 960px;
+		/* height: 960px; */
 	}
 
 	.section1 .contents {
@@ -1109,7 +1128,7 @@ header .more_btn  a.distributor {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
-		margin-top: 10vw;
+		margin-top: 0;
 		padding: 42px 50px 42px;
 		background-color: #000;
 	}
@@ -1262,7 +1281,7 @@ header .more_btn  a.distributor {
 	}
 
 	.section1 {
-		height: 760px;
+		/* height: 760px; */
 	}
 
 	.section1 .contents .main_txt .title {
@@ -1517,7 +1536,7 @@ header .more_btn  a.distributor {
 		flex-direction: column;
 		justify-content: flex-start;
 		height: auto;
-		margin-top: 60px;
+		margin-top: 0;
 		padding: 50px 20px 50px;
 		background-color: #000;
 		overflow: hidden;
