@@ -1,7 +1,6 @@
 
 let resizeTimeout = null;
 let lastScrollPos = 0;
-const $header = $("#header");
 
 function hideHeader() {
   let lastScrollPos = 0;
@@ -58,6 +57,7 @@ $(window).on("load", function (e) {
     pcBoxPositionUp();
   }
 
+  const $header = $("#header");
   document.querySelectorAll('.main .section1 .contents').forEach((section, index, array) => {
     // Pin the section
     gsap.to(section, {
@@ -67,6 +67,21 @@ $(window).on("load", function (e) {
         end: "bottom top",
         pin: true,
         scrub: true, // Use scrub to smoothly animate the changes over the scroll duration
+        onRefreshInit: function(self) {
+          lastScrollPos = self.scroll();
+        },
+        onUpdate: function(self) {
+          const currentScrollPos = self.scroll();
+          
+          if (currentScrollPos > lastScrollPos) {
+            // �ㅽ겕濡ㅼ쓣 �꾨옒濡� �� �� �ㅻ뜑 �④린湲�
+            $header.css('opacity', 0);
+          } else {
+            // �ㅽ겕濡ㅼ쓣 �꾨줈 �� �� �ㅻ뜑 蹂댁씠湲�
+            $header.css('opacity', 1);
+          }
+          lastScrollPos = currentScrollPos;
+        }
       }
     });
   

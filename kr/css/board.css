@@ -229,6 +229,7 @@
 }
 
 .notice-view .board-type1 .board_contents {
+  min-height: 300px;
   margin-top: 70px;
   font-family: Pretendard;
   font-size: 17px;
@@ -239,9 +240,9 @@
 }
 
 .notice-view .board-type1 .board_prev {
-  margin-top: 200px;
+  /* margin-top: 50px; */
   padding: 54px 0 0 0;
-  border-top: 1px solid #707070;
+  /* border-top: 1px solid #707070; */
 }
 
 .notice-view .board-type1 .board_prev a {
@@ -335,6 +336,7 @@
 }
 
 .press-view .board-type1 .board_contents {
+  min-height: 300px;
   margin-top: 70px;
   font-family: Pretendard;
   font-size: 17px;
@@ -370,12 +372,12 @@
   background-size: 51px 51px;
 }
 
-.press-view .board-type1 .board_files {
+.board-type1 .board_files {
   margin-top: 50px;
   border-bottom: 1px solid #707070;
 }
 
-.press-view .board-type1 .board_files a {
+.board-type1 .board_files a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -383,7 +385,7 @@
   border-top: 1px solid #707070;
 }
 
-.press-view .board-type1 .board_files .txt {
+.board-type1 .board_files .txt {
   font-family: Pretendard;
   font-size: 17px;
   color: #000;
@@ -452,6 +454,15 @@
 }
 
 @media (max-width: 1465px) {
+  .ir-list {
+    padding: 130px 20px 0;
+  }
+  .notice-list {
+    padding: 130px 20px 0;
+  }
+  .press-list {
+    padding: 130px 20px 0;
+  }
   .board {
     display: flex;
     flex-direction: column;
@@ -495,9 +506,9 @@
   }
 
   .notice-view .board-type1 .board_prev {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding: 34px 0 0 0;
-    border-top: 1px solid #707070;
+    /* border-top: 1px solid #707070; */
   }
 
   .press-view .board-type1 .column:nth-child(2) {
@@ -527,6 +538,7 @@
 }
 
 @media (max-width: 1100px) {
+
   .board-type1 .column:first-child {
     width: 100%;
     padding-bottom: 5%;
@@ -545,27 +557,32 @@
     gap: 60px;
   }  
   .board-type1 .column:first-child {
+    padding: 0;
     background: none;
   }
 
   .notice-view .board-type1 .board_title {
-    margin-top: 62px;
-    font-size: 30px;
+    margin-top: 26px;
+    padding-top: 30px;
+    font-size: 18px;
+    border-top: 1px solid #000;
   }
 
   .notice-view .board-type1 .board_date {
     margin-top: 14px;
     font-size: 16px;
+    color: #000;
   }
 
   .notice-view .board-type1 .board_contents {
+    min-height: 200px;
     margin-top: 40px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .notice-view .board-type1 .board_prev {
-    margin-top: 50px;
-    padding-top: 24px;
+    margin-top: 40px;
+    padding-top: 0;
   }
 
   .notice-view .board-type1 .board_prev a {
@@ -580,24 +597,27 @@
   }
 
   .press-view .board-type1 .board_title {
-    margin-top: 62px;
-    font-size: 30px;
+    margin-top: 26px;
+    padding-top: 30px;
+    font-size: 18px;
+    border-top: 1px solid #000;
   }
 
   .press-view .board-type1 .board_date {
     margin-top: 14px;
     font-size: 16px;
+    color: #000;
   }
 
   .press-view .board-type1 .board_contents {
+    min-height: 200px;
     margin-top: 40px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .press-view .board-type1 .board_prev {
-    margin-top: 20px;
-    padding-top: 24px;
-    border: 0;
+    margin-top: 40px;
+    padding-top: 0;
   }
 
   .press-view .board-type1 .board_prev a {
@@ -611,16 +631,16 @@
     background-size: 31px 31px;
   }
 
-  .press-view .board-type1 .board_files .txt {
+  .board-type1 .board_files .txt {
     font-family: Pretendard;
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
   }
 
-  .press-view .board-type1 .board_files .download img {
-    width: 17px;
-    height: 17px;
-    background-size: 17px 17px;
+  .board-type1 .board_files .download img {
+    width: 22px;
+    height: 20px;
+    background-size: 22px 20px;
   }
 
 }
@@ -649,7 +669,11 @@
     font-size: 80px;
   }
   .board-type1 .desc {
+    padding-bottom: 64%;
     font-size: 25px;
+
+    background: url('../images/pc/bg_notice@3x.webp') no-repeat 0 100%;
+    background-size: 100%;
   }
   .board-type1 .board_list {
     margin-top: 35px;
@@ -661,6 +685,9 @@
     background: none;
   }
     
+  .board-type1 .board_list .thead {
+    display: none;
+  }
   .board-type1 .board_list .thead .th {
     font-size: 12px;
   }
@@ -718,5 +745,94 @@
 
     width: 249px;
     height: 161px;
+  }
+
+  .ir-list .board-type1 .board_list {
+    gap: 30px;
+  }
+
+  .ir-list .board-type1 .board_list .table {
+    border-top: 1px solid #000000;
+  }
+  .ir-list .board-type1 .board_list .tbody .tr {
+    padding: 16px 0;
+    border-bottom: 1px solid #cbcbcb;
+  }
+  .ir-list .board-type1 .board_list .tbody .tr a {
+    position: relative;
+    padding: 0 0 26px 0;
+  }
+  .ir-list .board-type1 .board_list .tbody .td {
+    padding: 0;
+    font-size: 16px;
+    border: 0;
+  }
+  .ir-list .board-type1 .board_list .tbody .td:first-child {
+    display: none;
+  }
+
+  .ir-list .board-type1 .board_list .tbody .td:nth-child(2) {
+    width: 100%;
+  }
+  .ir-list .board-type1 .board_list .tbody .td:nth-child(3) {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: auto;
+  }
+  .ir-list .board-type1 .board_list .tbody .td:nth-child(3) img {
+    width: 22px;
+    height: 20.5px;
+    vertical-align: middle;
+  }
+  .ir-list .board-type1 .board_list .tbody .td:last-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    width: auto;
+  }
+
+
+  .notice-list .board-type1 .board_list {
+    gap: 30px;
+  }
+
+  .notice-list .board-type1 .board_list .table {
+    border-top: 1px solid #000000;
+  }
+  .notice-list .board-type1 .board_list .tbody .tr {
+    padding: 20px 0;
+    border-bottom: 1px solid #cbcbcb;
+  }
+
+  .notice-list .board-type1 .board_list .tbody .tr a {
+    position: relative;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .notice-list .board-type1 .board_list .tbody .td {
+    width: auto;
+    padding: 0;
+    text-align: left;
+    justify-content: flex-start;
+    font-size: 16px;
+    border: 0;
+  }
+  .notice-list .board-type1 .board_list .tbody .td .round {
+    width: 67px;
+    padding: 6px 0;
+    font-size: 13px;
+  }
+  .notice-list .board-type1 .board_list .tbody .td:first-child {
+    display: none;
+  }
+  .notice-list .board-type1 .board_list .tbody .contents {
+    max-height: 35px;
+    height: auto;
+    font-size: 16px;
+  }
+  .paging span a {
+    font-size: 16px;
   }
 }
