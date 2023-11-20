@@ -60,10 +60,14 @@ header {
 	z-index: 4;
 	position: fixed;
 	width: 100%;
-	height: 90px;
+  height: 339px;
+}
+
+header.active {
+	background-color: #000;
 }
 .mobile header .header_inner {
-	padding: 0;
+	padding: 16px 15px;
 }
 .tablet header .header_inner {
 	padding: 20px 30px;
@@ -102,7 +106,7 @@ header .logo a span {
 header .gnb_menu .header__nav__items a {
 	opacity: 0.5;
 }
-header .gnb_menu .header__nav__items a.on {
+header .gnb_menu .header__nav__items a.on, header .gnb_menu .header__nav__items a:hover {
 	opacity: 1;
 }
 .main_header .logo > a {
@@ -111,7 +115,6 @@ header .gnb_menu .header__nav__items a.on {
 	height: 50px;
 	background: url('../images/pc/main_logo.svg') no-repeat 0 0;
 	object-fit: contain;
-	text-indent: -1000000vw;
 }
 .sub_header .logo > a {
 	display: block;
@@ -119,7 +122,10 @@ header .gnb_menu .header__nav__items a.on {
 	height: 50px;
 	background: url('../images/pc/sub_logo.svg') no-repeat 0 0;
 	object-fit: contain;
-	text-indent: -1000000vw;
+}
+
+header .logo > a span {
+	display: none;
 }
 
 .mobile  .main_header .logo > a {
@@ -134,7 +140,7 @@ header .gnb_menu .header__nav__items a.on {
 }
 
 header .btn_menu {
-	display: flex;
+	display: none;
 	justify-content: center;
 }
 
@@ -204,27 +210,49 @@ header .more_btn  a.distributor {
 	background-color: #000;
 }
 
-header .gnb_menu {
+/* header .gnb_menu {
 	z-index: 1;
 	visibility: hidden;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 50%;
+	width: 100%;
 	height: 100vh;
-	transform: translateX(200%);
+	transform: translateX(100%);
   background-color: #000;
+} */
+
+header .gnb_menu {
+	display: flex;
+	flex-direction: row;
+}
+header .gnb_menu .logo {
+	display: none;
 }
 
 header .gnb_menu.active {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
 	visibility: visible;
 	transition-timing-function: cubic-bezier(10,2,3,1);
-	transform: translateX(100%);
+	transform: translateX(0%);
 	transition: 0.2s;
+	background-color: #000;
+}
+header .gnb_menu .btn_close {
+	display: none;
 }
 
 header .gnb_menu .header__nav__items {
-	margin: 17vh 0 0 8vw;
+	display: flex;
+	align-items: center;
+	gap: 110px;
+}
+
+header .gnb_menu .header__nav__items_sub li {
+	width: 110px;
 }
 header .gnb_menu .header__nav__items li {
 	position: relative;
@@ -266,37 +294,96 @@ header .gnb_menu .header__nav__items .temp {
   text-align: left;
   color: #fff;
 }
-header .gnb_menu .header__nav__items a {
+header .gnb_menu .header__nav__items .header__nav__link {
 	display: block;
-	height: 58px;
-	margin: 38px 49px 0 0;
-	font-family: HanwhaGothicEL_OTF;
-	font-size: 50px;
-	font-weight: normal;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: normal;
-	letter-spacing: 2px;
-	text-align: left;
+	height: 22px;
+	margin: 0 0 0 0;
+	font-family: HanwhaGothicR_OTF;
+	font-size: 19px;
+	letter-spacing: 1px;
+	font-weight: bold;
 	color: #fff;
 }
 
-header .gnb_menu .btn_close{
+header .gnb_menu .header__nav__items .header__nav__link.on {
+	color:#f37321;
+}
+header .gnb_menu .header__nav__items .header__nav__items_sub {
+	display: none;
+	flex-direction: column;
+	gap: 30px;
+	position: absolute;
+	top: 55px;
+	left: 0;
+}
+header .gnb_menu .header__nav__items .header__nav__items_sub.active {
+	display: flex;
+}
+
+header .gnb_menu .header__nav__items .header__nav__items_sub a {
+	font-size: 18px;
+}
+
+header .gnb_menu .header__nav__items_right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	margin-left: 98px;
+}
+
+header .gnb_menu .header__nav__items_right li {
+}
+header .gnb_menu .header__nav__items_right .sales-inquiry {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 128px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	opacity: 0.6;
+	background-color: #000;
+	border-radius: 21px;
+	border: solid 1px #fff;
+
+  opacity: 1;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 16px;
+  letter-spacing: 0.64px;
+  color: #fff;
+}
+
+header .more_btn a, header button.inquiry {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 130px;
+	height: 42px;
+	padding: 0;
+	border-radius: 18.5px;
+	background-color: #f37321;
+	opacity: 1;
+	font-family: HanwhaGothicB_OTF;
+	font-size: 16px;
+  letter-spacing: 0.64px;
+	color: #fff;
+}
+
+header .gnb_menu .btn_close {
 	cursor: pointer;
 	position: absolute;
-	top: 6vh;
-	right: 8vw;
-	width: 63px;
-	height: 30px;
-	font-family: HanwhaGothicEL_OTF;
-	font-size: 26px;
-	font-weight: normal;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: 1.65;
-	letter-spacing: normal;
-	text-align: left;
-	color: #fff;
+	top: 20px;
+	right: 25px;
+	width: 19px;
+	height: 19px;
+	background: url('../images/pc/btn_close.svg') no-repeat 0 0;
+	background-size: 19px;
+	background-color: #fff;
+}
+
+header .gnb_menu .btn_close span {
+	display: none;
 }
 
 header .gnb_menu .footer {
@@ -568,14 +655,139 @@ footer select {
 }
 
 @media (max-width: 1550px) {
-	header .more_btn {
-		right: 50px !important;
+	header > .logo {
+		display: none;
 	}
+	header .gnb_menu .header__nav__items {
+		gap: 78px;
+	}
+	header .gnb_menu .header__nav__items_sub li {
+		width: 110px;
+	}
+	header .gnb_menu .header__nav__items_right {
+		margin-left:38px;
+	}
+	header .gnb_menu .header__nav__items .header__nav__items_sub.active {
+		display: flex;
+		gap: 25px;
+	}
+	header .gnb_menu .header__nav__items .header__nav__items_sub.active a {
+		color: #fff;
+	}
+	
 }
 
-@media (max-width: 1025px) {
-	header .more_btn {
-		right: 15px !important;
+@media (max-width: 1325px) {
+	header .btn_menu {
+		display: flex;
+	}
+	header .gnb_menu {
+		display: none;
+		flex-direction: column;
+		flex-wrap: wrap;
+		visibility: visible;
+		z-index: 1;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		transform: translateX(0%);
+		background-color: #000;
+	}
+	header {
+		height: auto;
+	}
+	header .gnb_menu {
+		padding: 16px 0 0 0;
+	}
+
+	header .gnb_menu .btn_close {
+		display: block;
+	}
+
+	header .gnb_menu .logo {
+		display: block;
+		width: 143px;
+		height: 37px;
+		margin: 0 0 0 20px;
+	}
+	header .gnb_menu .logo a {
+		width: 143px;
+		height: 37px;
+		background: url('../images/pc/main_logo.svg') no-repeat 0 0;
+		background-size: 143px 37px;
+	}
+	header .gnb_menu .header__nav__items {
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin: 49px 0 0 29px;
+		gap: 40px;
+	}
+	header .gnb_menu .header__nav__items > li {
+		width: 46%;
+	}
+	header .gnb_menu .header__nav__items a {
+		font-family: HanwhaGothicEL_OTF;
+		font-size: 20px;
+		line-height: 1.9;
+		color: #fff;
+		opacity: 1;
+	}
+
+	header .gnb_menu .header__nav__items .header__nav__link.on {
+		font-size: 22px;
+		color: #f37321 !important;
+		opacity: 1 !important;
+	}
+
+	header .gnb_menu .header__nav__items .header__nav__link {
+		font-size: 22px;
+		color: #f37321;
+		opacity: 1 !important;
+	}
+	header .gnb_menu .header__nav__items .header__nav__items_sub {
+		position: static;
+		display: flex;
+		gap: 10px;
+		margin-top: 18px;
+	}
+	header .gnb_menu .header__nav__items_right {
+		margin: 58px 0 0 0;
+		width: 100%;
+		justify-content: center;
+		flex-direction: row-reverse;
+	}
+	header .gnb_menu .header__nav__items_right .sales-inquiry {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 165px;
+		height: 46px;
+		font-family: HanwhaGothicB_OTF;
+		font-size: 16px;
+		letter-spacing: 0.64px;
+		color: #fff;
+		border-radius: 23px;
+		border: solid 1px #fff;
+		box-sizing: border-box;
+		background: transparent;
+	}
+
+	header button.inquiry {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 165px;
+		height: 46px;
+		font-family: HanwhaGothicB_OTF;
+		font-size: 16px;
+		letter-spacing: 0.64px;
+		color: #f37321;
+		border-radius: 23px;
+		border: solid 1px #f37321;
+		box-sizing: border-box;
+		background: transparent;
 	}
 
 	.layer {
@@ -700,16 +912,9 @@ footer select {
 }
 
 @media (max-width: 763px) {
-
-	header .gnb_menu .header__nav__items li.inquiry {
-		display: none;
+	header .gnb_menu .header__nav__items > li {
+		width: 42%;
 	}
-
-	header .gnb_menu .header__nav__items a {
-		margin: 18px 29px 0 0 !important;
-		font-size: 30px !important;
-	}
-
 	.layer {
 		top: 157px;
 		width: 325px;
@@ -1036,6 +1241,10 @@ footer select {
 
 
 @media (max-width: 1025px) {
+	header .header_inner .logo {
+		width: 143px;
+    height: 37px;
+	}
 	header .gnb_menu .header__nav__items li.inquiry {
 		display: none;
 	}
@@ -1307,6 +1516,13 @@ footer select {
 
 }
 @media (min-width: 335px) and (max-width: 743px) {
+	header .gnb_menu .header__nav__items_right .sales-inquiry {
+		width: 143px;
+
+	}
+	header button.inquiry {
+		width: 143px;
+	}
 	footer {
 		position: relative;
 		display: flex;

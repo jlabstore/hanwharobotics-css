@@ -10,7 +10,13 @@
   }
 }
 
-header {
+header.active {
+	background-color: #000;
+}
+header.active .header_inner{
+	background-color: #000;
+}
+header .header_inner {
 	background-color: #f60;
 }
 
@@ -19,7 +25,7 @@ header .menu {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 40px;
+	/* gap: 40px; */
 }
 
 header .menu .disabled a {
@@ -70,10 +76,6 @@ header .gnb_menu .header__nav__items .temp {
   font-size: 18px;
 }
 header .gnb_menu .header__nav__items a {
-	display: block;
-	height: 58px;
-	margin: 38px 49px 0 0;
-	font-size: 50px;
 }
 
 header .gnb_menu .btn_close{
@@ -147,10 +149,40 @@ header .gnb_menu {
 
 header .gnb_menu .header__nav__items {
   display: flex;
-  flex-direction: row;
   margin: 0;
-  gap: 40px;
-  align-items: center;
+}
+
+header .gnb_menu .header__nav__items .header__nav__link {
+	display: block;
+	height: 22px;
+	margin: 0 0 0 0;
+	font-family: HanwhaGothicR_OTF;
+	font-size: 19px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #fff;
+}
+
+header .gnb_menu .header__nav__items .header__nav__link.on {
+	color:#fff;
+}
+header .gnb_menu .header__nav__items .header__nav__items_sub {
+	display: none;
+	flex-direction: column;
+	gap: 30px;
+	position: absolute;
+	top: 55px;
+	left: 0;
+}
+header .gnb_menu .header__nav__items .header__nav__items_sub.active {
+	display: flex;
+}
+
+header .gnb_menu .header__nav__items_right {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	margin-left: 98px;
 }
 
 header .gnb_menu .header__nav__items li.inquiry {
@@ -166,17 +198,22 @@ header .gnb_menu .header__nav__items a {
   color: #fff;
 }
 
+header .gnb_menu .header__nav__items_right .sales-inquiry {
+  background: transparent
+}
+
+/* header .gnb_menu .header__nav__items_right .sales-inquiry {
+  background-color:#f60;
+} */
+
 header button.inquiry {
 	cursor: pointer;
-	width: 130px;
-	height: 42px;
-	padding: 11px 0 12px;
 	font-family: HanwhaGothicB_OTF;
 	font-size: 16px;
 	color: #fff;
 	justify-content: center;
 	border-radius: 21px;
-	background-color: #000;
+	background-color: transparent;
 	box-sizing: border-box;
 }
 
@@ -184,22 +221,18 @@ header .more_btn a, header button.inquiry {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  width: 102px;
-  height: 37px;
-  padding: 11px 18px;
   border-radius: 18.5px;
   background-color: #000;
 	opacity: 1;
   font-family: HanwhaGothicB_OTF;
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  font-size: 16px;
   letter-spacing: 0.52px;
-  text-align: center;
   color: #fff;
 	box-sizing: border-box;
+}
+
+header.active button.inquiry {
+  background-color: #f60;
 }
 
 header .more_btn  a.distributor {

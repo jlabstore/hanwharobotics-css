@@ -12,11 +12,18 @@
 
 header {
 	align-items: center;
-	background-color: #f60;
+	/* background-color: #f60; */
 }
 
-header .header {
+header .header_inner {
 	max-width: 1500px;
+
+  background-color: #f60;
+}
+
+header.active .header_inner {
+
+  background-color: #000;
 }
 
 header .menu {
@@ -24,7 +31,7 @@ header .menu {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 40px;
+	/* gap: 40px; */
 }
 
 header .menu .disabled a {
@@ -58,27 +65,51 @@ header .more_btn {
   right: 15px;
 }
 
+header .gnb_menu .header__nav__items .header__nav__link {
+	display: block;
+	height: 22px;
+	margin: 0 0 0 0;
+	font-family: HanwhaGothicR_OTF;
+	font-size: 19px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #fff;
+}
+
+header .gnb_menu .header__nav__items .header__nav__link.on {
+	color:#fff;
+}
+
+/* header .gnb_menu .header__nav__items .header__nav__link {
+	opacity: 0.5;
+} */
+
+/* header .gnb_menu .header__nav__items .header__nav__link.on {
+	color:#fff;
+  opacity: 1;
+} */
+header .gnb_menu .header__nav__items_right .sales-inquiry {
+  background: transparent
+}
 header .more_btn a, header button.inquiry {
   cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  width: 102px;
-  height: 37px;
-  padding: 11px 18px;
-  border-radius: 18.5px;
+  width: 130px;
+  height: 42px;
+  border-radius: 23px;
   background-color: #000;
 	opacity: 1;
   font-family: HanwhaGothicB_OTF;
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  font-size: 16px;
   letter-spacing: 0.52px;
-  text-align: center;
   color: #fff;
 	box-sizing: border-box;
+}
+
+header.active button.inquiry {
+  background-color: #f60;
 }
 
 header .more_btn  a.distributor {

@@ -1,7 +1,4 @@
 
-header.main_header {
-	background-color: transparent;
-}
 header .menu {
 	display: none;
 	flex-direction: row;
@@ -10,26 +7,13 @@ header .menu {
 	gap: 40px;
 }
 
-header .gnb_menu .header__nav__items a {
+/* header .gnb_menu .header__nav__items a {
 	display: block;
 	height: 58px;
 	margin: 38px 49px 0 0;
 	font-size: 50px;
-}
+} */
 
-header button.inquiry {
-	cursor: pointer;
-	width: 130px;
-	height: 42px;
-	padding: 11px 0 12px;
-	font-family: HanwhaGothicB_OTF;
-	font-size: 16px;
-	color: #fff;
-	justify-content: center;
-	border-radius: 21px;
-	background-color: #f37321;
-	box-sizing: border-box;
-}
 
 header .more_btn {
 	display: flex;
@@ -38,29 +22,6 @@ header .more_btn {
 	top: 70px;
 	right: 60px;
 	gap: 3px;
-}
-
-
-header .more_btn a, header button.inquiry {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  width: 102px;
-  height: 37px;
-  padding: 11px 18px;
-  border-radius: 18.5px;
-  background-color: #f37321;
-	opacity: 1;
-  font-family: HanwhaGothicB_OTF;
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.52px;
-  text-align: center;
-  color: #fff;
-	box-sizing: border-box;
 }
 
 header .more_btn  a.distributor {
@@ -833,11 +794,6 @@ header .more_btn  a.distributor {
 
 
 @media (min-width: 1550px) {
-
-	header .gnb_menu{
-		display: flex;
-	}
-
 	header .logo {
 		width: auto;
 	}
@@ -874,28 +830,15 @@ header .more_btn  a.distributor {
 		background: url('../images/pc/ic_main_more.svg') no-repeat 0 0;
 	}
 
-	header .btn_menu {
+	/* header .btn_menu {
 		display: none;
-	}
+	} */
 
-	header .gnb_menu {
-		visibility: visible;
-		z-index: 1;
-		position: static;
-		top: 0;
-		left: 0;
-		width: auto;
-		height: auto;
-		transform: translateX(0%);
-		background-color: transparent;
-	}
 
 	header .gnb_menu .header__nav__items {
 		display: flex;
 		flex-direction: row;
 		margin: 0;
-		gap: 40px;
-    align-items: center;
 	}
 
 	header .gnb_menu .header__nav__items li.inquiry {
@@ -1433,7 +1376,7 @@ header .more_btn  a.distributor {
 }
 @media (min-width: 335px) and (max-width: 743px) {
 	header {
-		padding: 18px 20px;
+		/* padding: 18px 20px; */
 	}
 	.main .pc {
 		visibility: hidden;
