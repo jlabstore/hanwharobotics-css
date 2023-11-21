@@ -14,10 +14,12 @@ header.active {
 	background-color: #000;
 }
 header.active .header_inner{
-	background-color: #000;
 }
-header .header_inner {
+header .header_wrapper {
 	background-color: #f60;
+}
+header.active .header_wrapper {
+	background-color: #000;
 }
 
 header .menu {
