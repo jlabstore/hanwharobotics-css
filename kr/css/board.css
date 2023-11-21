@@ -267,6 +267,9 @@
 .press-list .board-type1 .board_title {
   margin-top: 162px;
 }
+.press-list .board-type1 .thumbs {
+  width: 100%;
+}
 
 .press-list .board-type1 .thumb {
   padding: 44px 0 45px 0;
