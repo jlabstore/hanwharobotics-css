@@ -421,6 +421,13 @@ header .gnb_layer.active {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
+.sub {
+	display: flex;
+	margin: 0 auto;
+	max-width: 1920px;
+	box-sizing: border-box;
+}
+
 footer select {
 	font-family: 'Nanum Gothic', 'serif' !important;
 }
@@ -443,7 +450,7 @@ footer select {
 
 .layer {
 	display: none;
-	z-index: 5;
+	z-index: 3;
 	position: absolute;
 	top: 187px;
 	left: 50%;

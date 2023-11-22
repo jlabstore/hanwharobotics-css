@@ -281,7 +281,11 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  padding-right: 40%;
+  justify-content: space-between;
+}
+
+.press-list .board-type1 .thumb .thumb_wrap {
+  width: 60%;
 }
 
 .press-list .board-type1 .thumb .thumb_title {
@@ -297,7 +301,7 @@
 }
 
 .press-list .board-type1 .thumb .thumb_contents {
-  height: 75px;
+  max-height: 75px;
   text-overflow: ellipsis;
   overflow: hidden;
   margin-top: 12px;
@@ -319,9 +323,9 @@
 }
 
 .press-list .board-type1 .thumb .thumb_img {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  right: 0;
+  right: 0; */
 
   width: 249px;
   height: 161px;
@@ -338,6 +342,32 @@
   font-family: HanwhaGothicB_OTF;
   font-size: 40px;
   line-height: 1.38;
+  text-align: left;
+  color: #000;
+}
+
+.board.board-type1 .board_contents h2 {
+  margin-top: 60px;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 24px;
+  line-height: 1.38;
+  text-align: left;
+  color: #000;
+}
+.board .board_contents h3 {
+  margin-top: 45px;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 18px;
+  line-height: 1.83;
+  text-align: left;
+  color: #000;
+}
+.board .board_contents h4 {
+  margin-top: 30px;
+  margin-bottom: 6px;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 17px;
+  line-height: 1.94;
   text-align: left;
   color: #000;
 }

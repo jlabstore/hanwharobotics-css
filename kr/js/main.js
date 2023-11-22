@@ -42,23 +42,32 @@ function pcBoxPositionUp() {
   });
 }
 
-$(window).on("resize", function (e) {
+$(window).on("resize", function () {
+  const $missionBox = $('.section2 .second_box');
   hideHeader();
 
-  if ($(this).width() >= 743) {
+  if ($(this).width() >= 1190) {
     pcBoxPositionUp();
+  } else {
+  
+  $missionBox.css('top', '0')
+  .off('mouseenter mouseleave');
   }
 });
 
 $(window).on("load", function (e) {
+  const $missionBox = $('.section2 .second_box');
   hideHeader();
 
-  if ($(this).width() >= 743) {
+  if ($(this).width() >= 1190) {
     pcBoxPositionUp();
+  } else {
+    $missionBox.css('top', '0')
+    .off('mouseenter mouseleave');
   }
 
-  const $header = $("#header");
   document.querySelectorAll('.main .section1 .contents').forEach((section, index, array) => {
+  
     // Pin the section
     gsap.to(section, {
       scrollTrigger: {
@@ -66,42 +75,48 @@ $(window).on("load", function (e) {
         start: "top top",
         end: "bottom top",
         pin: true,
-        scrub: true, // Use scrub to smoothly animate the changes over the scroll duration
-        onRefreshInit: function(self) {
-          lastScrollPos = self.scroll();
-        },
-        onUpdate: function(self) {
-          const currentScrollPos = self.scroll();
-          
-          if (currentScrollPos > lastScrollPos) {
-            // �ㅽ겕濡ㅼ쓣 �꾨옒濡� �� �� �ㅻ뜑 �④린湲�
-            $header.css('opacity', 0);
-          } else {
-            // �ㅽ겕濡ㅼ쓣 �꾨줈 �� �� �ㅻ뜑 蹂댁씠湲�
-            $header.css('opacity', 1);
-          }
-          lastScrollPos = currentScrollPos;
-        }
+        scrub: true
       }
     });
-  
-    // Animate the .title and .txt within each section
-    gsap.fromTo(section.querySelectorAll('.title, .txt'), {
-      y: 50, // start 50 pixels below their final position
-      opacity: 0 // start fully transparent
-    }, {
-      y: 0, // end at their final position
-      opacity: 1, // fade in to fully opaque
-      duration: 1, // duration of the fade in effect
-      scrollTrigger: {
-        trigger: section,
-        start: "top center+=100", // start the fade in a little after the top of the section hits the center
-        end: "bottom center", // end the fade in when the bottom of the section hits the center
-        scrub: true // animate smoothly in conjunction with the scroll
-      },
-      stagger: 0.1 // stagger the start of the animations for each title and txt
-    });
-  });
+    
+    // Only proceed if there is a next section
+    if (index < array.length - 1) {
+      const nextSection = array[index + 1]; // Get the next section
 
+      const textElements = section.querySelectorAll('.title, .txt, .move_to_intro');
+      const nextTextElements = nextSection.querySelectorAll('.title, .txt, .move_to_intro');
+
+
+      // Create a timeline for the current section's text elements
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: nextSection, // Use the next section as the trigger
+          start: "top bottom", // Start when the top of the next section hits the bottom of the viewport
+          end: "top top", // End when the top of the next section hits the top of the viewport
+          scrub: true,
+          onEnter: () => {
+            // When the next section's .title and .txt start coming in, fade out the current section's .title and .txt
+            textElements.forEach(el => {
+              gsap.to(el, { opacity: 0, duration: 3 });
+            });           
+            
+          },
+          onLeaveBack: () => {
+            // When scrolling back up, reset the opacity if the previous .title and .txt are in view again
+            textElements.forEach(el => {
+              gsap.to(el, { opacity: 1, duration: 3 });
+            });
+          }
+        }
+      });
+
+      // Fade in the next section's text elements gradually
+      nextTextElements.forEach(el => {
+        tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 3, ease: "none" });
+      });
+    }
+  });
+  
+  
   
 });
