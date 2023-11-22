@@ -3,12 +3,14 @@ $(window).on("load resize", function (e) {
   const win = $(this); //this = window
 
   $(document).on('mouseover', '#header .header_inner', function() {
+    $(this).closest('#header').css({'height': '332px'});
     $(this).find('.header__nav__items_sub').addClass('active');
     $(this).closest('#header').addClass('active');
   })
   .on('mouseleave', '#header', function() {
     $(this).find('.header__nav__items_sub').removeClass('active');
     $(this).closest('#header').removeClass('active');
+    $(this).closest('#header').css({'height': 'auto'});
   });
 
 
