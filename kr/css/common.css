@@ -40,6 +40,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: none;
 	word-break: keep-all;
+	overflow-x: hidden;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu,n av, section {display: block;word-break: keep-all;}
 ul li{list-style:none;}
@@ -426,6 +427,11 @@ header .gnb_layer.active {
 	margin: 0 auto;
 	max-width: 1920px;
 	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+.sub.about {
+	flex-direction: column;
 }
 
 footer select {
@@ -434,7 +440,7 @@ footer select {
 
 .layer_bg {
 	display: none;
-	z-index: 4;
+	z-index: 2;
 	position: fixed;
 	top: 0;
 	left: 0;

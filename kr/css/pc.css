@@ -251,6 +251,7 @@ header .btn_close {
 
 main.about {
 	padding: 230px 0 0 0;
+  max-width: none;
 }
 
 main .main {
@@ -261,6 +262,7 @@ main .main {
 	position: relative; /* 위치 지정을 위해 상대 위치 설정 */
 	padding: 0 60px;
 	max-width: 1920px;
+  width: 100%;
 	margin: 0 auto;
 	z-index: 3;
 }
