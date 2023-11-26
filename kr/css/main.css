@@ -70,6 +70,7 @@ header .more_btn  a.distributor {
 }
 
 .section1 .contents {
+	position: relative;
 	z-index: 2;
 	display: flex;
 	flex-direction: row;
@@ -207,7 +208,7 @@ header .more_btn  a.distributor {
 }
 .section2 .second_box {
 	position: relative;
-	top: 140px;
+	top: 0;
 }
 
 .section2 .primary_box .contents {
@@ -294,7 +295,7 @@ header .more_btn  a.distributor {
 	display: flex;
 	flex-direction: row;
 	max-width: 1920px;
-	margin: 290px auto 0;
+	margin: 190px auto 0;
 	padding: 0 60px;
 
 	gap: 45px;
@@ -302,7 +303,7 @@ header .more_btn  a.distributor {
 
 .section3 .recruit {
 	display: flex;
-	width: 30%;
+	width: 45%;
 	/* height: 229px; */
 	/* padding: 0 0 19% 0; */
 	border-radius: 10px;
@@ -356,8 +357,8 @@ header .more_btn  a.distributor {
 .section3 .section3_inner {
 	display: flex;
 	flex-direction: row;
-	gap: 45px;
-	width: 70%;
+	gap: 75px;
+	width: 100%;
 }
 
 .section3 .board_wrap {
@@ -421,6 +422,7 @@ header .more_btn  a.distributor {
   line-height: 2;
   text-align: left;
   color: #000;
+	margin-left: 10px;
 }
 
 @media (max-width: 1830px) {
@@ -460,6 +462,9 @@ header .more_btn  a.distributor {
 
 @media (max-width: 1600px) {
 
+	.section1 .contents .main_txt .title {
+		font-size: 108px !important;
+	}
 	.section3 .recruit a {
 		display: flex;
 		flex-direction: column;
@@ -494,7 +499,6 @@ header .more_btn  a.distributor {
 }
 
 @media (max-width: 1385px) {
-
 	.section3 .recruit a {
 		display: flex;
 		flex-direction: column;
@@ -526,6 +530,21 @@ header .more_btn  a.distributor {
 		color: #fff;
 	}
 
+	.section3 .section3_inner {
+		width: 100%;
+		gap: 47px;
+	}
+
+	.section3 .recruit {
+		width: 70%;
+	}
+
+	.section3 .recruit a {
+		/* justify-content: flex-start; */
+		padding: 0 0 0 49px;
+		background: url(../images/pc/ic_round_recruit.svg) no-repeat 90% 50%;
+		background-size: 30% 30%;
+	}
 }
 
 @media (max-width: 1280px) {
@@ -535,9 +554,9 @@ header .more_btn  a.distributor {
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
-		padding: 0 0 0 15px;
+		/* padding: 0 0 0 15px; */
 		background: url('../images/pc/ic_round_recruit.svg') no-repeat 90% 50%;
-		background-size: 44px 44px;
+		/* background-size: 44px 44px; */
 		box-sizing: border-box;
 	}
 
@@ -705,7 +724,7 @@ header .more_btn  a.distributor {
 	}
 	
 	.section3 .board_wrap:first-child {
-		border-bottom: 0;
+		/* border-bottom: 0; */
 	}
 		
 	.section3 .recruit {
@@ -775,19 +794,6 @@ header .more_btn  a.distributor {
 		padding: 10% 0 24%;
 	}
 
-	.section2 .box a {
-		display: block;
-		position: relative;
-		width: 100%;
-		padding: 45px 45px 19px 25px;
-		border-radius: 15%;
-		border-top-left-radius: 0;
-		background-color: #f3f3f3;
-	}
-
-	.section2 .pc_title {
-		display: none;
-	}
 
 }
 
@@ -1072,7 +1078,7 @@ header .more_btn  a.distributor {
 	}
 
 	header .more_btn {
-		display: none;
+		/* display: none; */
 	}
 
 	header .btn_close {
@@ -1183,16 +1189,11 @@ header .more_btn  a.distributor {
 		gap: 50px;
 	}
 
-	.section3 .section3_inner {
-		width: 100%;
-		flex-direction: column;
-		gap: 0;
-	}
 	.section3 .board_wrap {
 		height: auto;
 	}
 	.section3 .board_wrap:first-child {
-		border-bottom: 0;
+		/* border-bottom: 0; */
 	}
 	.section2 .box a {
 		padding: 0 0 0 82px;
@@ -1236,13 +1237,13 @@ header .more_btn  a.distributor {
 	}
 
 	.section3 .recruit {
-		width: 60%;
-		background: url('../images/tablet/bg_recruit_banner.webp') no-repeat 0 0/100% 100%;
+		/* width: 60%;
+		background: url('../images/tablet/bg_recruit_banner.webp') no-repeat 0 0/100% 100%; */
 	}
 	.section3 .recruit a {
-		justify-content: flex-start;
-		padding: 65px 0 0 55px;
-		background: url(../images/pc/ic_round_recruit.svg) no-repeat 90% 85%;
+		/* justify-content: flex-start; */
+		/* padding: 65px 0 0 55px; */
+		/* background: url(../images/pc/ic_round_recruit.svg) no-repeat 90% 85%; */
 	}
 	.section3 .recruit a span.pc {
 		display: none;
@@ -1292,7 +1293,7 @@ header .more_btn  a.distributor {
 	
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
 	.main .pc {
 		visibility: hidden;
 		height: 0;
@@ -1320,7 +1321,7 @@ header .more_btn  a.distributor {
 	}
 
 	.fixed {display:none;}
-
+	
 	.section1 {
 		/* height: 960px; */
 	}
@@ -1329,12 +1330,12 @@ header .more_btn  a.distributor {
 		flex-direction: column;
 		max-width: none;
 		/* padding: 202px 15px 0; */
-		padding: 0 30px 0;
+		padding: 0 15px 0;
 		justify-content: center;
 	}
 
 	.section1 .contents .main_txt .title {
-		font-size: 124px;
+		font-size: 109px !important;
 		line-height: 1.42;
 	}
 
@@ -1383,11 +1384,6 @@ header .more_btn  a.distributor {
 		background-size: 24px 20px;
 	}
 
-	.section3 .recruit a {
-		justify-content: flex-start;
-		padding: 65px 0 0 20px;
-		background: url(../images/pc/ic_round_recruit.svg) no-repeat 90% 85%;
-	}
 	.section3 .recruit a span.pc {
 		display: none;
 	}
@@ -1575,13 +1571,13 @@ header .more_btn  a.distributor {
 	}
 
 	.section1 .contents .main_txt .title {
-		font-size: 84px;
+		/* font-size: 84px; */
 		line-height: 1.42;
 	}
 
 	.section1 .contents .main_txt .txt {
-		font-size: 37px;
-		line-height: 1.19;
+		/* font-size: 35px;
+		line-height: 1.19; */
 	}
 
 	.section1 .contents .main_txt .move_to_intro a {
@@ -1596,6 +1592,17 @@ header .more_btn  a.distributor {
 		background: url('../images/pc/ic_round_arrow_mobile.svg') no-repeat 0 0;
     background-size: 68px 67px;
 	}
+
+	.section2 .box a {
+		display: block;
+		position: relative;
+		width: 100%;
+		padding: 45px 5px 19px 20px;
+		border-radius: 15%;
+		border-top-left-radius: 0;
+		background-color: #f3f3f3;
+	}
+
 
 	footer .address {
 		font-size: 14px;
@@ -1642,6 +1649,14 @@ header .more_btn  a.distributor {
 
 	header .gnb_menu .header__nav__items li.inquiry {
 		display: none;
+	}
+
+	.section1 .contents .main_txt .title {
+		font-size: 48px !important;
+		line-height: 1.42;
+	}
+	.section1 .contents .main_txt .txt {
+		font-size: 35px;
 	}
 	footer {
 		position: relative;
@@ -1780,6 +1795,11 @@ header .more_btn  a.distributor {
 		text-align: left;
 		color: #000;
 	}
+	.section3 .section3_inner {
+		width: 100%;
+		flex-direction: column;
+		gap: 0;
+	}
 	.section .title .line {
 		width: 88vw;
 		margin-top: 3px;
@@ -1832,6 +1852,25 @@ header .more_btn  a.distributor {
 	}
 	.about a img {
 		height: 88px;
+	}
+
+	.section2 .pc_title {
+		display: none;
+	}
+	.section2 .box .mobile_title {
+		font-size: 26px;
+	}
+	.section2 .box .pc_txt {
+		display: none;
+	}
+	.section2 .box .not_pc_txt {
+		display: block;
+		font-size: 16px;
+	}
+
+	.section3 .recruit {
+		margin-top: 40px;
+		width: 100%;
 	}
 
 	footer {
