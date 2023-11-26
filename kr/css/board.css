@@ -697,19 +697,22 @@
   color: #000;
 }
 
-@media (max-width: 1465px) {
+@media (max-width: 1500px) {
   .ir-list {
-    padding: 130px 20px 0;
+    padding: 130px 30px 0;
   }
   .notice-list {
-    padding: 130px 20px 0;
+    padding: 130px 30px 0;
   }
   .sales-inquiry-list {
-    padding: 130px 20px 0;
+    padding: 130px 30px 0;
   }
   .press-list {
-    padding: 130px 20px 0;
+    padding: 130px 30px 0;
   }
+}
+
+@media (max-width: 1465px) {
   .board {
     display: flex;
     flex-direction: column;

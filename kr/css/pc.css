@@ -180,13 +180,6 @@ header .gnb_menu .header__nav__items .header__nav__items_sub.active {
 	display: flex;
 }
 
-header .gnb_menu .header__nav__items_right {
-	display: flex;
-	flex-direction: row;
-	gap: 10px;
-	margin-left: 98px;
-}
-
 header .gnb_menu .header__nav__items li.inquiry {
   display: block;
 }
