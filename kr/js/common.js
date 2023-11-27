@@ -4,30 +4,19 @@ const win = $(this); //this = window
 $(window).on("load resize", function (e) {
 
   let top = 0;
-  let headerHeight = '332px';
   
-  if (win.width() <= 1023) {
+  if (win.width() <= 950) {
     top = 70;
-  } else if (win.width() > 1023 && win.width() <= 1190) {
+  } else if (win.width() > 950 && win.width() <= 1190) {
     top = 167;
   } else {
     top = 207;
   }
 
+  let headerHeight = '332px';
   if(win.width() <= 1550) {
     headerHeight = '450px';
   }
-
-  $(document).on('mouseover', '#header .header_inner', function() {
-    $(this).closest('#header').css({'height': headerHeight});
-    $(this).find('.header__nav__items_sub').addClass('active');
-    $(this).closest('#header').addClass('active');
-  })
-  .on('mouseleave', '#header', function() {
-    $(this).find('.header__nav__items_sub').removeClass('active');
-    $(this).closest('#header').removeClass('active');
-    $(this).closest('#header').css({'height': 'auto'});
-  });
 
   if (win.width() <= 1024) {
     $(document).off('mouseover mouseleave');
@@ -41,7 +30,8 @@ $(window).on("load resize", function (e) {
 
       if(e.target.tagName !== 'A') {
         $(this).find('.header__nav__items_sub').addClass('active');
-        $(this).closest('#header').css({'height': headerHeight}).addClass('active');
+        $(this).closest('#header').addClass('active');
+        $(this).closest('#header').animate({'height': headerHeight}, 'fast');
         // $(this).closest('.header__nav__items_sub').addClass('active');
       }
     });
@@ -68,6 +58,11 @@ $(window).on("load resize", function (e) {
 
 $(document).ready(async function() {
 
+  let headerHeight = '332px';
+  if(win.width() <= 1550) {
+    headerHeight = '450px';
+  }
+
   $('#header').load('../includes/header.html');
   $('#aside').load('../includes/aside.html');
   $('#footer').load('../includes/footer.html', function() {
@@ -90,24 +85,24 @@ $(document).ready(async function() {
   $(document).on('click', 'header .gnb_layer, header .gnb_menu .btn_close', function(e) {
     e.stopPropagation();
 
+    $(this).closest('#header').animate({'height': '90px'}, 'fast');
     $('#header .header__nav__items_sub').removeClass('active');
     $(this).closest('#header').removeClass('active');
     $(this).removeClass('active');
     $('header .btn_menu button').removeClass('active');
     $('.gnb_menu, .gnb_layer').removeClass('active');
-    $('#header').css({'height': 'auto'});
     $('html').removeClass('scroll-lock');
   });
 
   $(document).on('click', 'header .gnb_menu .header__nav__items .header__nav__items_sub a', function(e) {
     e.stopPropagation();
 
+    $(this).closest('#header').animate({'height': '90px'}, 'fast');
     $('#header .header__nav__items_sub').removeClass('active');
     $(this).closest('#header').removeClass('active');
     $(this).removeClass('active');
     $('header .btn_menu button').removeClass('active');
     $('.gnb_menu, .gnb_layer').removeClass('active');
-    $('#header').css({'height': 'auto'});
     $('html').removeClass('scroll-lock');
   });
 
@@ -115,7 +110,7 @@ $(document).ready(async function() {
     e.stopPropagation();
 
     // $('body').addClass('scroll-lock');
-    $('.layer.inquiry').show();
+    $('.layer.inquiry').show('fast');
     $('.layer_bg').show();
     $(this).removeClass('active');
     $('html').removeClass('scroll-lock'); 
@@ -124,14 +119,25 @@ $(document).ready(async function() {
     $('.gnb_menu, .gnb_layer').removeClass('active');
 
     $('.header__nav__items_sub').removeClass('active');
+    $(this).closest('#header').animate({'height': '90px'}, 'fast');
     $('#header').removeClass('active');
-    $('#header').css({'height': 'auto'});
   });
 
   $(document).on('click', '.layer_bg, .layer .btn_close', function() {
     $('body').removeClass('scroll-lock');
-    $('.layer.inquiry').hide();
+    $('.layer.inquiry').hide('fast');
     $('.layer_bg').hide();
+  });
+
+  $(document).on('mouseover', '#header .gnb_menu', function() {
+    $(this).closest('#header').addClass('active');
+    $(this).find('.header__nav__items_sub').addClass('active');
+    $(this).closest('#header').animate({'height': headerHeight}, 'fast');
+  })
+  .on('mouseleave', '#header', function() {
+    $(this).find('.header__nav__items_sub').removeClass('active');
+    $(this).closest('#header').removeClass('active');
+    $(this).closest('#header').animate({'height': '90px'}, 'fast');
   });
 
 });

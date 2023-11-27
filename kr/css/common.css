@@ -61,7 +61,6 @@ header {
 	z-index: 7;
 	position: fixed;
 	width: 100%;
-  /* height: 339px; */
 }
 
 header.active {
@@ -238,6 +237,7 @@ header .gnb_menu .logo {
 }
 
 header .gnb_menu.active {
+	opacity: 1;
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
@@ -245,7 +245,6 @@ header .gnb_menu.active {
 	visibility: visible;
 	transition-timing-function: cubic-bezier(10,2,3,1);
 	transform: translateX(0%);
-	transition: 0.2s;
 	background-color: #000;
 }
 header .gnb_menu .btn_close {
