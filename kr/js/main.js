@@ -43,8 +43,8 @@ function pcBoxPositionUp() {
 }
 
 $(window).on("resize", function () {
-  const $missionBox = $('.section2 .second_box');
-  hideHeader();
+  // const $missionBox = $('.section2 .second_box');
+  // hideHeader();
 
   // if ($(this).width() >= 1190) {
   //   pcBoxPositionUp();
@@ -56,8 +56,8 @@ $(window).on("resize", function () {
 });
 
 $(window).on("load", function (e) {
-  const $missionBox = $('.section2 .second_box');
-  hideHeader();
+  // const $missionBox = $('.section2 .second_box');
+  // hideHeader();
 
   // if ($(this).width() >= 1190) {
   //   pcBoxPositionUp();
