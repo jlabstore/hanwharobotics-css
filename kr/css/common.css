@@ -254,13 +254,12 @@ header .gnb_menu .btn_close {
 header .gnb_menu .header__nav__items {
 	display: flex;
 	align-items: center;
-	/* gap: 44px; */
+	gap: 74px;
 }
 
 header.active .gnb_menu .header__nav__items {
 	display: flex;
 	align-items: center;
-	gap: 0;
 }
 
 header .gnb_menu .header__nav__items_sub li {
@@ -268,7 +267,11 @@ header .gnb_menu .header__nav__items_sub li {
 header .gnb_menu .header__nav__items li {
 	position: relative;
 }
-header .gnb_menu .header__nav__items > li:nth-child(1) {
+
+header .gnb_menu .header__nav__items > li {
+
+}
+/* header .gnb_menu .header__nav__items > li:nth-child(1) {
 	width: 88px;
 	margin-right: 75px;
 }
@@ -286,8 +289,7 @@ header .gnb_menu .header__nav__items > li:nth-child(4) {
 }
 header .gnb_menu .header__nav__items > li:nth-child(5) {
 	width: 110px;
-	/* margin-right: 115px; */
-}
+} */
 header .gnb_menu .header__nav__items .strike {
 	position: absolute;
 	top: 50%;
@@ -353,6 +355,7 @@ header .gnb_menu .header__nav__items .header__nav__items_sub.active {
 
 header .gnb_menu .header__nav__items .header__nav__items_sub a {
 	font-size: 18px;
+	white-space: nowrap;
 }
 
 header .gnb_menu .header__nav__items_right {
@@ -1224,7 +1227,7 @@ footer select {
 
 @media (max-width: 1190px) {
 
-	header .gnb_menu .header__nav__items > li:nth-child(1) {
+	/* header .gnb_menu .header__nav__items > li:nth-child(1) {
 		margin-right: 50px;
 	}
 	header .gnb_menu .header__nav__items > li:nth-child(2) {
@@ -1235,10 +1238,7 @@ footer select {
 	}
 	header .gnb_menu .header__nav__items > li:nth-child(4) {
 		margin-right: 33px;
-	}
-	header .gnb_menu .header__nav__items > li:nth-child(5) {
-		/* margin-right: 115px; */
-	}
+	} */
 	#aside .more_btn {
 		top: 167px;
 		right: 40px;
@@ -1480,6 +1480,8 @@ footer select {
 
 	header .gnb_menu .btn_close {
 		display: block;
+		top: 35px;
+		bottom: auto;
 	}
 
 	header .gnb_menu .logo {
@@ -1507,7 +1509,7 @@ footer select {
 		right: 35px;
 	}
 
-	header.active .gnb_menu .header__nav__items > li:nth-child(1) {
+	/* header.active .gnb_menu .header__nav__items > li:nth-child(1) {
 		margin-right: 80px;
 	}
 	header.active .gnb_menu .header__nav__items > li:nth-child(2) {
@@ -1518,7 +1520,7 @@ footer select {
 	}
 	header.active .gnb_menu .header__nav__items > li:nth-child(4) {
 		margin-right: 58px;
-	}
+	} */
 
 	header .gnb_menu .header__nav__items {
 		flex-wrap: wrap;
