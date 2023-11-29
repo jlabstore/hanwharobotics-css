@@ -89,7 +89,7 @@ $(window).on("load resize", function (e) {
 
 $(document).ready(async function() {
 
-  let headerHeight = '332px';
+  // let headerHeight = '332px';
 
   $('#header').load('../includes/header.html');
   $('#aside').load('../includes/aside.html');
@@ -169,7 +169,7 @@ window.addEventListener('scroll', throttle(function() {
     let top = 0;
 
     if (win.width() <= 1024) {
-      top = 70;
+      top = 100;
     } else if (win.width() > 1024 && win.width() <= 1190) {
       top = 167;
     } else {

@@ -1,6 +1,7 @@
 
 let resizeTimeout = null;
 let lastScrollPos = 0;
+const $header = $("#header");
 
 function hideHeader() {
   let lastScrollPos = 0;
@@ -43,6 +44,7 @@ function pcBoxPositionUp() {
 }
 
 $(window).on("resize", function () {
+  // backgroundHeader();
   // const $missionBox = $('.section2 .second_box');
   // hideHeader();
 
@@ -56,6 +58,7 @@ $(window).on("resize", function () {
 });
 
 $(window).on("load", function (e) {
+  // backgroundHeader();
   // const $missionBox = $('.section2 .second_box');
   // hideHeader();
 
@@ -116,7 +119,15 @@ $(window).on("load", function (e) {
   //     });
   //   }
   // });
-  
-  
-  
+});
+
+
+$(window).scroll(function (e) {
+  if(window.scrollY < 1) {
+    $header.css('backgroundColor', 'transparent').find('.header_wrapper').css('backgroundColor', 'transparent');
+  } else { 
+
+    $header.css('backgroundColor', '#f60').find('.header_wrapper').css('backgroundColor', '#f60');
+    // $header.css('opacity', 0);
+  }
 });
