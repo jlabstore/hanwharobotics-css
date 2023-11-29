@@ -1,4 +1,11 @@
 
+header {
+	background: transparent;
+}
+header .header_wrapper {
+	background: transparent;
+}
+
 .mobile header {
 	padding: 16px 15px;
 }
