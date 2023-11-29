@@ -65,7 +65,7 @@ header {
 }
 
 header.active {
-	background-color: #000;
+	background-color: #000 !important;
 }
 .mobile header .header_inner {
 	/* padding: 16px 15px; */
@@ -89,7 +89,7 @@ header .header_wrapper {
 	background-color: #f60;
 }
 header.active .header_wrapper {
-	background-color: #000;
+	background-color: #000 !important;
 }
 header .header {
 	display: flex;
