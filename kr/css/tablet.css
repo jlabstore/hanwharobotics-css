@@ -73,7 +73,7 @@ header .gnb_menu .header__nav__items .header__nav__link {
 	font-size: 19px;
 	letter-spacing: 1px;
 	font-weight: bold;
-	color: #fff;
+	/* color: #fff; */
 }
 
 header .gnb_menu .header__nav__items .header__nav__link.on {
