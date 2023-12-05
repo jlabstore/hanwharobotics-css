@@ -166,7 +166,7 @@ $(window).on("load resize", function (e) {
       }
     });
     
-    if (win.width() <= 1024) {
+    if (win.width() <= 1023) {
       stopObservingAll('.section_2 .list');
     } else if (win.width() <= 1500) {
       padBoxPositionUp();

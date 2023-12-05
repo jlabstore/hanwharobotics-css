@@ -501,7 +501,7 @@ header .gnb_layer.active {
 	margin: 0 auto;
 	max-width: 1920px;
 	box-sizing: border-box;
-	overflow: hidden;
+	/* overflow-x: hidden; */
 }
 
 .sub.about {
@@ -1104,7 +1104,7 @@ footer select {
 }
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 	header .gnb_menu .header__nav__items li.inquiry {
 		display: none;
 	}
@@ -1113,7 +1113,7 @@ footer select {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
-		margin-top: 10vw;
+		/* margin-top: 10vw; */
 		padding: 52px 64px 52px;
 		background-color: #000;
 	}
@@ -1380,7 +1380,7 @@ footer select {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
-		margin-top: 10vw;
+		/* margin-top: 10vw; */
 		padding: 42px 50px 42px;
 		background-color: #000;
 	}
@@ -1755,7 +1755,7 @@ footer select {
 		flex-direction: column;
 		justify-content: flex-start;
 		height: auto;
-		margin-top: 60px;
+		/* margin-top: 60px; */
 		padding: 42px 50px 42px;
 		background-color: #000;
 		overflow: hidden;
@@ -1849,7 +1849,7 @@ footer select {
 		flex-direction: column;
 		justify-content: flex-start;
 		height: auto;
-		margin-top: 60px;
+		/* margin-top: 60px; */
 		padding: 50px 20px 50px;
 		background-color: #000;
 		overflow: hidden;

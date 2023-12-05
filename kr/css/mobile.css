@@ -67,6 +67,7 @@ main .main {
 
 main.about {
   padding: 170px 0 0 0;
+  overflow-y: hidden;
 }
 
 div.main {
