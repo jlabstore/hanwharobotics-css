@@ -119,6 +119,19 @@
   width: 15%;
 }
 
+
+.board-type1 .board_list .tbody .empty {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px 12px 0;
+    font-family: HanwhaGothicEL_OTF;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    border-bottom: 1px solid #cbcbcb;
+}
+
 .board-type1 .board_list .tbody .tr a {
   display: flex;
   flex-direction: row;
@@ -1122,7 +1135,9 @@
   .board-type1 .board_list .thead .th {
     font-size: 12px;
   }
-
+  .board-type1 .board_list .tbody .empty {
+    border: 0;
+  }
   .board-type1 .board_list .tbody .td {
     width: 60%;
     padding-right: 6px;
