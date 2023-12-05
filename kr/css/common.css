@@ -41,6 +41,9 @@ body {
 	-webkit-text-size-adjust: none;
 	word-break: keep-all;
 	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu,n av, section {display: block;word-break: keep-all;}
 ul li{list-style:none;}
@@ -499,6 +502,8 @@ header .gnb_layer.active {
 .sub {
 	display: flex;
 	margin: 0 auto;
+	padding-bottom: 130px !important;
+	width: 100%;
 	max-width: 1920px;
 	box-sizing: border-box;
 	/* overflow-x: hidden; */
@@ -506,6 +511,7 @@ header .gnb_layer.active {
 
 .sub.about {
 	flex-direction: column;
+	padding-bottom: 0 !important;
 }
 
 footer select {
@@ -1113,7 +1119,7 @@ footer select {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
-		/* margin-top: 10vw; */
+		margin-top: auto;
 		padding: 52px 64px 52px;
 		background-color: #000;
 	}
@@ -1224,6 +1230,7 @@ footer select {
 @media (max-width: 1755px) {
 
 	footer {
+		margin-top: auto;
 		padding: 40px 50px 54px 50px;
 	}
 
@@ -1323,6 +1330,7 @@ footer select {
 @media (max-width: 1024px) {
 	header {
 		margin-top: 50px;
+    padding: 18px 20px;
 		height: 70px;
 	}
 	header.active .header_inner {
@@ -1696,6 +1704,9 @@ footer select {
 	}
 	header .gnb_menu .header__nav__items li.inquiry {
 		display: none;
+	}
+	.sub {
+		padding-bottom: 50px !important;
 	}
 	footer .address {
 		font-size: 14px;

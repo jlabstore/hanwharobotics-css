@@ -217,8 +217,7 @@ header .more_btn  a.distributor {
 	position: relative;
 	width: 100%;
 	padding: 73px 0 24px 62px;
-	border-radius: 15%;
-	border-top-left-radius: 0;
+	border-radius: 20px 100px 100px 100px;
 	background-color: #f3f3f3;
 }
 
@@ -809,11 +808,11 @@ header .more_btn  a.distributor {
 		padding: 0 15px 0;
 	}
 	.section2 .primary_box .contents {
-		background: url('../images/mobile/thumb_1@3x.webp') no-repeat 100% 100%/contain;
+		background: url('../images/mobile/thumb_1@3x.webp') no-repeat 100% 100%/contain !important;
 	}
 
 	.section2 .second_box .contents {
-		background: url('../images/mobile/thumb_2@3x.webp') no-repeat 100% 100%/contain;
+		background: url('../images/mobile/thumb_2@3x.webp') no-repeat 100% 100%/contain !important;
 	}
 
 	.section2 .box .contents {
@@ -1221,6 +1220,12 @@ header .more_btn  a.distributor {
 	}
 	.section3 .board_wrap:first-child {
 		/* border-bottom: 0; */
+	}
+	.section2 .primary_box .contents {
+    background: url('../images/pc/thumb_1@3x.webp') no-repeat 90% 70%/45%;
+	}
+	.section2 .second_box .contents {
+		background: url('../images/mobile/thumb_2@3x.webp') no-repeat 90% 70%/45%;
 	}
 	.section2 .box a {
 		padding: 0 0 0 82px;
