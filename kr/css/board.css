@@ -323,7 +323,10 @@
 }
 
 .press-list .board-type1 .thumb .thumb_contents {
-  max-height: 75px;
+  /* max-height: 75px; */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
   margin-top: 12px;
@@ -421,7 +424,7 @@
   margin-top: 18px;
   font-family: HanwhaGothicEL_OTF;
   font-size: 20px;
-  color: #aaa;
+  color: #000;
 }
 
 .press-view .board-type1 .board_contents {
@@ -439,7 +442,7 @@
   margin-bottom: 40px;
 }
 
-.press-view .board-type1 .board_contents .image .image_desc{
+.press-view .board-type1 .board_contents .image .image_desc, .press-view .board-type1 .board_contents .image figcaption {
   margin-top: 15px;
   font-family: HanwhaGothicB_OTF;
   font-size: 14px;
@@ -871,6 +874,31 @@
   }
 }
 
+@media (max-width: 1024px) {
+
+  .notice-list {
+    padding: 190px 30px 0;
+  }
+  .sales-inquiry-list {
+    padding: 190px 30px 0;
+  }
+  .notice-view {
+    padding: 190px 30px 0;
+  }
+
+  .ir-list {
+    padding: 190px 30px 0;
+  }
+  .press-list {
+    padding: 190px 30px 0;
+  }
+
+  .press-view {
+    padding: 190px 30px 0;
+  }
+
+}
+
 @media (max-width: 1100px) {
 
   .board-type1 .column:first-child {
@@ -897,6 +925,15 @@
   .board-type1 .column:first-child {
     /* padding-bottom: 4%; */
     /* background: none; */
+  }
+
+  .press-list .board-type1 .thumb {
+    padding: 30px 0 30px 0;
+    border-top: 1px solid #cbcbcb;
+    /* border-bottom: 1px solid #cbcbcb; */
+  }
+  .press-list .board-type1 .thumb .thumb_date {
+    margin-top: 12px;
   }
 
   .notice-view .board-type1 .board_title {
@@ -1089,24 +1126,24 @@
 @media (max-width: 765px) {
 
   .notice-list {
-    padding: 230px 15px 0;
+    padding: 170px 15px 0;
   }
   .sales-inquiry-list {
-    padding: 230px 15px 0;
+    padding: 170px 15px 0;
   }
   .notice-view {
-    padding: 230px 15px 0;
+    padding: 170px 15px 0;
   }
 
   .ir-list {
-    padding: 230px 15px 0;
+    padding: 170px 15px 0;
   }
   .press-list {
-    padding: 230px 15px 0;
+    padding: 170px 15px 0;
   }
 
   .press-view {
-    padding: 230px 15px 0;
+    padding: 170px 15px 0;
   }
 
   .board-type1 h1 {
@@ -1169,7 +1206,7 @@
     font-size: 18px;
   }
   .press-list .board-type1 .thumb .thumb_contents {
-    max-height: 87px;
+    /* max-height: 87px; */
     font-size: 14px;
   }
 

@@ -92,14 +92,15 @@ $(window).on("load resize", function (e) {
   }
   $("header").css('visibility', 'visible');
 
-  setTimeout(function() {
+  // setTimeout(function() {
     // more_btn 요소를 선택합니다.
-    const moreBtn = $('#aside .more_btn');
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;    
+    // const moreBtn = $('#aside');
+    // const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;    
     // Convert the current top style to an integer and add the scroll position
     // const currentTop = parseInt(moreBtn.css('top'), 10);
-    moreBtn.css('top', top + scrollPosition + 'px');
-  }, 300);
+    // moreBtn.css('top', top + scrollPosition + 'px');
+    // moreBtn.css('top', top + 'px');
+  // }, 300);
 });
 
 $(document).ready(async function() {
@@ -185,26 +186,26 @@ $(document).ready(async function() {
 });
   
 // 스크롤 이벤트 리스너를 추가합니다.
-window.addEventListener('scroll', throttle(function() {
-  requestAnimationFrame(() => {
-    let top = 0;
+// window.addEventListener('scroll', function() {
+//   requestAnimationFrame(() => {
+//     let top = 0;
 
-    if (win.width() <= 1024) {
-      top = 130;
-    } else if (win.width() > 1024 && win.width() <= 1190) {
-      top = 167;
-    } else {
-      top = 207;
-    }
+//     if (win.width() <= 1024) {
+//       top = 130;
+//     } else if (win.width() > 1024 && win.width() <= 1190) {
+//       top = 167;
+//     } else {
+//       top = 207;
+//     }
 
-    // more_btn 요소를 선택합니다.
-    const moreBtn = $('#aside .more_btn');
+//     // more_btn 요소를 선택합니다.
+//     const moreBtn = $('#aside .more_btn');
     
-    // 브라우저 창 상단으로부터의 현재 스크롤 위치를 얻습니다.
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+//     // 브라우저 창 상단으로부터의 현재 스크롤 위치를 얻습니다.
+//     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
       
-    // Convert the current top style to an integer and add the scroll position
-    // const currentTop = parseInt(moreBtn.css('top'), 10);
-    moreBtn.css('top', top + scrollPosition + 'px');
-  });
-},2));
+//     // Convert the current top style to an integer and add the scroll position
+//     // const currentTop = parseInt(moreBtn.css('top'), 10);
+//     moreBtn.css('top', top + scrollPosition + 'px');
+//   });
+// });

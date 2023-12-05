@@ -187,7 +187,10 @@ header .btn_menu .icon-bottom {
 }
 
 #aside {
-	position: relative;
+	/* position: relative; */
+	position: fixed;
+	top: 207px;
+	right: 63px;
 	z-index: 6;
 	max-width: 1920px;
 	margin: 0 auto;
@@ -195,9 +198,9 @@ header .btn_menu .icon-bottom {
 #aside .more_btn {
 	display: flex;
 	flex-direction: column;
-	position: absolute;
+	/* position: absolute;
 	top: 207px;
-	right: 63px;
+	right: 63px; */
 	z-index: 6;
 	gap: 13px;
 }
@@ -498,7 +501,7 @@ header .gnb_layer.active {
 	margin: 0 auto;
 	max-width: 1920px;
 	box-sizing: border-box;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .sub.about {
@@ -1365,6 +1368,11 @@ footer select {
 		/* bottom: 35px; */
 		/* right: 35px; */
 	}
+
+	#aside {
+		top: 167px;
+		right: 40px;
+	}
 }
 
 @media (max-width: 1023px) {
@@ -1517,7 +1525,7 @@ footer select {
 
 @media (max-width: 950px) {
 	
-	#aside .more_btn {
+	#aside {
 		top: 130px;
 		right: 10px;
 	}
@@ -1735,6 +1743,11 @@ footer select {
 		transition-timing-function: cubic-bezier(10,2,3,1);
 		transform: translateX(0%);
 		background-color: #000;
+	}
+
+	#aside {
+		top: 120px;
+		right: 10px;
 	}
 	footer {
 		position: relative;
