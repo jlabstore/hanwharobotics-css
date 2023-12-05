@@ -38,6 +38,18 @@ header .more_btn  a.distributor {
 	background-color: #000;
 }
 
+.inquiry_more .bg {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	opacity: 0.6;
+	background-color: #000;
+}
+
 .main .pc {
 	visibility: hidden;
 	height: 100vw;
@@ -421,6 +433,10 @@ header .more_btn  a.distributor {
   line-height: 2;
   text-align: left;
   color: #000;
+
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
 }
 
 .section3 .board_wrap .board .list_date {
@@ -623,8 +639,9 @@ header .more_btn  a.distributor {
 		position: relative;
 		width: 100%;
 		padding: 43px 0 24px 32px;
-		border-radius: 15%;
-		border-top-left-radius: 0;
+		/* border-radius: 15%; */
+		/* border-top-left-radius: 0; */
+		border-radius: 20px 100px 100px 100px;
 		background-color: #f3f3f3;
 	}
 
@@ -708,6 +725,7 @@ header .more_btn  a.distributor {
 	}
 	
 	.section3 .board_wrap .board .list {
+		margin: 0;
 		padding: 0 0 0 0;
 	}
 	
@@ -724,6 +742,7 @@ header .more_btn  a.distributor {
 	}
 	.section3 .board_wrap .board.news .list_title {
 		width: 100%;
+		height: 30px;
 	}
 	
 	.section3 .board_wrap .board.news .list_date {
@@ -1047,8 +1066,8 @@ header .more_btn  a.distributor {
 		margin: -4px 0 0 13px;
 		font-family: HanwhaGothicB_OTF;
 		font-size: 20px;
-		/* color: #f37321; */
-		color: #fff;
+		color: #f37321;
+		/* color: #fff; */
 	}
 
 	header .logo .txt span strong {

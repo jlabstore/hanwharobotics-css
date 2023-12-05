@@ -125,9 +125,16 @@ $(window).on("load", function (e) {
 $(window).scroll(function (e) {
   if(window.scrollY < 1) {
     $header.css('backgroundColor', 'transparent').find('.header_wrapper').css('backgroundColor', 'transparent');
+    $('.inquiry_more .bg').css({
+      'opacity': '0.6',
+      'background': '#000'
+    });
   } else { 
 
     $header.css('backgroundColor', '#f60').find('.header_wrapper').css('backgroundColor', '#f60');
-    // $header.css('opacity', 0);
+    $('.inquiry_more .bg').css({
+      'opacity': '1',
+      'background': '#666'
+    });
   }
 });
