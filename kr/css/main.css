@@ -1633,8 +1633,9 @@ header .more_btn  a.distributor {
 		position: relative;
 		width: 100%;
 		padding: 45px 5px 19px 20px;
-		border-radius: 15%;
-		border-top-left-radius: 0;
+		/* border-radius: 15%;
+		border-top-left-radius: 0; */
+		border-radius: 20px 100px 100px 100px;
 		background-color: #f3f3f3;
 	}
 
