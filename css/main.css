@@ -563,7 +563,7 @@ header .more_btn  a.distributor {
 
 	.section3 .recruit a {
 		/* justify-content: flex-start; */
-		padding: 0 0 0 49px;
+		padding: 0 0 0 29px;
 		background: url(../images/pc/ic_round_recruit.svg) no-repeat 90% 50%;
 		background-size: 30% 30%;
 	}
@@ -701,6 +701,11 @@ header .more_btn  a.distributor {
 		border: solid 2px #f60;
 
 		background: url('../images/pc/ic_sub_more.svg') no-repeat 50% 50%;
+	}
+
+
+	.en .section2 .box .detail span {
+		margin: 0 0 0 32px;
 	}
 
 }

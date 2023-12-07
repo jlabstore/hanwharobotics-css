@@ -111,6 +111,13 @@ header .logo {
 	height: 50px;
 }
 
+.en header .logo {
+	display: flex;
+	/* width: 270px; */
+	width: auto;
+	height: 50px;
+}
+
 header .logo a span {
 	display: none;
 }
@@ -149,6 +156,31 @@ header .gnb_menu .header__nav__items a.on, header .gnb_menu .header__nav__items 
 .sub_header.active .logo > a {
 	background: url('../images/pc/main_logo.svg') no-repeat 0 0;
 }
+
+
+.en .main_header .logo > a {
+	display: block;
+	width: 270px;
+	height: 50px;
+	background: url('../images/pc/en_logo.svg') no-repeat 0 0;
+	object-fit: contain;
+}
+.en .sub_header .logo > a {
+	display: block;
+	width: 270px;
+	height: 50px;
+	background: url('../images/pc/en_logo.svg') no-repeat 0 0;
+	object-fit: contain;
+}
+
+.en .main_header.active .logo > a {
+	background: url('../images/pc/en_logo.svg') no-repeat 0 0;
+}
+
+.en .sub_header.active .logo > a {
+	background: url('../images/pc/en_logo.svg') no-repeat 0 0;
+}
+
 
 header .logo > a span {
 	display: none;
@@ -1306,6 +1338,10 @@ footer select {
 		right: 40px;
 	}
 
+	.en header .gnb_menu .header__nav__items {
+		gap: 50px;
+	}
+
 	footer .address {
 		font-size: 15px;
 	}
@@ -1556,6 +1592,12 @@ footer select {
 		color: #fff;
 		box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.25);
 		background-color: #f37321;
+	}
+
+	.en #aside .more_btn a, .en #aside button.inquiry {
+		width: auto !important;
+		height: 37px !important;
+		padding: 0 20px !important;
 	}
 
 	header .gnb_menu {
