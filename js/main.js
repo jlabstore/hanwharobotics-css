@@ -121,7 +121,6 @@ $(window).on("load", function (e) {
   // });
 });
 
-
 $(window).scroll(function (e) {
   if(window.scrollY < 1) {
     $header.css('backgroundColor', 'transparent').find('.header_wrapper').css('backgroundColor', 'transparent');
@@ -129,6 +128,9 @@ $(window).scroll(function (e) {
       'opacity': '0.6',
       'background': '#000'
     });
+    $('header .logo .txt span').css('color', '#f60');
+    $('header .logo .txt span strong').css('background', 'url(../images/pc/ic_main_more.svg) no-repeat 0 0')
+
   } else { 
 
     $header.css('backgroundColor', '#f60').find('.header_wrapper').css('backgroundColor', '#f60');
@@ -136,5 +138,7 @@ $(window).scroll(function (e) {
       'opacity': '1',
       'background': '#666'
     });
+    $('header .logo .txt span, header .logo .txt span strong').css('color', '#fff');
+    $('header .logo .txt span strong').css('background', 'url(../images/pc/ic_sub_more.svg) no-repeat 0 0')
   }
 });

@@ -184,7 +184,6 @@ $(document).ready(async function() {
   });
 
 });
-  
 // 스크롤 이벤트 리스너를 추가합니다.
 // window.addEventListener('scroll', function() {
 //   requestAnimationFrame(() => {
