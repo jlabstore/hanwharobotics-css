@@ -301,7 +301,7 @@ header .more_btn  a.distributor {
 	align-items: center;
   width: 42px;
   height: 42px;
-  margin: 0 0 0 92px;
+  margin: 0 0 0 0;
   padding: 14px;
 	border-radius: 50%;
   border: solid 2px #f60;
@@ -1082,6 +1082,35 @@ header .more_btn  a.distributor {
 		margin: 5px 0 3px 7px;
 		object-fit: contain;
 		background: url('../images/pc/ic_main_more.svg') no-repeat 0 0;
+	}
+
+	.en header .logo .txt a {
+		display: flex;
+		align-items: center;
+		margin-left: 20px;
+		font-family: HanwhaGothicB_OTF;
+		font-size: 16px;
+		color: #fff;
+	}
+
+	.en header .logo .txt span {
+		display: flex;
+		align-items: center;
+		margin: -2px 0 0 8px;
+		font-family: HanwhaGothicB_OTF;
+		font-size: 16px;
+		color: #f37321;
+		/* color: #fff; */
+	}
+	.en header .logo .txt span strong {
+		display: flex;
+		align-items: center;
+		width: 10px;
+		height: 10px;
+		margin: 5px 0 3px 7px;
+		object-fit: contain;
+		background: url('../images/pc/ic_main_more.svg') no-repeat 0 0;
+		background-size: 10px 10px !important;
 	}
 
 	/* header .btn_menu {

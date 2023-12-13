@@ -160,7 +160,7 @@ header .gnb_menu .header__nav__items a.on, header .gnb_menu .header__nav__items 
 
 .en .main_header .logo > a {
 	display: block;
-	width: 270px;
+	width: 280px;
 	height: 50px;
 	background: url('../images/pc/en_logo.svg') no-repeat 0 0;
 	object-fit: contain;
@@ -780,6 +780,67 @@ footer select {
   font-size: 15px;
   line-height: 1.73;
 }
+
+@media (max-width: 1640px) {
+	.en .inquiry_more {
+		z-index: 6;
+		position: fixed;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 50px;
+		padding: 8px 15px;
+	}
+
+	.en .inquiry_more .bg {
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		opacity: 1;
+		/* background-color: #666; */
+	}
+
+	.en .inquiry_more a {
+		position: relative;
+		z-index: 2;
+		font-family: HanwhaGothicL_OTF;
+		font-size: 14px;
+		line-height: 1.21;
+		letter-spacing: 0.56px;
+		color: #fff;
+	}
+
+
+	.en .inquiry_more a span {
+		display: inline-flex;
+		margin-left: 3px;
+		font-family: HanwhaGothicB_OTF;
+		font-size: 15px;
+		color: #f37321;
+	}
+
+	.en .inquiry_more a strong {
+		display: inline-flex;
+		align-items: center;
+		width: 9px;
+		height: 9px;
+		margin: 5px 0 3px 7px;
+		background: url('../images/pc/ic_main_more.svg') no-repeat 0 0;
+		background-size: 9px;
+	}
+
+	.en header {
+    margin-top: 50px;
+	}
+	.en header .logo .txt {
+		display: none;
+	}
+}
+
 
 @media (max-width: 1500px) {
 	.inquiry_more {
