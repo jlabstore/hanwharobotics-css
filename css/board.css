@@ -60,6 +60,15 @@
   background-size: 100% auto;
 }
 
+.en .sales-inquiry-list .board-type1 h1 {
+  line-height: 1;
+}
+
+
+.en .sales-inquiry-list .board-type1 .desc {
+  line-height: 1.2;
+}
+
 .sales-inquiry-list .board-type1 .desc {
   font-size: 27px;
 }
@@ -606,6 +615,10 @@
   color: #000;
 }
 
+.en .section-sales-inquiry-benefit .section-sales-inquiry-benefit-list .section-sales-inquiry-benefit-list-item span {
+  font-size: 16px;
+}
+
 .section-product-contents {
   width: 100%;
   margin-top: 85px;
@@ -635,6 +648,11 @@
   font-size: 18px;
   line-height: 1.78;
   color: #000;
+}
+
+
+.en .section-product-contents .section-product-inquiry .section-title p {
+  line-height: 1.4;
 }
 
 .section-product-contents .section-product-inquiry .inquiry {

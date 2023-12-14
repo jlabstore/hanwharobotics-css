@@ -365,6 +365,10 @@ header .more_btn  a.distributor {
 	visibility: visible;
 	overflow: auto;
 	height: auto;
+	line-height: 1.4;
+}
+.en .section3 .recruit a span.pc {
+	line-height: 1.4;
 }
 .section3 .recruit a span.tablet {
 	display: none;

@@ -10,6 +10,9 @@
   }
 }
 
+.en .inquiry_more .bg {
+  background-color: #666;
+}
 header {
 	align-items: center;
 	/* background-color: #f60; */
@@ -160,6 +163,12 @@ main .main {
 
 }
 
+.en .about .section_1 .group1 .txt1 {
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+
+}
+
 .about .section_1 .group2 {
 	display: flex;
 	flex-direction: column;
@@ -201,6 +210,9 @@ main .main {
   color: #000;
 }
 
+.en .about .section_1 .group2 .title {
+  line-height: 1.3;
+}
 
 .about .section_1 .group2 .txt1 {
 	width: 580px;
@@ -215,6 +227,11 @@ main .main {
   letter-spacing: normal;
   text-align: left;
   color: #000;
+}
+
+.en .about .section_1 .group2 .txt1 {
+  line-height: 1.4;
+  letter-spacing: -0.01em;
 }
 
 .about .section_1 .group3 {
@@ -248,6 +265,10 @@ main .main {
   color: #000;
 }
 
+.en .about .section_1 .group3 .txt2 {
+  font-size: 38px;
+  line-height:1.2;
+}
 .about .section_1 .group4 {
 	display: flex;
 	flex-direction: column;
@@ -317,6 +338,10 @@ main .main {
   letter-spacing: normal;
   text-align: left;
   color: #000;
+}
+
+.en .about .section_2 .row .box .txt1 {
+  line-height: 1.4;
 }
 
 .about .section_2 .row img {
