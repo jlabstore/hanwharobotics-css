@@ -7,7 +7,7 @@ header .header_wrapper {
 }
 
 .mobile header {
-	padding: 16px 15px;
+	padding: 16px 15px !important;
 }
 header .menu {
 	display: none;
@@ -814,7 +814,7 @@ header .more_btn  a.distributor {
 
 	.section1 .contents {
 		/* padding: 127px 15px 0; */
-		padding: 0 15px 0;
+		padding: 0 15px 0 !important;
 	}
 	.section2 .primary_box .contents {
 		background: url('../images/mobile/thumb_1@3x.webp') no-repeat 100% 100%/contain !important;
@@ -884,6 +884,30 @@ header .more_btn  a.distributor {
 		font-stretch: normal;
 		font-style: normal;
 		line-height: 1.18;
+		letter-spacing: normal;
+		text-align: left;
+		color: #eaeaea;
+	}
+
+	.en .section1 .contents .main_txt .title{
+		font-family: HanwhaGothicB_OTF;
+		font-size: 151px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.4;
+		letter-spacing: normal;
+		text-align: left;
+		color: #f37321;
+	}
+
+	.en .section1 .contents .main_txt .txt {
+		font-family: HanwhaGothicB_OTF;
+		font-size: 65px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.17;
 		letter-spacing: normal;
 		text-align: left;
 		color: #eaeaea;
@@ -1095,6 +1119,7 @@ header .more_btn  a.distributor {
 		font-family: HanwhaGothicB_OTF;
 		font-size: 16px;
 		color: #fff;
+		letter-spacing: 0.64px;
 	}
 
 	.en header .logo .txt span {
@@ -1314,6 +1339,7 @@ header .more_btn  a.distributor {
 		/* justify-content: flex-start; */
 		/* padding: 65px 0 0 55px; */
 		/* background: url(../images/pc/ic_round_recruit.svg) no-repeat 90% 85%; */
+		background: none !important;
 	}
 	.section3 .recruit a span.pc {
 		display: none;
@@ -1384,7 +1410,9 @@ header .more_btn  a.distributor {
 	.main .tablet {
 		/* padding: 0 50px; */
 	}
-
+	.en header {
+		padding: 20px 27px;
+	}
 	header .logo .txt {
 		display: none;
 	}
@@ -1403,7 +1431,7 @@ header .more_btn  a.distributor {
 		flex-direction: column;
 		max-width: none;
 		/* padding: 202px 15px 0; */
-		padding: 0 15px 0;
+		padding: 0 40px 0;
 		justify-content: center;
 	}
 
@@ -1417,10 +1445,25 @@ header .more_btn  a.distributor {
 		line-height: 1.19;
 	}
 
+	.en .section1 .contents .main_txt .title {
+		font-size: 95px;
+		line-height: 1.41;
+	}
+
+	.en .section1 .contents .main_txt .txt {
+		font-size: 40px;
+		line-height: 1.18;
+	}
+
 	.section1 .contents .main_txt .move_to_intro a {
 		margin-top: 32px;
 		font-size: 20px;
 		line-height: 1.25;
+	}
+	.en .section1 .contents .main_txt .move_to_intro a {
+		margin-top: 32px;
+		font-size: 19px;
+		line-height: 1.21;
 	}
 
 	.section1 .contents .main_txt .move_to_intro a br {
@@ -1434,7 +1477,8 @@ header .more_btn  a.distributor {
     background-size: 88px 87px;
 	}
 	.section1 .update {
-		
+		left: 40px;
+		right: none;
 	}
 	.section1 .update .title {
 		display: none;
@@ -1481,6 +1525,10 @@ header .more_btn  a.distributor {
 		line-height: 1.67;
 		text-align: left;
 		color: #fff;
+	}
+
+	.en .section3 .recruit a {
+		background: none !important;
 	}
 	footer {
 		z-index: 3;
@@ -1730,7 +1778,7 @@ header .more_btn  a.distributor {
 		line-height: 1.42;
 	}
 	.section1 .contents .main_txt .txt {
-		font-size: 26px;
+		font-size: 26px !important;
 	}
 
 	.section1 .update {
