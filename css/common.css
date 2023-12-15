@@ -466,7 +466,12 @@ header .gnb_right .selected_country {
   width: 53px;
   height: 27px;
   margin-left: 30px;
+	padding: 4px 5px 4px 28px;  
+	opacity: 0.6;
+  border-radius: 13.5px;
   border: 1px solid #fff;
+	background: url('../images/pc/ico_country.svg') no-repeat 3px 3px;
+	background-size: 19px 19px;
 }
 
 
