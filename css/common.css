@@ -373,8 +373,11 @@ header .gnb_menu .header__nav__items .header__nav__link {
 	color: #fff;
 }
 
-header .gnb_menu .header__nav__items .header__nav__link.on {
-	/* color:#f37321; */
+header .gnb_menu .header__nav__items .header__nav__link:nth-child(1) {
+	cursor: pointer;
+}
+header .gnb_menu .header__nav__items .header__nav__link:nth-child(2) {
+	cursor: pointer;
 }
 header .gnb_menu .header__nav__items .header__nav__items_sub {
 	display: none;
