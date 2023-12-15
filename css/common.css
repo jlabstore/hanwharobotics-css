@@ -728,6 +728,11 @@ footer select {
   color: #000;
 }
 
+
+.en .layer .layer_inner .terms .sub_title {
+	font-size: 16px;
+}
+
 .layer .layer_inner .terms .terms_box {
 	margin: 20px 0 0 0;
   padding: 28px 22px 23px 33px;
