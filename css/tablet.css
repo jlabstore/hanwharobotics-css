@@ -327,21 +327,22 @@ main .main {
 }
 
 .about .section_2 .row .box .txt1 {
-	width: 287px;
+	width: 100%;
 	margin-top: 28px;
 	font-family: HanwhaGothicEL_OTF;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.6;
+  line-height: 28px;
   letter-spacing: normal;
   text-align: left;
   color: #000;
 }
 
 .en .about .section_2 .row .box .txt1 {
-  line-height: 1.4;
+	margin-top: 10px;
+  /* line-height: 1.4; */
 }
 
 .about .section_2 .row img {

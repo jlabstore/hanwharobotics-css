@@ -345,7 +345,8 @@ main .main {
 
 
 .en .about .section_1 .group2 .title {
-  line-height: 1.3;
+  font-size: 30px;
+  line-height: 42px;
 }
 
 .about .section_1 .group2 .txt1 {
@@ -354,11 +355,8 @@ main .main {
   width: 800px;
 	margin: 32px 0 0 0;
 	font-family: HanwhaGothicEL_OTF;
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 28px;
   letter-spacing: normal;
   text-align: left;
   color: #000;
@@ -377,11 +375,8 @@ main .main {
 
 .about .section_1 .group3 .txt1 {
 	font-family: HanwhaGothicEL_OTF;
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 28px;
   letter-spacing: normal;
   text-align: left;
   color: #000;
@@ -470,14 +465,14 @@ main .main {
 }
 
 .about .section_2 .row .box .txt1 {
-	width: 287px;
-	margin-top: 15px;
+	width: 90%;
+	margin-top: 10px;
 	font-family: HanwhaGothicEL_OTF;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.6;
+  line-height: 28px;
   letter-spacing: normal;
   text-align: left;
   color: #000;

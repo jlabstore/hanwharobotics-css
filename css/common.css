@@ -169,7 +169,7 @@ header .gnb_menu .header__nav__items a.on, header .gnb_menu .header__nav__items 
 	display: block;
 	width: 280px;
 	height: 50px;
-	background: url('../images/pc/en_logo.svg') no-repeat 0 35%;
+	background: url('../images/pc/en_sub_logo.svg') no-repeat 0 35%;
 	object-fit: contain;
 }
 

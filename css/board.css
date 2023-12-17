@@ -53,8 +53,19 @@
   margin-top: 25px;
   /* padding-bottom: 70%; */
   font-family: HanwhaGothicEL_OTF;
-  font-size: 31px;
-  line-height: 1.39;
+  font-size: 24px;
+  line-height: 34px;
+  color: #000;
+  /* background: url('../images/pc/bg_notice@3x.webp') no-repeat 0 100%; */
+  background-size: 100% auto;
+}
+
+.en .board-type1 .desc {
+  margin-top: 30px;
+  /* padding-bottom: 70%; */
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 24px !important;
+  line-height: 34px !important;
   color: #000;
   /* background: url('../images/pc/bg_notice@3x.webp') no-repeat 0 100%; */
   background-size: 100% auto;
@@ -66,7 +77,9 @@
 
 
 .en .sales-inquiry-list .board-type1 .desc {
-  line-height: 1.2;
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 34px !important;
 }
 
 .sales-inquiry-list .board-type1 .desc {
@@ -537,6 +550,13 @@
   font-family: HanwhaGothicEL_OTF;
   font-size: 18px;
   line-height: 1.78;
+  color: #000;
+}
+
+.en .sales-inquiry-contents .section-sales-inquiry .section-title p {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 18px;
+  line-height: 26px;
   color: #000;
 }
 
@@ -1141,6 +1161,10 @@
   }
   .section-product-contents .section-product-inquiry .inquiry strong {
     font-size: 22px;
+  }
+
+  .en .board-type1 .desc {
+    margin-top: 10px;
   }
 }
 
