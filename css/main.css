@@ -1899,6 +1899,10 @@ header .more_btn  a.distributor {
 
 	.fixed {display:none;}
 	
+	.section1 .contents .main_txt .txt br {
+		display: none;
+	
+	}
 	.section_bottom {
 		position: relative;
 		z-index: 2;
