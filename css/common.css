@@ -475,6 +475,7 @@ header .gnb_right .selected_country {
   border: 1px solid #fff;
 	background: url('../images/pc/ico_country.svg') no-repeat 3px 3px;
 	background-size: 19px 19px;
+	box-sizing: border-box;
 }
 
 
