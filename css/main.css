@@ -489,13 +489,25 @@ header .more_btn  a.distributor {
 @media (max-width: 1600px) {
 
 	.section1 .contents .main_txt .title {
-		font-size: 108px !important;
+		font-size: 95px !important;
+	}
+	.en .section1 .contents .main_txt .txt {
+		font-size: 40px !important;
+	}
+	.en .section1 .contents .main_txt .move_to_intro a {
+		font-size: 19px !important;
+	}
+	.en .section1 .contents .main_txt .move_to_intro span {
+		width: 104px;
+		height: 104px;
+		background-size: 104px;
 	}
 	.section3 .recruit a {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
+		
 		padding: 0 0 0 27px;
 		background: url('../images/pc/ic_round_recruit.svg') no-repeat 90% 50%;
 		background-size: 64px 64px;
