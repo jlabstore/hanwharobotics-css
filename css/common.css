@@ -857,6 +857,25 @@ footer select {
 	box-sizing: border-box;
 }
 
+
+.layer .company_box table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.layer .company_box table th {
+	padding: 10px 0;
+	text-align: center;
+	color: #fff;
+	border-bottom: solid 1px #aaa;
+	background-color: #707070;
+}
+.layer .company_box table td {
+	padding: 10px 0;
+	text-align: center;
+	border-bottom: solid 1px #aaa;
+}
+
 .layer .family {
 	margin-top: 25px;
 }
