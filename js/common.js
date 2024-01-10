@@ -1,4 +1,10 @@
 const win = $(this); //this = window
+const mailList = {
+  "product" : "rbt_sales@hanwha.com",
+  "inquiry" : "rbt_distributor@hanwha.com",
+  "partner" : "rbt_business@hanwha.com",
+  "education" : "rbt_education@hanwha.com"
+}
 let headerMinHeight = '90px';
 
 function showLayer(layerName, target, headerMinHeight) {
@@ -144,6 +150,7 @@ $(document).ready(async function() {
     $('.layer.privacy').load('./includes/layer_privacy.html');
     $('.layer.copyright').load('./includes/layer_copyright.html');
     $('.layer.family').load('./includes/layer_family.html');
+    $('.layer.cookie').load('./includes/layer_cookie.html');
   });
 
   $(document).on('click', 'header .btn_menu button', function(e) {
@@ -224,12 +231,17 @@ $(document).ready(async function() {
     showLayer('family', $(this), headerMinHeight);
   });
 
+  $(document).on('click', 'button.sitemap_cookie', function(e) {
+    e.stopPropagation();
+
+    showLayer('cookie', $(this), headerMinHeight);
+  });
+  
   $(document).on('click', '.layer_bg, .layer .btn_close', function() {
     $('body').removeClass('scroll-lock');
     $('.layer').hide('fast');
     $('.layer_bg').hide();
   });
-
 });
 // 스크롤 이벤트 리스너를 추가합니다.
 // window.addEventListener('scroll', function() {

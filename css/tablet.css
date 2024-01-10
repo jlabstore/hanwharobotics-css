@@ -477,3 +477,125 @@ main .main {
 	transform: translate3d(0px, 0px, 0px, 0px);
 	content-visibility: visible;
 }
+
+.sub.cookie {
+  max-width: 840px;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 258px;
+}
+
+.sub.cookie .title {
+  display: flex;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 50px;
+  line-height: 2;
+  color: #000;
+}
+
+.sub.cookie .desc2 {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 15px;
+  line-height: 1.67;
+  color: #000;
+}
+
+.sub.cookie .desc2 .orange {
+  font-family: HanwhaGothicB_OTF;
+  color: #f60;
+}
+
+.sub.cookie .desc2 a {
+  font-family: HanwhaGothicB_OTF;
+  font-size: 15px;
+  line-height: 1.67;
+  color: #000;
+  text-decoration: underline;
+}
+
+.sub.cookie .title3 {
+  display: flex;
+  margin-top: 40px;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 24px;
+  line-height: 2.92;
+  color: #000;
+}
+
+
+.sub.cookie .block {
+	margin-top: 30px;
+	padding-top: 25px;
+	border-top: solid 1px #707070;
+}
+
+.sub.cookie .block [type=checkbox] {
+	width: 26px;
+	height: 26px;
+	border-radius: 2px;
+  border: solid 1px #707070;
+	vertical-align: middle;
+}
+
+
+.sub.cookie .block [type=checkbox]:checked {
+	background: url('../images/pc/ic_checkbox.svg') no-repeat center center;
+}
+
+.sub.cookie .block .checkbox label {
+	font-family: HanwhaGothicR_OTF;
+  font-size: 18px;
+  line-height: 3;
+  color: #000;
+}
+
+.sub.cookie .btn_wrap {
+	display: flex;
+	justify-content: space-between;
+  margin-top: 30px;
+	padding-top: 30px;	
+	border-top: solid 1px #707070;
+}
+
+.sub.cookie .btn_wrap .btn_left button.save {
+	width: 106px;
+	height: 43px;
+	padding: 14px 20px 13px 21px;
+	font-family: HanwhaGothicB_OTF;
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+  border-radius: 21.5px;
+  background-color: #000;
+	box-sizing: border-box;
+}
+
+.sub.cookie .btn_wrap .btn_left button.deny {
+	width: 106px;
+	height: 43px;
+	padding: 14px 20px 13px 21px;
+	font-family: HanwhaGothicB_OTF;
+  font-size: 14px;
+  line-height: 1;
+  color: #000;
+  border-radius: 21.5px;
+  background-color: #fff;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+
+.sub.cookie .btn_wrap .btn_right button.agree {
+  height: 43px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+	font-family: HanwhaGothicB_OTF;
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+	padding: 14px 20px 13px 21px;
+  border-radius: 21.5px;
+  background-color: #f37321;
+	box-sizing: border-box;
+}
+

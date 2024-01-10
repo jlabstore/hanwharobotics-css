@@ -56,7 +56,10 @@
               <p>한화로보틱스와 함께 로봇산업을 이끌어 갈 대리점을 모집합니다.</p>
             </div>
 
-            <a href="#" class="inquiry" target="_blank">  
+            <a href="javascript:void(0)" class="inquiry" onClick="
+              showLayer('inquiry', $('.layer.inquiry'), headerMinHeight);
+              $('.layer.inquiry .inquiry_select').val('inquiry');
+            ">  
               대리점 모집 문의하기
               <span><strong>+</strong></span>
             </a>
@@ -97,7 +100,10 @@
               <p>한화로보틱스 제품에 대해 문의하실 내용을 아래 문의하기 폼을 이용해 보내주시거나<br />아래 메일 주소로 직접 메일을 보내주세요. 담당자들이 확인 후 연락드립니다.</p>
             </div>
 
-            <a href="#" class="inquiry" target="_blank">
+            <a href="javascript:void(0)" class="inquiry" onClick="
+              showLayer('inquiry', $('.layer.inquiry'), headerMinHeight);
+              $('.layer.inquiry .inquiry_select').val('product');
+            ">
               제품 문의하기
               <span><strong>+</strong></span>
             </a>
