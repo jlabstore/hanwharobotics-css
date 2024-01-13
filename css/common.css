@@ -753,7 +753,8 @@ footer select {
   text-align: left;
   color: #000;
   border: solid 1px #aaa;
-  background-color: #fff;
+  background: #fff url('../images/pc/ic_select_arrow.svg') no-repeat 97% 39%;
+	background-size: 14px;
 	box-sizing: border-box;
 }
 
