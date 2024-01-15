@@ -1641,7 +1641,7 @@ header .more_btn  a.distributor {
 	}
 
 	footer .column1 .link .select_wrap select, footer .column1 .link .select_wrap div {
-		padding-right: 104px;
+		/* padding-right: 104px; */
 		font-family: HanwhaGothicR_OTF;
 		font-size: 16px;
 		font-weight: normal;
