@@ -2377,6 +2377,9 @@ footer select {
 	footer .address {
 		margin-top: 145px !important;
 	}
+	.en footer .address {
+		margin-top: 30px !important;
+	}
 }
 
 @media (min-width: 335px) and (max-width: 743px) {
