@@ -2372,6 +2372,13 @@ footer select {
 		margin-top: 20px;
 	}
 }
+
+@media (max-width: 385px) {
+	footer .address {
+		margin-top: 145px !important;
+	}
+}
+
 @media (min-width: 335px) and (max-width: 743px) {
 
 	#aside .more_btn {
@@ -2492,5 +2499,4 @@ footer select {
 		margin-top: 40px;
 	}
 }
-
 
