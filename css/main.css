@@ -1024,7 +1024,7 @@ header .more_btn  a.distributor {
 	}
 
 	footer .copyright br {
-		display: none;
+		/* display: none; */
 	}
 	footer .column1 {
 		display: flex;
@@ -1603,7 +1603,7 @@ header .more_btn  a.distributor {
 	}
 
 	footer .copyright br {
-		display: none;
+		/* display: none; */
 	}
 	footer .column1 {
 		display: flex;
