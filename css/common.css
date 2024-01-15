@@ -1569,7 +1569,7 @@ footer select {
 	footer .column1 .sitemap {
 		display: flex;
 		flex-direction: column;
-		gap: 6px;
+		gap: 20px;
 	}
 	footer .column1 .sitemap button {
 		cursor: pointer;
