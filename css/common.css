@@ -903,6 +903,14 @@ footer select {
   line-height: 1.73;
 }
 
+.layer .footer .notice {
+	margin-top: 12px;
+	font-family: HanwhaGothicEL_OTF;
+  font-size: 15px;
+  line-height: 1.73;
+  color: #efd9bc;
+}
+
 .layer.company, .layer.family, .layer.copyright, .layer.email, .layer.privacy, .layer.cookie {
 	padding-bottom: 80px;
 }
