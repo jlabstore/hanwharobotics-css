@@ -992,6 +992,12 @@ footer select {
 	border-top: solid 1px #707070;
 }
 
+
+.layer.cookie .block .checkbox {
+	cursor: default;
+	background: none;
+}
+
 .layer.cookie .block [type=checkbox] {
 	width: 26px;
 	height: 26px;
@@ -2528,6 +2534,112 @@ footer select {
 		flex-direction: row;
 		gap: 20px;
 		margin-top: 40px;
+	}
+
+	.layer.cookie {
+		left: 10px;
+		width: calc(100% - 20px);
+		margin: 0;
+		padding-bottom: 40px;
+	}
+
+	.layer.cookie .layer_inner {
+		padding: 30px 20px 0;
+	}
+
+
+	.layer.cookie .layer_inner .title {
+		font-size: 22px;
+	}
+
+	.layer.cookie .layer_inner .desc {
+		margin-top: 16px;
+		font-size: 14px;
+	}
+
+	.layer.cookie .scroll {
+		height: auto;
+		max-height: none;
+	}
+
+	.layer.cookie .layer_inner .desc2 {
+		height: 56px;
+		padding-right: 10px;
+		font-size: 14px;
+		line-height: 1.43;
+		overflow-y: auto;
+	}
+
+	.layer.cookie .layer_inner .title3 {
+		margin-top: 20px;
+		font-size: 18px;
+		line-height: 1;
+	}
+
+	.layer.cookie .layer_inner .block_wrap {
+		margin-top: 24px;
+	}
+	.layer.cookie .scroll .block {
+		margin-top: 0;
+		padding-top: 14px;
+	}
+
+	.layer.cookie .block .checkbox {
+		position: relative;
+		cursor: pointer;
+	}
+	.layer.cookie .block .checkbox::after {
+    content: '';
+    position: absolute;
+    width: 14px;  /* Adjust as needed */
+    height: 14px; /* Adjust as needed */
+    background: url('../images/pc/ic_arrow_down.svg') no-repeat center center;
+    background-size: contain;
+    top: 22%;  /* Adjust for positioning */
+    right: 5%; /* Adjust for positioning */
+    transform: rotate(180deg); /* Rotate as needed */
+    pointer-events: none; /* Ignore mouse events */
+	}
+
+	.layer.cookie .block .desc2 {
+		height: 0;
+		font-size: 14px;
+		overflow: hidden;
+	}
+
+	.layer.cookie .block.on .checkbox::after {
+		transform: rotate(0deg);
+	}
+	.layer.cookie .block.on .desc2 {
+		margin-bottom: 14px;
+		height: 136px;
+		overflow-y: auto;
+	}
+	.layer.cookie .btn_wrap {
+		flex-direction: column;
+		margin-top: 0;
+		padding-top: 24px;
+	}
+
+	.layer.cookie .btn_wrap .btn_left button.save {
+		width: 100%;
+		height: 50px;
+		font-size: 14px;
+	}
+	.layer.cookie .btn_wrap .btn_left button.deny {
+		margin-top: 5px;
+		width: 100%;
+		height: 50px;
+		font-size: 14px;
+	}
+	.layer.cookie .btn_wrap .btn_right {
+		margin-top: 5px;
+	}
+	.layer.cookie .btn_wrap .btn_right button.agree {
+		width: 100%;
+		height: 50px;
+		font-size: 14px;
+		line-height: 1.6;
 	}
 }
 
