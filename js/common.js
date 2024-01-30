@@ -231,11 +231,21 @@ $(document).ready(async function() {
     showLayer('family', $(this), headerMinHeight);
   });
 
-  $(document).on('click', 'button.sitemap_cookie', function(e) {
-    e.stopPropagation();
+  // $(document).on('click', 'button.sitemap_cookie', function(e) {
+  //   e.stopPropagation();
 
-    showLayer('cookie', $(this), headerMinHeight);
-  });
+  //   const layerCookie = $('.layer.cookie');
+
+  //   // showLayer('cookie', $(this), headerMinHeight);
+
+  //   if(layerCookie.css('display') === 'none') {
+  //     $('.layer.cookie').show('fast');
+  //     $('html').addClass('scroll-lock');
+  //   } else {
+  //     $('.layer.cookie').hide('fast');
+  //     $('html').removeClass('scroll-lock');
+  //   }
+  // });
   
   $(document).on('click', '.layer_bg, .layer .btn_close', function() {
     $('body').removeClass('scroll-lock');

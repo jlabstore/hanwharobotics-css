@@ -986,6 +986,13 @@ footer select {
 	overflow-y: scroll; */
 }
 
+.layer.cookie {
+	position: fixed;
+	top: 50%;
+	left: 50%; /* Center horizontally */
+	transform: translate(-50%, -50%);
+	margin-left: 0;
+}
 .layer.cookie .block {
 	margin-top: 30px;
 	padding-top: 30px;
@@ -1027,6 +1034,7 @@ footer select {
 }
 
 .layer.cookie .btn_wrap .btn_left button.save {
+	cursor: pointer;
 	width: 106px;
 	height: 43px;
 	padding: 14px 20px 13px 21px;
@@ -1040,6 +1048,7 @@ footer select {
 }
 
 .layer.cookie .btn_wrap .btn_left button.deny {
+	cursor: pointer;
 	width: 106px;
 	height: 43px;
 	padding: 14px 20px 13px 21px;
@@ -1054,6 +1063,7 @@ footer select {
 }
 
 .layer.cookie .btn_wrap .btn_right button.agree {
+	cursor: pointer;
   height: 43px;
   display: flex;
   flex-direction: row;
@@ -2483,6 +2493,7 @@ footer select {
 		display: flex;
 		/* flex-direction: column; */
 		/* gap: 0; */
+		flex-wrap: wrap;
 		margin-top: 0;
 	}
 
@@ -2537,14 +2548,16 @@ footer select {
 	}
 
 	.layer.cookie {
-		left: 10px;
 		width: calc(100% - 20px);
+		height: 95%;
 		margin: 0;
 		padding-bottom: 40px;
 	}
 
 	.layer.cookie .layer_inner {
 		padding: 30px 20px 0;
+		max-height: 600px;
+		overflow-y: auto;
 	}
 
 
