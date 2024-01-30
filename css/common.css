@@ -2549,14 +2549,14 @@ footer select {
 
 	.layer.cookie {
 		width: calc(100% - 20px);
-		height: 95%;
+		height: calc(100% - 20px);
 		margin: 0;
 		padding-bottom: 40px;
+		overflow-y: auto;
 	}
 
 	.layer.cookie .layer_inner {
 		padding: 30px 20px 0;
-		max-height: 600px;
 		overflow-y: auto;
 	}
 
@@ -2573,6 +2573,7 @@ footer select {
 	.layer.cookie .scroll {
 		height: auto;
 		max-height: none;
+		overflow: hidden;
 	}
 
 	.layer.cookie .layer_inner .desc2 {
