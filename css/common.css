@@ -463,12 +463,28 @@ header .gnb_right {
 }
 
 
+header .gnb_right .login {
+  display: flex;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  margin: -4px 0 0 20px;
+	/* opacity: 0.6; */
+	background: url('../images/pc/login.svg') no-repeat 0 0;
+	background-size: 27px 27px;
+}
+
+
+header .gnb_right .login span {
+	display: none;
+}
+
 header .gnb_right .selected_country {
   display: flex;
   align-items: center;
   width: 53px;
   height: 27px;
-  margin-left: 30px;
+  margin: -4px 0 0 15px;
 	padding: 4px 5px 4px 28px;  
 	opacity: 0.6;
   border-radius: 13.5px;
@@ -2659,7 +2675,7 @@ footer select {
 	}
 }
 
-@media (max-height: 700px) {
+@media (min-width: 335px) and (max-width: 743px) and (max-height: 700px) {
 
 	.layer.cookie {
     transform: translate(-50%, 0);
