@@ -7,12 +7,12 @@ const mailList = {
 }
 let headerMinHeight = '90px';
 
-function showLayer(layerName, target, headerMinHeight) {
+function showLayer(layerName, target, headerMinHeight, bgColor = '#fff', opacity = 0.1) {
 
   const offset = $(window).scrollTop()+50;
 
   $(`.layer.${layerName}`).css('top', offset+'px').show('fast');
-  $('.layer_bg').show();
+  $('.layer_bg').css('background-color', bgColor).css('opacity', opacity).show();
   target.removeClass('active');
   $('html').removeClass('scroll-lock'); 
 
@@ -151,6 +151,7 @@ $(document).ready(async function() {
     $('.layer.copyright').load('./includes/layer_copyright.html');
     $('.layer.family').load('./includes/layer_family.html');
     $('.layer.cookie').load('./includes/layer_cookie.html');
+    $('.layer.qna').load('./includes/layer_qna.html');
   });
 
   $(document).on('click', 'header .btn_menu button', function(e) {
@@ -229,6 +230,12 @@ $(document).ready(async function() {
     e.stopPropagation();
 
     showLayer('family', $(this), headerMinHeight);
+  });
+
+  $(document).on('click', 'button.inquiry.qna', function(e) {
+    e.stopPropagation();
+
+    showLayer('qna', $(this), headerMinHeight, '#000', 0.2);
   });
 
   // $(document).on('click', 'button.sitemap_cookie', function(e) {

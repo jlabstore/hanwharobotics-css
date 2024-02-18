@@ -63,6 +63,102 @@ html.scroll-lock, html.scroll-lock body {
 	display: none;
 }
 
+.checkbox {
+  cursor: pointer;
+  position: relative;
+  padding-left: 35px;
+	font-family: HanwaGothicEL_OTF;
+	font-size: 16px;
+	color: #000;
+	height: 26px;
+	display: flex;
+	align-items: center;
+}
+
+
+.checkbox > input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkbox > input[type="checkbox"]:checked ~ span::after {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.checkbox > span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 26px;
+	width: 26px;
+	background-color: transparent;
+	border: 1px solid #000;
+}
+
+.checkbox > span::after {
+	content: url("../images/pc/ic_check.svg");
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 14px;
+	display: none;
+}
+
+.radio {
+	cursor: pointer;
+  position: relative;
+  padding-left: 35px;
+	font-family: HanwaGothicEL_OTF;
+	font-size: 16px;
+	color: #000;
+	height: 26px;
+	display: flex;
+	align-items: center;
+}
+
+.radio > input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.radio > input[type="radio"]:checked ~ span::after {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.radio > span {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 26px;
+    background-color: transparent;
+    border-radius: 999px;
+    border: 1px solid #aaa;
+}
+
+.radio > span::after {
+	content: "";
+	display: none;
+	width: 16px;
+	height: 16px;
+	background-color: #f37321;
+	border-radius: 999px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
 header {
 	visibility: hidden;
 	z-index: 7;
