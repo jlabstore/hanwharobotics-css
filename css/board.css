@@ -1756,6 +1756,74 @@
   color: #000;
 }
 
+.login-main-container.find-id-complete {
+  gap: 50px;
+}
+
+.login-find-id-complete-msg {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-find-id-complete-msg h3 {
+  font-family: HanwhaGothicB_OTF;
+  font-size: 24px;
+  color: #000;
+}
+
+.login-find-id-complete-msg p {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.56;
+}
+
+.login-find-id-complete-btn-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.login-find-id-complete-btn {
+  width: 195px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-find-id-complete-btn.color-orange {
+  background-color: #f37321;
+  color: #fff;
+  border: 1px solid #f37321;
+}
+
+.login-main.find-complete {
+  padding-left: 90px;
+  justify-content: flex-start;
+}
+
+.login-main-container.re-complete {
+  text-align: center;
+}
+
+.login-main-container.re-complete .login-find-id-complete-msg h3 {
+  line-height: 1.5;
+}
+
+.login-main-container.re-complete .login-find-id-complete-btn-group {
+  justify-content: center;
+}
+
 /* 로그인 */
 
 /* About */
