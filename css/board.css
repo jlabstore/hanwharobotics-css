@@ -2204,6 +2204,139 @@
 
 /* About */
 
+/* 경영방침 */
+.management-policy-main-bg {
+  width: 100vw;
+  padding-top: 100px;
+}
+
+.management-policy-main-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.management-policy-info-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 130px 0 190px;
+}
+
+.management-policy-info > h2 {
+  font-size: 60px;
+  font-family: HanwhaGothicB_OTF;
+  line-height: 1.23;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.management-policy-info > p {
+  font-size: 18px;
+  font-family: HanwhaGothicEL_OTF;
+  line-height: 1.56;
+  color: #000;
+  word-break: break-all;
+  margin-bottom: 76px;
+}
+
+.management-policy-content {
+  margin-bottom: 63px;
+}
+
+.management-policy-content li b {
+  font-family: HanwhaGothicR_OTF;
+  font-size: 18px;
+  color: #000;
+  line-height: 3.33;
+  margin-right: 15px;
+}
+
+.management-policy-content li span {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 18px;
+  color: #000;
+  line-height: 3.33;
+
+}
+
+.management-policy-content li {
+  border-bottom: 1px solid #ddd;
+}
+
+.management-policy-sign {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  margin-bottom: 157px;
+}
+
+.management-policy-sign > p {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 18px;
+  color: #000;
+  line-height: 1.56;
+  word-break: break-all;
+}
+
+.management-policy-sign > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.management-policy-sign > div > span {
+  font-size: 24px;
+  font-family: 'Nanum Myeongjo', serif;
+  color: #000;
+}
+
+.management-policy-sign > div > p {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+}
+
+.management-policy-certification > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.management-policy-certification > summary {
+  display: none;
+}
+
+.management-policy-certification-item {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.management-policy-certification-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.management-policy-certification-item-info {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+}
+
+.management-policy-certification-item-info h5 {
+  font-family: HanwhaGothicB_OTF;
+  font-size: 16px;
+  color: #000;
+}
+
+.management-policy-certification-item-info p {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #000;
+}
+
+/* 경영방침 */
+
 @media (max-width: 1650px) {
 
   .board-type1 h1 {
@@ -2291,6 +2424,57 @@
   }
   .press-list {
     padding: 230px 30px 0;
+  }
+  .management-policy {
+    padding: 230px 0 0;
+  }
+
+  .about .section_1, .management-policy .section_1 {
+    position: relative; /* 위치 지정을 위해 상대 위치 설정 */
+    padding: 0 60px;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 3;
+  }
+  
+  .management-policy .section_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .management-policy .section_1 .group {
+    width: 100%;
+  }
+  
+  .management-policy .section_1 .group1 .title {
+    font-family: HanwhaGothicB_OTF;
+    font-size: 113px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .management-policy .section_1 .group1 .txt1 {
+    margin-top: 15px;
+    font-family: HanwhaGothicEL_OTF;
+    font-size: 31px;
+    line-height: 1.39;
+    letter-spacing: normal;
+    color: #000;
+  }
+
+  .management-policy-info-container {
+    padding: 130px 20px 190px;
+  }
+
+  .management-policy-certification > div {
+    gap: 20px;
   }
 }
 
@@ -2692,6 +2876,51 @@
   .about-main-section-4-hero {
     padding-top: 106.9px;
     gap: 82.3px;
+  }
+
+  .management-policy {
+    padding: 210px 0 0;
+  }
+
+  .management-policy-main-bg {
+    padding-top: 70px;
+  }
+
+  .management-policy-info-container {
+    padding: 70px 50px;
+  }
+
+  .management-policy-info > h2 {
+    font-size: 40px;
+  }
+
+  .management-policy-info > p {
+    margin-bottom: 50px;
+  }
+
+  .management-policy-info > p br {
+    display: none;
+  }
+
+  .management-policy-sign > p br {
+    display: none;
+  }
+
+  .management-policy-sign {
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+
+  .management-policy-certification-item-info h5 {
+    font-size: 15px;
+  }
+
+  .management-policy-certification-item-info p {
+    font-size: 15px;
+  }
+
+  .management-policy-certification-item {
+    gap: 30px;
   }
 }
 
@@ -3464,5 +3693,146 @@
 
   .about-main-section-5-txt-wrapper {
     align-items: flex-start;
+  }
+
+  .management-policy .section_1 .group1 .title {
+    font-size: 50px !important;
+  }
+
+  .management-policy .section_1 .group1 .txt1 {
+    font-size: 18px !important;
+    word-break: keep-all;
+  }
+
+  .management-policy .section_1 .group1 .txt1 br {
+    display: none;
+  }
+
+  .management-policy .section_1 {
+    padding: 0 20px !important;
+  }
+
+  .management-policy {
+    padding: 180px 0 0;
+  }
+
+  .management-policy-main-bg {
+    padding-top: 50px;
+  }
+
+  .management-policy-info-container {
+    padding: 40px 20px 59.5px;
+  }
+
+  .management-policy-info > h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .management-policy-info > p {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+
+  .management-policy-content li {
+    display: flex;
+    margin-bottom: 13px;
+    /* min-height: 73px; */
+    align-items: baseline;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  @media (max-width: 400px) {
+    .management-policy-content li:nth-child(5) {
+      min-height: 77px;
+      align-items: center;
+    }
+  }
+
+  .management-policy-content li span {
+    line-height: 1.5;
+    word-break: break-all;
+    margin-bottom: 10px;
+  }
+  
+  .management-policy-content li b {
+    line-height: 1.5;
+    font-size: 20px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+  }
+
+  .management-policy-content {
+    margin-bottom: 50px;
+  }
+
+  .management-policy-sign > p {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+
+  .management-policy-sign {
+    margin-bottom: 50px;
+  }
+
+  .management-policy-sign > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .management-policy-sign > div > span, .management-policy-sign > div > p {
+    font-size: 20px;
+  }
+
+  .management-policy-certification {
+    border-top: 1px solid #000;
+    padding: 19px 0 39.5px;
+  }
+
+  .management-policy-certification summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: HanwhaGothicB_OTF;
+    color: #000;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #000;
+    transition: all 0.2s;
+  }
+  
+  .management-policy-certification summary img {
+    transition: all 0.2s;
+    transform: rotate(180deg);
+    margin-right: 5px;
+  }
+
+  .management-policy-certification[open] summary img {
+    transition: all 0.2s;
+    transform: rotate(360deg);
+  }
+
+  .management-policy-certification[open] summary {
+    border-bottom: none;
+    padding-bottom: 30px;
+  }
+
+  .management-policy-certification[open] {
+    border-bottom: 1px solid #000;
+  }
+
+  .management-policy-certification > div {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .management-policy-certification-item {
+    gap: 20px;
+  }
+
+  .management-policy-certification-item-info {
+    gap: 10px;
   }
 }

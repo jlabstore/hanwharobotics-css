@@ -245,8 +245,8 @@ header .btn_close {
   display: none;
 }
 
-main.about {
-	padding: 230px 0 0 0;
+main.about, main.management-policy {
+	padding: 190px 0 0 0;
   max-width: none;
 }
 
@@ -254,7 +254,7 @@ main .main {
 	width: 100%;
 }
 
-.about .section_1 {
+.about .section_1, .management-policy .section_1 {
 	position: relative; /* 위치 지정을 위해 상대 위치 설정 */
 	padding: 0 60px;
 	max-width: 1920px;
@@ -263,17 +263,17 @@ main .main {
 	z-index: 3;
 }
 
-.about .section_1 {
+.about .section_1, .management-policy .section_1 {
 	display: flex;
 	flex-direction: column;
   justify-content: space-between;
 }
 
-.about .section_1 .group {
+.about .section_1 .group, .management-policy .section_1 .group {
 	width: 100%;
 }
 
-.about .section_1 .group1 .title {
+.about .section_1 .group1 .title, .management-policy .section_1 .group1 .title {
   font-family: HanwhaGothicB_OTF;
   font-size: 113px;
   font-weight: bold;
@@ -285,7 +285,7 @@ main .main {
   color: #000;
 }
 
-.about .section_1 .group1 .txt1 {
+.about .section_1 .group1 .txt1, .management-policy .section_1 .group1 .txt1 {
 	margin-top: 15px;
 	font-family: HanwhaGothicEL_OTF;
   font-size: 31px;

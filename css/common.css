@@ -702,7 +702,7 @@ header .gnb_layer.active {
 	/* overflow-x: hidden; */
 }
 
-.sub.about {
+.sub.about, .sub.management-policy {
 	flex-direction: column;
 	padding-bottom: 0 !important;
 }
