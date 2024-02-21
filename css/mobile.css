@@ -77,50 +77,9 @@ div.main {
 	padding: 123px 0 0 0;
 }
 
-.about .section_1 {
-	position: relative; /* 위치 지정을 위해 상대 위치 설정 */
-	padding: 0 20px;
-	max-width: 768px;
-	margin: 0 auto;
-	z-index: 3;
-}
-
-.about .section_1 {
-	display: flex;
-	flex-direction: column;
-}
-
-.about .section_1 .group {
-	width: 100%;
-  transform: translateZ(1) !important;
-}
-
-.about .section_1 .group1 .title {
-  font-family: HanwhaGothicB_OTF;
-  font-size: 50px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.19;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
-}
-
-.about .section_1 .group1 .txt1 {
-	margin-top: 15px;
-	font-family: HanwhaGothicEL_OTF;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: normal;
-  color: #000;
-
-}
-
 .en .about .section_1 .group1 .txt1 {
   line-height: 1.2;
   letter-spacing: -0.01em;
-
 }
 
 .about .section_1 .group2 {
