@@ -1361,15 +1361,16 @@
 }
 
 .qna-view-section-content ul li {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  display: grid;
+  align-items: flex-start;
+  gap: 40px;
+  grid-template-columns: 155px 1fr 1fr;
 }
 
 .qna-view-section-content ul li div {
   display: flex;
   gap: 10px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .qna-view-section-content-right {
@@ -1410,9 +1411,12 @@
 
 .qna-view-product-list h4 {
   line-height: 1.5;
+  white-space: nowrap;
 }
 .qna-view-product-list span {
   line-height: 1.5;
+  max-width: 135px;
+  word-break: break-all;
 }
 
 .qna-viw-qna-wrapper {
