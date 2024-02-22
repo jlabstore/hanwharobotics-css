@@ -2232,7 +2232,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-width: 210px;
+  min-width: 270px;
   height: 58px;
   font-family: HanwhaGothicL_OTF;
   font-size: 16px;
@@ -3746,7 +3746,7 @@
   }
 
   .about .about-download {
-    min-width: 246px;
+    min-width: 270px;
   }
 
   .about-main-section-5-txt {

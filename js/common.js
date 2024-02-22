@@ -120,6 +120,10 @@ $(window).on("load resize", function (e) {
   }
   $("header").css('visibility', 'visible');
 
+  if (win.outerWidth() <= 765) {
+    $('.management-policy-certification').removeAttr('open');
+  }
+
   // setTimeout(function() {
     // more_btn 요소를 선택합니다.
     // const moreBtn = $('#aside');
