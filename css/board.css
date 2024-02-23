@@ -1836,6 +1836,10 @@
   padding-top: 100px;
 }
 
+.en .about .section_1 .txt1 {
+  font-size: 24px !important;
+}
+
 .about-main-bg img {
   width: 100%;
   height: 100%;
@@ -1869,6 +1873,10 @@
   line-height: 1.67;
   color: #000;
   word-break: break-all;
+}
+
+.en .about-main-section-2-desc p {
+  word-break: keep-all;
 }
 
 .about-main-section-2-mission {
@@ -1920,6 +1928,10 @@
   color: #000;
   word-break: break-all;
   line-height: 1.5;
+}
+
+.en .about-main-section-2-mission-info-wrapper p {
+  word-break: keep-all;
 }
 
 .about-main-section-2-value {
@@ -2034,6 +2046,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-family: HanwhaGothicR_OTF;
   font-size: 22px;
   color: #fff;
@@ -2074,6 +2087,10 @@
   line-height: 1.56;
 }
 
+.en .about-main-section-4-desc h4 {
+  word-break: keep-all;
+}
+
 .about-main-section-4-desc p {
   font-family: HanwhaGothicEL_OTF;
   font-size: 18px;
@@ -2083,6 +2100,10 @@
   line-height: 1.67;
 }
 
+.en .about-main-section-4-desc p {
+  word-break: keep-all;
+}
+
 .about-main-section-4-info {
   display: flex;
   justify-content: space-between;
@@ -2090,6 +2111,10 @@
   border: 1px solid rgba(112, 112, 112, .2);
   border-radius: 223.5px;
   padding: 72px 80px 82px 226px;
+}
+
+.en .about-main-section-4-info {
+  padding-right: 110px;
 }
 
 .about-main-section-4-info-img {
@@ -2112,6 +2137,10 @@
   flex-direction: column;
   gap: 30px;
   padding-top: 30px;
+}
+
+.en .about-main-section-4-info-wrapper {
+  max-width: 540px;
 }
 
 .about-main-section-4-info-wrapper > div {
@@ -2302,6 +2331,10 @@
   margin-bottom: 30px;
 }
 
+.en .management-policy-info > h2 {
+  font-size: 40px;
+}
+
 .management-policy-info > p {
   font-size: 18px;
   font-family: HanwhaGothicEL_OTF;
@@ -2323,16 +2356,29 @@
   margin-right: 15px;
 }
 
+.en .management-policy-content li b {
+  margin-right: 0;
+}
+
 .management-policy-content li span {
   font-family: HanwhaGothicEL_OTF;
   font-size: 18px;
   color: #000;
   line-height: 3.33;
+}
 
+.en .management-policy-content li span {
+  line-height: normal;
 }
 
 .management-policy-content li {
   border-bottom: 1px solid #ddd;
+}
+
+.en .management-policy-content li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .management-policy-sign {
@@ -2384,6 +2430,10 @@
   gap: 25px;
 }
 
+.en .management-policy-certification-item {
+  max-width: 360px;
+}
+
 .management-policy-certification-item img {
   width: 100%;
   height: 100%;
@@ -2399,6 +2449,7 @@
   font-family: HanwhaGothicB_OTF;
   font-size: 16px;
   color: #000;
+  word-break: keep-all;
 }
 
 .management-policy-certification-item-info p {
@@ -2408,6 +2459,226 @@
 }
 
 /* 경영방침 */
+
+/* 마이페이지 */
+.mypage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.mypage-container {
+  margin-top: 90px;
+  padding-top: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.mypage-btn-group {
+  padding-bottom: 190px;
+}
+
+.mypage-container h1 {
+  font-family: HanwhaGothicB_OTF;
+  font-size: 50px;
+  color: #000;
+}
+
+.mypage-contents {
+  width: 800px;
+  height: 100%;
+  padding: 60px;
+  border-radius: 20px;
+  border: 1px solid rgba(112, 112, 112, .3);
+}
+
+.mypage-contents .mypage-section {
+  display: flex;
+  border-bottom: 1px solid #cbcbcb;
+  align-items: center;
+  width: 100%;
+}
+
+.mypage-contents .mypage-section:first-child {
+  border-top: 1px solid rgba(112, 112, 112, .3);
+}
+
+.mypage-contents .mypage-section h2 {
+  font-family: HanwhaGothicR_OTF;
+  font-size: 16px;
+  color: #000;
+  line-height: 3.94;
+  min-width: 181px;
+}
+
+.mypage-contents .mypage-section span {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #000;
+  line-height: 3.94
+}
+
+.mypage-btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+}
+
+.mypage-btn {
+  width: 195px;
+  height: 50px;
+  border-radius: 25px;
+  color: #666;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #999;
+}
+
+.mypage-btn-group > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mypage-btn.color-orange {
+  border: 1px solid #f37321;
+  background-color: #f37321;
+  color: #fff;
+  width: 210px;
+}
+
+.mypage-btn.color-black {
+  border: 1px solid #000;
+  color: #000;
+}
+
+.mypage-btn.color-orange.edit {
+  margin-bottom: 190px;
+}
+
+.mypage > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.mypage-contents .mypage-section button {
+  width: 180px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #000;
+  color: #fff;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.mypage-edit-email {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 11px;
+}
+
+.mypage-edit-email input {
+  box-sizing: border-box;
+  width: 300px !important;
+  border: 1px solid #aaa;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: HanwhaGothicEL_OTF;
+  color: #000;
+}
+
+.mypage-edit-email select {
+  box-sizing: border-box;
+  width: 180px;
+  height: 50px;
+  border: 1px solid #aaa;
+  background: #fff url('../images/pc/ic_select_arrow.svg') no-repeat 90% 39%;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: HanwhaGothicEL_OTF;
+  color: #000;
+}
+
+.mypage-contents.edit .mypage-section h2 {
+  min-width: 160px;
+}
+
+.mypage-edit-zipcode {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.mypage-edit-zipcode button {
+  width: 115px;
+}
+
+.mypage-section input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #aaa;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: HanwhaGothicEL_OTF;
+  color: #000;
+}
+
+.mypage-edit-phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 11px;
+}
+
+.mypage-edit-phone select {
+  box-sizing: border-box;
+  width: 152px;
+  height: 50px;
+  border: 1px solid #aaa;
+  background: #fff url('../images/pc/ic_select_arrow.svg') no-repeat 88% 39%;
+  padding-left: 20px;
+  padding-right: 19px;
+  font-size: 16px;
+  font-family: HanwhaGothicEL_OTF;
+  color: #000;
+}
+
+.mypage-edit-phone input {
+  width: 152px;
+}
+
+.mypage-contents .mypage-section:first-child input {
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+/* 마이페이지 */
+
+@media (max-width: 1755px) {
+  .en footer .column1 .sitemap {
+		top: 85px;
+	}
+}
 
 @media (max-width: 1650px) {
 
@@ -2922,6 +3193,10 @@
     padding: 60.5px 78.5px 58.5px 135.9px; 
   }
 
+  .en .about-main-section-4-info {
+    padding-right: 78.5px;
+  }
+
   .about-main-section-4-info-img {
     max-width: 239.1px;
   }
@@ -2930,6 +3205,9 @@
     max-width: 367px;
     padding-top: 0;
     gap: 19.3px;
+  }
+  .en .about-main-section-4-info-wrapper {
+    max-width: 367px;
   }
 
   .about-main-section-4-info-wrapper > div {
@@ -2943,6 +3221,10 @@
   .about-main-section-4-info-wrapper > div > p {
     font-size: 16px;
     word-break: break-all;
+  }
+
+  .en .about-main-section-4-info-wrapper > div > p {
+    word-break: keep-all;
   }
 
   .about-main-section-4-hero {
@@ -2994,6 +3276,10 @@
   .management-policy-certification-item {
     gap: 30px;
   }
+
+  .en .management-policy-certification-item {
+    max-width: 260px !important;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -3022,6 +3308,10 @@
   .about-main-section-4-hero {
     max-width: 804px;
     margin: 0 auto;
+  }
+
+  .en .management-policy-certification-item {
+    max-width: 300px;
   }
 }
 
@@ -3564,6 +3854,10 @@
     margin-bottom: 30px;
   }
 
+  .en .about-main-section-2-title {
+    word-break: keep-all;
+  }
+
   .about-main-section-2-desc p {
     line-height: 1.63;
     font-size: 16px;
@@ -3644,6 +3938,10 @@
     font-size: 14px;
   }
 
+  .en .about-main-section-3-img span {
+    padding: 0 13.5px;
+  }
+
   .about-main-section-3-container {
     padding-bottom: 50px;
   }
@@ -3689,6 +3987,14 @@
   .about-main-section-4-info-wrapper {
     max-width: 100%;
     gap: 30px;
+  }
+
+  .en .about-main-section-4-info {
+    padding-right: 0;
+  }
+
+  .en .about-main-section-4-info-wrapper {
+    max-width: 100%;
   }
 
   .about-main-section-4-info-wrapper > div > h3 {
@@ -3743,7 +4049,7 @@
   }
 
   .about-main-section-5 {
-    padding: 30px 20px 56.3px;
+    padding: 30px 20px 127px;
     flex-direction: column;
     gap: 40px;
     align-items: flex-start;
@@ -3907,4 +4213,14 @@
   .management-policy-certification-item-info {
     gap: 10px;
   }
+
+  .en .management-policy-certification-item {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 335px) and (max-width: 743px) {
+  .en footer .column1 .sitemap {
+		top: 120px;
+	}
 }

@@ -63,7 +63,7 @@ html.scroll-lock, html.scroll-lock body {
 	display: none;
 }
 
-.checkbox {
+.checkbox-common {
   cursor: pointer;
   position: relative;
   padding-left: 35px;
@@ -76,7 +76,7 @@ html.scroll-lock, html.scroll-lock body {
 }
 
 
-.checkbox > input[type="checkbox"] {
+.checkbox-common > input[type="checkbox"] {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
@@ -84,13 +84,13 @@ html.scroll-lock, html.scroll-lock body {
 	width: 0;
 }
 
-.checkbox > input[type="checkbox"]:checked ~ span::after {
+.checkbox-common > input[type="checkbox"]:checked ~ span::after {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.checkbox > span {
+.checkbox-common > span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -100,7 +100,7 @@ html.scroll-lock, html.scroll-lock body {
 	border: 1px solid #000;
 }
 
-.checkbox > span::after {
+.checkbox-common > span::after {
 	content: url("../images/pc/ic_check.svg");
 	width: 100%;
 	height: 100%;
@@ -2529,12 +2529,9 @@ footer select {
 	}
 }
 
-@media (max-width: 385px) {
-	footer .address {
-		margin-top: 145px !important;
-	}
+@media (max-width: 375px) {
 	.en footer .address {
-		margin-top: 30px !important;
+		margin-top: 200px !important;
 	}
 }
 
@@ -2592,7 +2589,7 @@ footer select {
 	}
 	.en footer .mobile3.address {
 		display: block !important;
-		margin-top:30px;
+		margin-top: 130px;
 	}
 	footer .mobile3.address {
 		display: block;
@@ -2783,4 +2780,3 @@ footer select {
 	}
 	
 }
-

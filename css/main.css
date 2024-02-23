@@ -1246,6 +1246,9 @@ header .more_btn  a.distributor {
 		margin-top: 0;
 	}
 
+	.en footer .column1 .sitemap {
+		top: 85px;
+	}
 
 	footer .column1 .link {
 		/* margin-top: 72px; */
@@ -2107,6 +2110,10 @@ header .more_btn  a.distributor {
 		/* gap: 0; */
 		flex-wrap: wrap;
 		margin-top: 0;
+	}
+
+	.en footer .column1 .sitemap {
+		top: 120px;
 	}
 
 
