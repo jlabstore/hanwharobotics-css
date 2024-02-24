@@ -11,6 +11,9 @@ function showLayer(layerName, target, headerMinHeight, bgColor = '#fff', opacity
 
   const offset = $(window).scrollTop()+50;
 
+  $('.layer').hide('fast');
+  $('.layer_bg').hide();
+
   $(`.layer.${layerName}`).css('top', offset+'px').show('fast');
   $('.layer_bg').css('background-color', bgColor).css('opacity', opacity).show();
   target.removeClass('active');
@@ -156,6 +159,9 @@ $(document).ready(async function() {
     $('.layer.family').load('./includes/layer_family.html');
     $('.layer.cookie').load('./includes/layer_cookie.html');
     $('.layer.qna').load('./includes/layer_qna.html');
+    $('.layer.pwd-edit').load('./includes/layer_pwd-edit.html');
+    $('.layer.pwd-edit-confirm').load('./includes/layer_pwd-edit-confirm.html');
+    $('.layer.pwd-edit-complete').load('./includes/layer_pwd-edit-complete.html');
   });
 
   $(document).on('click', 'header .btn_menu button', function(e) {
@@ -240,6 +246,24 @@ $(document).ready(async function() {
     e.stopPropagation();
 
     showLayer('qna', $(this), headerMinHeight, '#000', 0.2);
+  });
+
+  $(document).on('click', 'button.mypage-pwd-edit', function(e) {
+    e.stopPropagation();
+
+    showLayer('pwd-edit', $(this), headerMinHeight, '#000', 0.2);
+  });
+
+  $(document).on('click', 'button.round-btn.pwd-edit-step-1', function(e) {
+    e.stopPropagation();
+
+    showLayer('pwd-edit-confirm', $(this), headerMinHeight, '#000', 0.2);
+  });
+
+  $(document).on('click', 'button.round-btn.pwd-edit-step-2', function(e) {
+    e.stopPropagation();
+
+    showLayer('pwd-edit-complete', $(this), headerMinHeight, '#000', 0.2);
   });
 
   // $(document).on('click', 'button.sitemap_cookie', function(e) {
