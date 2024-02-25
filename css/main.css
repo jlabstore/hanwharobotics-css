@@ -2071,7 +2071,7 @@ header .more_btn  a.distributor {
 	}
 
 	footer .address {
-		margin-top: 100px;
+		margin-top: 140px;
 		/* margin-top: 30px; */
 		/* padding-top: 200px; */
 		font-family: HanwhaGothicL_OTF;
@@ -2102,7 +2102,7 @@ header .more_btn  a.distributor {
 
 	footer .column1 .sitemap {
 		position: absolute;
-		top: 128px;
+		top: 115px;
 		left: 20px !important;
 		display: flex;
 		width: 90%;

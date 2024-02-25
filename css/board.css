@@ -2968,6 +2968,253 @@
 }
 /* 마이페이지 */
 
+/* 회원가입 */
+.signup-terms .login-content .login-main {
+  padding-left: 70px;
+  padding-top: 60px;
+  padding-right: 70px;
+  align-items: flex-start;
+}
+
+.signup-terms-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup-terms-text h2 {
+  font-family: HanwhaGothicR_OTF;
+  font-size: 20px;
+  color: #000;
+}
+
+.signup-terms-text p {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.75;
+  word-break: break-all;
+}
+
+.signup-terms-btngroup {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  align-items: flex-start;
+}
+
+.signup-terms-btngroup button {
+  width: 210px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #f37321;
+  background-color: #f37321;
+  color: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-terms-btngroup .checkbox-common span {
+  border: 1px solid #aaa;
+}
+
+.signup-complete-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.signup-complete-text .signup-complete-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.signup-complete-text .signup-complete-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.signup-complete-text h2 {
+  font-family: HanwhaGothicR_OTF;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.signup-complete-text p {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.56;
+  margin-bottom: 15px;
+}
+
+.signup-complete-text span {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.56;
+}
+
+.login.signup-complete .login-content {
+  height: 448px;
+}
+
+.signup-complete-link {
+  background: url('../images/pc/signup_complete_news@3x.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+  margin-top: -26px;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.signup-complete-link div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup-complete-link div img {
+  width: 63px;
+  height: 63px;
+}
+
+.signup-complete-link div span {
+  font-family: HanwhaGothicR_OTF;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.signup-main .mypage-container .mypage-contents .mypage-section strong {
+  color: #ff6600;
+  padding-left: 5px;
+}
+
+.signup-main .mypage-container .mypage-contents .mypage-section:first-child input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #aaa;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: HanwhaGothicEL_OTF;
+  color: #000;
+}
+
+.signup-main .mypage-container .mypage-contents .mypage-section:last-child {
+  border-bottom: none;
+}
+
+.signup-main .mypage-container .mypage-contents .mypage-section:first-child > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.signup-main .mypage-container .mypage-contents .mypage-section:first-child > div > div {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.signup-main .mypage-container .mypage-contents .mypage-section button { 
+  min-width: 115px !important;
+  width: 115px !important;
+}
+
+.signup-main .mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.signup-main .mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper .mypage-edit-email input {
+  width: 180px !important;
+}
+
+.signup-select-country {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #aaa;
+  background: #fff url('../images/pc/ic_select_arrow.svg') no-repeat 96% 39%;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: HanwhaGothicEL_OTF;
+  color: #000;
+}
+
+.signup-main-phone {
+  width: 100%;
+}
+
+.signup-main-phone select {
+  width: 115px;
+  box-sizing: border-box;
+}
+
+.signup-main-phone input {
+  width: 100%;
+}
+
+.signup-done-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.signup-done-message p {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.56;
+}
+
+.signup-done {
+  width: 240px !important;
+}
+
+.signup-message-warning {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #f00;
+}
+
+.signup-main-email-container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signup-main-email-container .signup-main-email-wrapper .mypage-edit-email > span {
+  line-height: 3;
+}
+
+/* 회원가입 */
+
 @media (max-width: 1755px) {
   .en footer .column1 .sitemap {
 		top: 85px;
