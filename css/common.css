@@ -469,6 +469,14 @@ header .gnb_menu .header__nav__items .header__nav__link {
 	color: #fff;
 }
 
+header .gnb_menu .header__nav__login {
+	display: none;
+}
+
+header .gnb_menu .header__nav__login .header__nav__link {
+	line-height: 1;
+}
+
 header .gnb_menu .header__nav__items .header__nav__link:nth-child(1) {
 	cursor: pointer;
 }
@@ -1882,6 +1890,10 @@ footer select {
 }
 
 @media (max-width: 1024px) {
+	header .gnb_menu .header__nav__login {
+		display: block;
+	}
+	
   header .gnb_menu {
     display: none;
     flex-direction: column;
