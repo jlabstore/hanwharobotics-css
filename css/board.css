@@ -2386,11 +2386,19 @@
   gap: 15px;
 }
 
+.en .about-main-section-5-txt-wrapper {
+  align-items: flex-start;
+}
+
 .about-main-section-5-txt-wrapper h5 {
   font-family: HanwhaGothicB_OTF;
   font-size: 16px;
   color: #000;
   width: 45px;
+}
+
+.en .about-main-section-5-txt-wrapper h5 {
+  line-height: 1.56;
 }
 
 .about-main-section-5-txt-wrapper span {
@@ -2415,6 +2423,10 @@
   border-radius: 29px;
   background-color: #000;
   box-sizing: border-box;
+}
+
+.en .about .about-download {
+  min-width: 320px;
 }
 
 .about .about-download span {
