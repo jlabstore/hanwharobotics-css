@@ -1161,7 +1161,7 @@ footer select {
 
 .layer.cookie .btn_wrap .btn_left button.deny {
 	cursor: pointer;
-	width: 106px;
+	width: 135px;
 	height: 43px;
 	padding: 14px 20px 13px 21px;
 	font-family: HanwhaGothicB_OTF;
@@ -1172,6 +1172,10 @@ footer select {
   background-color: #fff;
 	border: 1px solid #000;
 	box-sizing: border-box;
+}
+
+.en .layer.cookie .btn_wrap .btn_left button.deny {
+	width: 160px;
 }
 
 .layer.cookie .btn_wrap .btn_right button.agree {
