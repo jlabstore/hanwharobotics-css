@@ -2521,6 +2521,10 @@
   margin-bottom: 76px;
 }
 
+.en .management-policy-info > p {
+  word-break: keep-all;
+}
+
 .management-policy-content {
   margin-bottom: 63px;
 }
@@ -2542,6 +2546,10 @@
   font-size: 18px;
   color: #000;
   line-height: 3.33;
+}
+
+.en .management-policy-content li span {
+  word-break: keep-all;
 }
 
 .en .management-policy-content li span {
@@ -2570,7 +2578,7 @@
   font-size: 18px;
   color: #000;
   line-height: 1.56;
-  word-break: break-all;
+  word-break: keep-all;
 }
 
 .management-policy-sign > div {
@@ -4697,7 +4705,6 @@
 
   .management-policy-content li span {
     line-height: 1.5;
-    word-break: break-all;
     margin-bottom: 10px;
   }
   
@@ -4771,6 +4778,7 @@
   .management-policy-certification > div {
     flex-direction: column;
     gap: 40px;
+    align-items: center;
   }
 
   .management-policy-certification-item {
