@@ -1521,6 +1521,10 @@
   border-color: #ff6600;
 }
 
+.qna-view-answer-content .qna-view-answer-my-btngroup .qna-view-answer-my-btn.edit-complete {
+  width: 96px;
+}
+
 .qna-view-answer.re .hidden-text {
   color: white !important;
 }
@@ -1537,6 +1541,27 @@
   font-size: 16px;
   color: #000;
   line-height: 1.88;
+}
+
+.qna-view-answer-content textarea {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.88;
+  resize: none;
+  width: 100%;
+  border-radius: 20px;
+  border: solid 1px #707070;
+  padding: 30px 27px 30px 40px;
+  height: 145px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.qna-view-answer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px !important;
 }
 
 .qna-view-answer-my {
@@ -2795,6 +2820,7 @@
 }
 
 .mypage-edit-phone {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2803,7 +2829,7 @@
 
 .mypage-edit-phone select {
   box-sizing: border-box;
-  width: 152px;
+  width: 115px;
   height: 50px;
   border: 1px solid #aaa;
   background: #fff url('../images/pc/ic_select_arrow.svg') no-repeat 88% 39%;
@@ -2815,8 +2841,9 @@
 }
 
 .mypage-edit-phone input {
-  width: 152px;
+  width: 100%;
 }
+
 
 .mypage-contents .mypage-section:first-child input {
   outline: none;
@@ -3172,19 +3199,6 @@
   font-size: 16px;
   font-family: HanwhaGothicEL_OTF;
   color: #000;
-}
-
-.signup-main-phone {
-  width: 100%;
-}
-
-.signup-main-phone select {
-  width: 115px;
-  box-sizing: border-box;
-}
-
-.signup-main-phone input {
-  width: 100%;
 }
 
 .signup-done-message {
