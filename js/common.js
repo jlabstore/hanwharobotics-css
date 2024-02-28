@@ -266,6 +266,18 @@ $(document).ready(async function() {
     showLayer('pwd-edit-complete', $(this), headerMinHeight, '#000', 0.2);
   });
 
+  $(document).on('click', '.qna-list .qna-mobile-search', function(e) {
+    e.stopPropagation();
+
+    $('.qna-list .search').css('display', 'block');
+  });
+
+  $(document).on('click', '.qna-list .search-close', function(e) {
+    e.stopPropagation();
+
+    $('.qna-list .search').css('display', 'none');
+  });
+
   // $(document).on('click', 'button.sitemap_cookie', function(e) {
   //   e.stopPropagation();
 
