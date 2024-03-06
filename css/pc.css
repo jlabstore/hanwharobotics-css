@@ -245,7 +245,7 @@ header .btn_close {
   display: none;
 }
 
-main.about, main.management-policy {
+main.about, main.management-policy, main.products {
 	padding: 190px 0 0 0;
   max-width: none;
 }
@@ -292,7 +292,40 @@ main .main {
   line-height: 1.39;
   letter-spacing: normal;
   color: #000;
+}
 
+.products .section_1, .management-policy .section_1 {
+	position: relative; /* 위치 지정을 위해 상대 위치 설정 */
+	padding: 0 60px;
+	max-width: 1920px;
+  width: 100%;
+	margin: 0 auto;
+	z-index: 3;
+}
+
+.products .section_1 .group, .management-policy .section_1 .group {
+	width: 100%;
+}
+
+.products .section_1 .group1 .title, .management-policy .section_1 .group1 .title {
+  font-family: HanwhaGothicB_OTF;
+  font-size: 113px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.products .section_1 .group1 .txt1, .management-policy .section_1 .group1 .txt1 {
+	margin-top: 15px;
+	font-family: HanwhaGothicEL_OTF;
+  font-size: 31px;
+  line-height: 1.39;
+  letter-spacing: normal;
+  color: #000;
 }
 
 .en .about .section_1 .group1 .txt1 {

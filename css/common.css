@@ -710,7 +710,7 @@ header .gnb_layer.active {
 	/* overflow-x: hidden; */
 }
 
-.sub.about, .sub.management-policy {
+.sub.about, .sub.management-policy, .sub.products {
 	flex-direction: column;
 	padding-bottom: 0 !important;
 }

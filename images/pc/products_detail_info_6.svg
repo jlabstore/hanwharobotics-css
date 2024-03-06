@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="88" viewBox="0 0 94 88">
+    <defs>
+        <clipPath id="b9pjumn6ia">
+            <path data-name="사각형 689" transform="translate(735 1370)" style="fill:#fff;stroke:#707070" d="M0 0h94v88H0z"/>
+        </clipPath>
+        <clipPath id="jsdzhapp4b">
+            <path data-name="사각형 623" style="stroke:#f79a4b;stroke-width:1.5px;fill:none" d="M0 0h69.949v66.353H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="마스크 그룹 64" transform="translate(-735 -1370)" style="clip-path:url(#b9pjumn6ia)">
+        <g data-name="그룹 1023">
+            <g data-name="그룹 1022" transform="translate(746.994 1380.125)" style="clip-path:url(#jsdzhapp4b)">
+                <rect data-name="사각형 613" width="30.098" height="53.13" rx="2" transform="translate(1.571 11.651)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f79a4b;stroke-width:1.5px;fill:none"/>
+                <path data-name="패스 1461" d="M27.719 9.181V5.118C27.719 3.4 25.76 2 23.343 2h-9.3c-2.417 0-4.376 1.4-4.376 3.118v4.063z" transform="translate(-2.072 2.471)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f79a4b;stroke-width:1.5px;fill:none"/>
+                <path data-name="사각형 615" transform="translate(7.654 51.817)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f79a4b;stroke-width:1.5px;fill:none" d="M0 0h17.932v6.567H0z"/>
+                <path data-name="사각형 617" transform="translate(7.654 39.693)" style="fill:none" d="M0 0h17.932v6.567H0z"/>
+                <path data-name="사각형 619" transform="translate(7.654 27.57)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f79a4b;stroke-width:1.5px;fill:none" d="M0 0h17.932v6.567H0z"/>
+                <path data-name="사각형 625" transform="translate(7.654 39.693)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f79a4b;stroke-width:1.5px;fill:none" d="M0 0h17.932v6.567H0z"/>
+                <rect data-name="사각형 620" width="30.098" height="53.13" rx="2" transform="translate(38.28 11.651)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f79a4b;stroke-width:1.5px;fill:none"/>
+                <path data-name="패스 1462" d="M74.446 9.181V5.118C74.446 3.4 72.487 2 70.07 2h-9.3c-2.417 0-4.377 1.4-4.377 3.118v4.063z" transform="translate(-12.091 2.471)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f79a4b;stroke-width:1.5px;fill:none"/>
+                <path data-name="사각형 622" transform="translate(44.363 51.817)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f79a4b;stroke-width:1.5px;fill:none" d="M0 0h17.932v6.567H0z"/>
+            </g>
+        </g>
+    </g>
+</svg>

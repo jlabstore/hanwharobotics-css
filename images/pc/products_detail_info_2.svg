@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="88" viewBox="0 0 94 88">
+    <defs>
+        <clipPath id="f98l0wuw6a">
+            <path data-name="사각형 690" transform="translate(909 1370)" style="fill:#fff;stroke:#707070" d="M0 0h94v88H0z"/>
+        </clipPath>
+        <clipPath id="xtrgtiyn7b">
+            <path data-name="사각형 500" style="stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h83.254v59.105H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="마스크 그룹 63" transform="translate(-909 -1370)" style="clip-path:url(#f98l0wuw6a)">
+        <g data-name="그룹 829" style="opacity:.8">
+            <g data-name="그룹 807">
+                <g data-name="그룹 806" style="clip-path:url(#xtrgtiyn7b)" transform="translate(916.703 1386.26)">
+                    <path data-name="패스 1277" d="M71.154 2.834v53.04h41.814" transform="translate(-30.569 -1.218)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7"/>
+                </g>
+            </g>
+            <path data-name="패스 1278" d="M1.5 1.5h26.547L41.23 26.733v20.448H1.5z" transform="translate(916.059 1385.616)" style="stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7"/>
+            <g data-name="그룹 809">
+                <g data-name="그룹 808" style="clip-path:url(#xtrgtiyn7b)" transform="translate(916.703 1386.26)">
+                    <path data-name="패스 1279" d="M1.5 1.5h26.547L41.23 26.733v20.448H1.5z" transform="translate(-.644 -.644)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7"/>
+                    <path data-name="패스 1280" d="M39.218 72.767a11.712 11.712 0 1 1-11.712-11.712 11.712 11.712 0 0 1 11.712 11.712" transform="translate(-6.785 -26.23)" style="stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7"/>
+                    <path data-name="패스 1281" d="M39.218 72.767a11.712 11.712 0 1 1-11.712-11.712 11.712 11.712 0 0 1 11.712 11.712z" transform="translate(-6.785 -26.23)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7"/>
+                    <path data-name="패스 1282" d="M37.588 77.743a5.106 5.106 0 1 1-5.106-5.106 5.106 5.106 0 0 1 5.106 5.106" transform="translate(-11.761 -31.206)" style="stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7"/>
+                    <path data-name="패스 1283" d="M37.588 77.743a5.106 5.106 0 1 1-5.106-5.106 5.106 5.106 0 0 1 5.106 5.106z" transform="translate(-11.761 -31.206)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7"/>
+                    <path data-name="사각형 501" transform="translate(53.141 34.825)" style="stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h24.945v19.833H0z"/>
+                    <path data-name="사각형 502" transform="translate(53.141 34.825)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h24.945v19.833H0z"/>
+                    <path data-name="사각형 503" transform="translate(53.141 14.884)" style="stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h24.945v19.833H0z"/>
+                    <path data-name="사각형 504" transform="translate(53.141 14.884)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h24.945v19.833H0z"/>
+                    <path data-name="사각형 505" transform="translate(63.155 14.884)" style="stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h4.918v4.918H0z"/>
+                    <path data-name="사각형 506" transform="translate(63.155 14.884)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h4.918v4.918H0z"/>
+                    <path data-name="사각형 507" transform="translate(63.155 29.233)" style="stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h4.918v4.918H0z"/>
+                    <path data-name="사각형 508" transform="translate(63.155 29.233)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h4.918v4.918H0z"/>
+                    <path data-name="사각형 509" transform="translate(63.155 35.108)" style="stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h4.918v4.918H0z"/>
+                    <path data-name="사각형 510" transform="translate(63.155 35.108)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h4.918v4.918H0z"/>
+                    <path data-name="사각형 511" transform="translate(63.155 49.457)" style="stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h4.918v4.918H0z"/>
+                    <path data-name="사각형 512" transform="translate(63.155 49.457)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7" d="M0 0h4.918v4.918H0z"/>
+                    <path data-name="패스 1284" d="M38.269 27.777 28.72 9.5H9.5v18.277z" transform="translate(-4.081 -4.081)" style="stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7"/>
+                    <path data-name="패스 1285" d="M38.269 27.777 28.72 9.5H9.5v18.277z" transform="translate(-4.081 -4.081)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px;fill:#f7f7f7"/>
+                    <path data-name="선 177" transform="translate(5.419 29.233)" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#f78421;stroke-width:1.5px" d="M0 0h6.951"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -209,7 +209,7 @@ $(document).ready(async function() {
     $('html').removeClass('scroll-lock');
   });
 
-  $(document).on('click', '#header button.inquiry, #aside button.inquiry', function(e) {
+  $(document).on('click', '#header button.inquiry, #aside button.inquiry, button.inquiry.products', function(e) {
     e.stopPropagation();
 
     showLayer('inquiry', $(this), headerMinHeight);
@@ -307,6 +307,63 @@ $(document).ready(async function() {
   $(document).on('click', '.mobile .block .checkbox', function() {
     $(this).closest('.block').toggleClass('on');
   });
+
+  $('.products-section2-slider').slick({
+    rows: 3,
+    dots: true,
+    arrows: true,
+    slidesPerRow: 3,
+    infinite: false,
+    autoplay: false,
+    draggable: false,
+    prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>"
+  });
+
+  $('.products-detail-slider').slick({
+    arrows: true,
+    infinite: false,
+    autoplay: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    draggable: false,
+    prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/products_detail_slider_prev.svg' alt='' /></button>",
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/products_detail_slider_next.svg' alt='' /></button>"
+  })
+
+  $('#nav1-1-content').show();
+
+  $("input[name='nav1-1']").change(function() {
+    let value = $("input[name='nav1-1']:checked").val();
+
+    if (value === 'nav1-1') {
+      $('#nav1-1-content').show();
+      $('#nav1-2-content').hide();
+      $('#nav1-3-content').hide();
+      $('#nav1-4-content').hide();
+    }
+
+    if (value === 'nav1-2') {
+      $('#nav1-1-content').hide();
+      $('#nav1-2-content').show();
+      $('#nav1-3-content').hide();
+      $('#nav1-4-content').hide();
+    }
+
+    if (value === 'nav1-3') {
+      $('#nav1-1-content').hide();
+      $('#nav1-2-content').hide();
+      $('#nav1-3-content').show();
+      $('#nav1-4-content').hide();
+    }
+
+    if (value === 'nav1-4') {
+      $('#nav1-1-content').hide();
+      $('#nav1-2-content').hide();
+      $('#nav1-3-content').hide();
+      $('#nav1-4-content').show();
+    }
+  })
 });
 // 스크롤 이벤트 리스너를 추가합니다.
 // window.addEventListener('scroll', function() {

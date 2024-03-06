@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="88" viewBox="0 0 94 88">
+    <defs>
+        <clipPath id="ybqmzrt7va">
+            <path data-name="사각형 693" transform="translate(1431 1370)" style="fill:#fff;stroke:#707070" d="M0 0h94v88H0z"/>
+        </clipPath>
+        <clipPath id="53tobpk19b">
+            <path data-name="사각형 557" style="fill:none;stroke:#f59a4b;stroke-width:1.5px" d="M0 0h67v67H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="마스크 그룹 60" transform="translate(-1431 -1370)" style="clip-path:url(#ybqmzrt7va)">
+        <g data-name="그룹 904">
+            <g data-name="그룹 901">
+                <g data-name="그룹 900" style="clip-path:url(#53tobpk19b)" transform="translate(1445 1380)">
+                    <path data-name="선 205" transform="translate(26 13)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f59a4b;stroke-width:1.5px" d="M0 0h41"/>
+                </g>
+            </g>
+            <path data-name="선 206" transform="translate(1475 1393)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f59a4b;stroke-width:1.5px" d="M2 10 0 0"/>
+            <g data-name="그룹 903">
+                <g data-name="그룹 902" style="clip-path:url(#53tobpk19b)" transform="translate(1445 1380)">
+                    <path data-name="패스 1442" d="m56.437 12-4.522 53.141H44" transform="translate(5.749 1.107)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f59a4b;stroke-width:1.5px"/>
+                    <path data-name="선 207" transform="translate(46)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f59a4b;stroke-width:1.5px" d="M8 0 0 13"/>
+                    <path data-name="사각형 558" transform="translate(1 44)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f59a4b;stroke-width:1.5px" d="M0 0h47v9H0z"/>
+                    <path data-name="패스 1443" d="M43.444 47.311v6.608c0 3.635-7.523 6.609-16.714 6.609h-5.018C12.521 60.527 5 57.554 5 53.919v-6.608" transform="translate(.654 5.72)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f59a4b;stroke-width:1.5px"/>
+                    <path data-name="패스 1444" d="M5 40.217V33.61C5 29.975 12.521 27 21.712 27h5.018c9.191 0 16.714 2.975 16.714 6.61v6.608" transform="translate(.654 3.067)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f59a4b;stroke-width:1.5px"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
