@@ -5965,14 +5965,29 @@
   }
 
   .about-main-section-5 {
-    padding: 30px 20px 127px;
+    padding: 30px 20px 66px;
     flex-direction: column;
     gap: 40px;
     align-items: flex-start;
   }
 
   .about .about-download {
-    min-width: 270px;
+    min-width: 220px;
+    font-size: 14px;
+    line-height: 1.71;
+    padding: 14px 8px 13px 21px;
+    height: 43px;
+  }
+
+  .about .about-download span {
+    width: 31px;
+    height: 31px;
+    top: 6px;
+    right: 6px;
+  }
+
+  .en .about .about-download {
+    min-width: 260px;
   }
 
   .about-main-section-5-txt {
