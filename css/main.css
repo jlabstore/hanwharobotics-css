@@ -451,6 +451,80 @@ header .more_btn  a.distributor {
 	margin-left: 10px;
 }
 
+.main-case-studies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 106px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 155px 0 0;
+}
+
+.main-case-studies-title {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+}
+
+.main-case-studies-title > h2 {
+	font-size: 77px;
+	font-family: HanwhaGothicL_OTF;
+	color: #000;
+}
+
+.main-case-studies-title > p {
+	font-size: 26px;
+	font-family: HanwhaGothicEL_OTF;
+	color: #000;
+}
+
+.main-case-studies-content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+	align-items: center;
+}
+
+.main-case-studies-item {
+	width: 100%;
+	max-width: 560px;
+	position: relative;
+}
+
+.main-case-studies-item-text {
+	position: absolute;
+	top: calc(50% - 47.5px);
+	left: 64px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.main-case-studies-item-text h3 {
+	font-size: 30px;
+	font-family: HanwhaGothicB_OTF;
+	color: #fff;
+}
+
+.main-case-studies-item-text p {
+	font-size: 16px;
+	font-family: HanwhaGothicR_OTF;
+	color: #fff;
+	line-height: 1.38;
+	max-width: 399px;
+	word-break: keep-all;
+}
+
+.main-case-studies-item img {
+	width: 100%;
+	height: 100%;
+}
+
 @media (max-width: 1830px) {
 
 	.section3 .recruit a {
@@ -484,6 +558,14 @@ header .more_btn  a.distributor {
 		color: #fff;
 	}
 
+	.main-case-studies {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.main-case-studies-content {
+		gap: 20px;
+	}
 }
 
 @media (max-width: 1600px) {
@@ -534,6 +616,9 @@ header .more_btn  a.distributor {
 		color: #fff;
 	}
 
+	.main-case-studies-item-text {
+		left: 30px;
+	}
 }
 
 @media (max-width: 1385px) {
@@ -732,7 +817,7 @@ header .more_btn  a.distributor {
 		flex-direction: column;
 		max-width: none;
 		margin: 0 auto 0;
-		margin: 50px auto 0;
+		margin: 10px auto 0 !important;
 		padding: 0 15px;
 		gap: 40px !important;
 	}
@@ -840,7 +925,19 @@ header .more_btn  a.distributor {
 		padding: 10% 0 24%;
 	}
 
+	.main-case-studies {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
+	.main-case-studies-title > p {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	.main-case-studies-item-text p {
+		max-width: 90% !important;
+	}
 }
 
 @media (min-width: 1025px) {
@@ -1300,7 +1397,7 @@ header .more_btn  a.distributor {
 	}
 
 	.section3 {
-		margin-top: 70px;
+		margin-top: 100px;
 		gap: 50px;
 	}
 
@@ -1415,7 +1512,30 @@ header .more_btn  a.distributor {
 		margin-left: 35px;
 	}
 
-	
+	.main-case-studies {
+		gap: 60px;
+		padding-top: 100px;
+	}
+
+	.main-case-studies-item-text h3 {
+		font-size: 22px;
+	}
+
+	.main-case-studies-item-text {
+		gap: 11px;
+	}
+
+	.main-case-studies-item-text p {
+		max-width: 90%;
+	}
+
+	.main-case-studies-title > h2 {
+		font-size: 50px;
+	}
+
+	.main-case-studies-title > p {
+		font-size: 22px;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -1704,6 +1824,9 @@ header .more_btn  a.distributor {
 		display: block;
 	}
 
+	.main-case-studies-item {
+		height: 176px;
+	}
 }
 
 @media (max-width: 950px) {
@@ -1915,6 +2038,40 @@ header .more_btn  a.distributor {
 		margin-top: 62px;
 	}
 
+	.main-case-studies-content {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.main-case-studies-item {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.main-case-studies-item-text {
+		left: 33px;
+	}
+
+	.main-case-studies-item-text p {
+		max-width: 100%;
+	}
+
+	.main-case-studies-title > h2 {
+		font-size: 36px;
+	}
+
+	.main-case-studies-title {
+		gap: 15px;
+	}
+
+	.main-case-studies-title > p {
+		font-size: 18px;
+	}
+
+	.main-case-studies {
+		gap: 40px;
+		padding-top: 70px;
+	}
 }
 @media (min-width: 335px) and (max-width: 743px) {
 	header {
