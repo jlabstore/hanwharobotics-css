@@ -317,7 +317,25 @@ $(document).ready(async function() {
     autoplay: false,
     draggable: false,
     prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
-    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>"
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+          rows: 3,
+          slidesPerRow: 2,
+          draggable: true
+        }
+      },
+      {
+        breakpoint: 765,
+        settings: {
+          rows: 3,
+          slidesPerRow: 1,
+          draggable: true
+        }
+      }
+    ]
   });
 
   $('.products-detail-slider').slick({
@@ -328,10 +346,33 @@ $(document).ready(async function() {
     slidesToScroll: 1,
     draggable: false,
     prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/products_detail_slider_prev.svg' alt='' /></button>",
-    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/products_detail_slider_next.svg' alt='' /></button>"
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/products_detail_slider_next.svg' alt='' /></button>",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          draggable: true,
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 765,
+        settings: {
+          arrows: false,
+          draggable: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          swipeToSlide: true
+        }
+      },
+    ]
   })
 
-  $('#nav1-1-content').show();
+  if (win.outerWidth() > 765) {
+    $('#nav1-1-content').show();
+  } else {
+    $('#nav1-1-content').hide();
+  }
 
   $("input[name='nav1-1']").change(function() {
     let value = $("input[name='nav1-1']:checked").val();
@@ -364,6 +405,16 @@ $(document).ready(async function() {
       $('#nav1-4-content').show();
     }
   })
+
+  if (win.outerWidth() <= 765) {
+    $('.nav1-content-mobile-title').first().toggleClass('on').next('.nav1-content-mobile-content').slideToggle(300);
+  }
+
+  $(".nav1-content-mobile-title").click(function() {
+    $(this).next(".nav1-content-mobile-content").stop().slideToggle(300);
+    $(this).toggleClass('on').siblings().removeClass('on');
+    $(this).next(".nav1-content-mobile-content").siblings(".nav1-content-mobile-content").slideUp(300); // 1개씩 펼치기
+  });
 });
 // 스크롤 이벤트 리스너를 추가합니다.
 // window.addEventListener('scroll', function() {

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="88" viewBox="0 0 94 88">
+    <defs>
+        <clipPath id="nqz8ujagza">
+            <path data-name="사각형 951" transform="translate(1083 1370)" style="fill:#fff;stroke:#707070" d="M0 0h94v88H0z"/>
+        </clipPath>
+        <clipPath id="7vk9s31feb">
+            <path data-name="사각형 635" style="fill:none;stroke:#f39747;stroke-width:1.5px" d="M0 0h69.957v67.906H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="마스크 그룹 109" transform="translate(-1083 -1370)" style="clip-path:url(#nqz8ujagza)">
+        <g data-name="그룹 1302">
+            <g data-name="그룹 1030">
+                <g data-name="그룹 1029" style="clip-path:url(#7vk9s31feb)" transform="translate(1096.526 1377.595)">
+                    <path data-name="패스 1466" d="M57.526 93.7H9.923a8.673 8.673 0 0 1-8.673-8.67 8.673 8.673 0 0 1 8.673-8.673h47.6a8.673 8.673 0 0 1 8.677 8.672 8.673 8.673 0 0 1-8.674 8.671" transform="translate(-.436 -26.612)" style="fill:none;stroke:#f39747;stroke-width:1.5px"/>
+                    <rect data-name="사각형 633" width="64.949" height="17.347" rx="8.673" transform="translate(.815 49.744)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f39747;stroke-width:1.5px"/>
+                    <circle data-name="타원 88" cx="3.93" cy="3.93" r="3.93" transform="translate(6.563 54.487)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f39747;stroke-width:1.5px"/>
+                    <circle data-name="타원 89" cx="3.93" cy="3.93" r="3.93" transform="translate(21.76 54.487)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f39747;stroke-width:1.5px"/>
+                    <circle data-name="타원 90" cx="3.93" cy="3.93" r="3.93" transform="translate(36.957 54.487)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f39747;stroke-width:1.5px"/>
+                    <circle data-name="타원 91" cx="3.93" cy="3.93" r="3.93" transform="translate(52.155 54.487)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f39747;stroke-width:1.5px"/>
+                    <path data-name="패스 1467" d="M60.384 32.746v20.392H20.446V24.5h29.569" transform="translate(-7.126 -8.537)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f39747;stroke-width:1.5px"/>
+                    <path data-name="사각형 634" transform="translate(28.459 15.959)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f39747;stroke-width:1.5px" d="M0 0h9.662v10.508H0z"/>
+                    <path data-name="패스 1468" d="M92.087 16.413V12.34l-2.86-.44a10.52 10.52 0 0 0-1.253-3.027l1.708-2.335L86.8 3.654l-2.333 1.708a10.493 10.493 0 0 0-3.027-1.253L81 1.249h-4.077l-.443 2.86a10.5 10.5 0 0 0-3.028 1.253l-2.335-1.708-2.88 2.88 1.708 2.335a10.5 10.5 0 0 0-1.253 3.031l-2.86.444v4.073l2.86.444a10.493 10.493 0 0 0 1.253 3.027l-1.708 2.335 2.88 2.88 2.335-1.708a10.516 10.516 0 0 0 3.028 1.253l.443 2.859H81l.444-2.859a10.512 10.512 0 0 0 3.027-1.253L86.8 25.1l2.88-2.88-1.708-2.335a10.512 10.512 0 0 0 1.253-3.027z" transform="translate(-22.944 -.435)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f39747;stroke-width:1.5px"/>
+                    <circle data-name="타원 92" cx="5.648" cy="5.648" r="5.648" transform="translate(50.368 8.294)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#f39747;stroke-width:1.5px"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

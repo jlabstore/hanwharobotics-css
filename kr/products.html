@@ -53,7 +53,7 @@
 
     <aside class="products-main-bg">
       <picture>
-        <source srcset="../images/pc/about_main_bg_mo@3x.webp" media="(max-width: 765px)" />
+        <source srcset="../images/pc/products_main_bg_mobile@3x.webp" media="(max-width: 765px)" />
         <img src="../images/pc/products_main_bg@3x.webp" alt="" />
       </picture>
     </aside>
@@ -212,7 +212,8 @@
 
           <input type="radio" id="nav3" name="nav" />
           <label for="nav3" class="products-nav3">
-            <span>협동로봇 Collaboration</span>
+            <span class="products-nav3-pc">협동로봇 Collaboration</span>
+            <span class="products-nav3-mo">협동로봇<br/>Collab-<br/>oration</span>
           </label>
           
           <div id="nav1-content" class="nav-content">
@@ -314,6 +315,91 @@
                 </div>
               </div>
             </div>
+            <div class="nav1-content-mobile">
+              <div class="nav1-content-mobile-title">
+                <h4>위치인식기술</h4>
+                <img src="../images/pc/ic_arrow_down.svg" alt="" />
+              </div>
+              <div class="nav1-content-mobile-content">
+                <div class="nav1-content-mobile-content-text">
+                  <h5>1) Reflector-Guided Localization</h5>
+                  <p>2D-LiDAR(Light Detection and Ranging) 센서로 현장에 설치된 3개 이상의 반사판을 인식, 반사판 사이의 거리와 각도를 계산해 위치를 인식하는 기술로, 현존하는 위치 인식 기술 중 가장 신뢰성이 높습니다.</p>
+                </div>
+                <div class="nav1-content-mobile-content-text">
+                  <h5>2) SLAM (Simultaneously Localization and Mapping)</h5>
+                  <p>레이저 스캐너를 활용해 주변 환경 지도를 생성하여 스스로 위치를 인식하는 기술로, 반사판 설치가 필요하지 않다는 장점을 가지고 있습니다.</p>
+                </div>
+                <div class="nav1-content-mobile-content-text">
+                  <h5>3) SLAM-Reflector-Guided Hybrid Localization</h5>
+                  <p>Reflector Guided Localization과 SLAM 기술을 결합한 기술로, 일반적인 위치 인식은 SLAM 중심으로 진행하되 정밀한 위치 인식이 필요한 공간에는 반사판을 설치하여 주행 및 제어의 정밀도를 높인 기술입니다.</p>
+                </div>
+              </div>
+              <div class="nav1-content-mobile-title">
+                <h4>다양한 배터리 충전 방식</h4>
+                <img src="../images/pc/ic_arrow_down.svg" alt="" />
+              </div>
+              <div class="nav1-content-mobile-content">
+                <div class="nav1-content-mobile-content-text">
+                  <h5>1) 접촉식</h5>
+                  <p>AGV의 충전 단자를 충전기에 접촉시켜 충전하는 방식입니다.</p>
+                </div>
+                <div class="nav1-content-mobile-content-text">
+                  <h5>2) 비접촉식</h5>
+                  <p>충전 스테이션에 설치된 자기장을 이용해 단자 연결 없는 비접촉 방식으로도 충전이 가능합니다.</p>
+                </div>
+                <div class="nav1-content-mobile-content-text">
+                  <h5>3) 배터리 교환식 (충전 스테이션)</h5>
+                  <p>배터리를 상시 충전하는 스테이션을 구성하여 배터리 충전/교체 시간을 최소화하고, AGV/AMR의 사용
+                    효율성을 증대할 수 있습니다. </p>
+                </div>
+              </div>
+              <div class="nav1-content-mobile-title">
+                <h4>자체 관제 시스템</h4>
+                <img src="../images/pc/ic_arrow_down.svg" alt="" />
+              </div>
+              <div class="nav1-content-mobile-content">
+                <div class="nav1-content-mobile-content-text">
+                  <p>
+                    한화로보틱스가 자체 개발한 ACS (AGV Control System)를 적용하거나, 고객이 요구하는 ACS 를 적용해 고객 현장에 가장 효과적인 관제 시스템을 제공합니다.
+                  </p>
+                </div>
+                <div class="nav1-content-mobile-content-text">
+                  <h5>1) Job assign &amp; Control</h5>
+                  <p>새로운 업무를 진행할 때 해당 시점에 업무를 할당 받지 않은 AGV 탐색 후 가장 짧은 시간에 도착할 수
+                    있는 AGV에 업무를 할당합니다.</p>
+                </div>
+                <div class="nav1-content-mobile-content-text">
+                  <h5>2) 최적 경로 탐색 &amp; 트래픽 예측 알고리즘</h5>
+                  <p>설계된 동선 상에서 최단 이동 방법을 탐색(설계된 동선 위 장애물이 있다면 사전에 설계된 대체 동선
+                    활용)하고, 여러 AGV/AMR의 이동 경로를 예측해 특정 위치에서의 Traffic Jam을 방지합니다.
+                    </p>
+                </div>
+                <div class="nav1-content-mobile-content-text">
+                  <h5>3) 시뮬레이션</h5>
+                  <p>AGV/AMR 수량 및 Tact Time (수요를 맞추기 위해 필요한 제품 1개당 생산 시간), 단위 시간당 최대 반
+                    송량 등 정보 기반의 사전 시뮬레이션을 통해 물동량을 예측이 가능합니다.</p>
+                </div>
+                <div class="nav1-content-mobile-content-text">
+                  <h5>4) 이중화 솔루션</h5>
+                  <p>네트워크, 디스크, 전원 등 장애 발생 시 데이터를 예비 서버에 실시간 복제, 복구하여 서비스 운영의 안
+                    전성과 연속성을 보장합니다.</p>
+                </div>
+              </div>
+              <div class="nav1-content-mobile-title">
+                <h4>무선 네트워크 시뮬레이션</h4>
+                <img src="../images/pc/ic_arrow_down.svg" alt="" />
+              </div>
+              <div class="nav1-content-mobile-content">
+                <div class="nav1-content-mobile-content-text">
+                  <p>
+                    Wireless Network로 통신하는 AGV/AMR의 특성을 고려해 AGV/AMR의 원활한 가동을 위한 최적의
+                    네트워크를 마련합니다. AP (Access Point) 위치, 수량, 채널을 최적 설계하고 시뮬레이션을 통해 신호
+                    감소, 채널 간섭 등 트러블을 예측합니다. 시뮬레이션을 통해 신호 감도가 낮은 음영 지역을 확인하고
+                    문제 해결 솔루션을 제공합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <div id="nav2-content" class="nav-content">
             <h4>국제 표준 안전 시스템 준수</h4>
@@ -342,7 +428,7 @@
     </section>
 
     <a href="#" class="products-inquiry-link">
-      <img src="../images/pc/products_inquiry_cta@3x.webp" alt="" />
+      <span>구매/견적 문의</span>
     </a>
   </main>
 
