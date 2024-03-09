@@ -3084,13 +3084,15 @@
   padding-left: 70px;
   padding-top: 60px;
   padding-right: 70px;
+  padding-bottom: 60px;
   align-items: flex-start;
+  height: 436px;
+  overflow-y: scroll;
 }
 
 .signup-terms-text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .signup-terms-text h2 {
@@ -3105,6 +3107,13 @@
   color: #000;
   line-height: 1.75;
   word-break: break-all;
+}
+
+.signup-terms-text p strong {
+  font-family: HanwhaGothicR_OTF;
+  font-size: 18px;
+  color: #000;
+  line-height: 1.3;
 }
 
 .signup-terms-btngroup {
@@ -4046,8 +4055,8 @@
 }
 
 .products-detail-spec-table-item-cell > span {
-  padding-top: 19px;
-  padding-bottom: 18px;
+  padding-top: 14px;
+  padding-bottom: 13px;
   background-color: #f7f7f7;
   min-width: 230px;
   height: inherit;
@@ -4066,8 +4075,8 @@
   padding-left: 65px;
   line-height: 1.5;
   height: inherit;
-  padding-top: 16px;
-  padding-bottom: 15px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 }
 
 .products-detail-spec-table-item-cell-container.hardware .products-detail-spec-table-item-cell:nth-child(5) > span {
@@ -5088,6 +5097,20 @@
 
   .products .slick-slide > div {
     margin-bottom: 10px;
+  }
+
+  .products-section2-title {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .products-section2-title-item {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .products-section2, .products-section3 {
+    padding: 0 50px;
   }
   /* AGV/AMR */
 }
@@ -7132,16 +7155,6 @@
   .products-section2 {
     margin-top: 30px;
     gap: 40px;
-  }
-
-  .products-section2-title {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .products-section2-title-item {
-    width: 100%;
-    gap: 15px;
   }
 
   .products-section2-title-item > div > h2 {

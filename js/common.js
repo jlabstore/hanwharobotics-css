@@ -320,7 +320,7 @@ $(document).ready(async function() {
     nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
     responsive: [
       {
-        breakpoint: 980,
+        breakpoint: 1024,
         settings: {
           rows: 3,
           slidesPerRow: 2,
