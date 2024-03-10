@@ -338,6 +338,34 @@ $(document).ready(async function() {
     ]
   });
 
+  $('.robots-section2-slider').slick({
+    rows: 2,
+    dots: true,
+    arrows: true,
+    slidesPerRow: 2,
+    infinite: false,
+    autoplay: false,
+    draggable: false,
+    prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          draggable: true
+        }
+      },
+      {
+        breakpoint: 765,
+        settings: {
+          rows: 4,
+          slidesPerRow: 1,
+          draggable: true
+        }
+      }
+    ]
+  });
+
   $('.products-detail-slider').slick({
     arrows: true,
     infinite: false,
@@ -367,6 +395,52 @@ $(document).ready(async function() {
       },
     ]
   })
+
+  $('.robots-detail-slider').slick({
+    arrows: true,
+    infinite: true,
+    autoplay: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    draggable: false,
+    variableWidth: true,
+    prevArrow: "<div></div>",
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/ic_robots_detail_arrow.svg' alt='' /></button>",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: true,
+          draggable: true,
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 765,
+        settings: {
+          arrows: true,
+          draggable: true,
+          variableWidth: true,
+          slidesToShow: 1,
+          swipeToSlide: true
+        }
+      },
+    ]
+  })
+
+  if (win.outerWidth() <= 765) {
+    $('.robots-section4-slider').slick({
+      rows: 3,
+      dots: true,
+      arrows: true,
+      slidesPerRow: 2,
+      infinite: false,
+      autoplay: false,
+      draggable: false,
+      prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
+      nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
+    });
+  }
 
   if (win.outerWidth() > 765) {
     $('#nav1-1-content').show();

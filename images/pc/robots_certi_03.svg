@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="89" height="89" viewBox="0 0 89 89">
+    <defs>
+        <clipPath id="oxdr6mfyda">
+            <path data-name="사각형 744" transform="translate(1066 2382)" style="fill:#fff;stroke:#707070" d="M0 0h89v89H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="마스크 그룹 71" transform="translate(-1066 -2382)" style="clip-path:url(#oxdr6mfyda)">
+        <g data-name="그룹 1164" transform="translate(-615.024 54.93)">
+            <path data-name="패스 1553" d="M56.758 35.081a24.886 24.886 0 0 0 1.033-7.534 27.048 27.048 0 0 0-54.1 0 23.81 23.81 0 0 0 1.36 8.582" transform="translate(1695.281 2335)" style="fill:none;stroke:#ff6f0f;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+            <path data-name="패스 1554" d="M48.79 36.528a32.588 32.588 0 0 0 1.225-8.9C50.016 15.361 43.321 4.9 33.922.849 24.523 4.9 17.829 15.361 17.829 27.626A28.757 28.757 0 0 0 19.44 37.78" transform="translate(1692.103 2334.921)" style="fill:none;stroke:#ff6f0f;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+            <path data-name="선 262" transform="translate(1726.025 2335.77)" style="fill:none;stroke:#ff6f0f;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0v50.886"/>
+            <path data-name="선 263" transform="translate(1699.248 2362.547)" style="fill:none;stroke:#ff6f0f;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" d="M0 0h53.553"/>
+            <path data-name="패스 1555" d="M29.376 62.682a19.217 19.217 0 0 0-5.55-9.258 23.779 23.779 0 0 0-22.615-6.256 23.8 23.8 0 0 0 28.871 28.87" transform="translate(1696 2324.664)" style="fill:none;stroke:#ff6f0f;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+            <ellipse data-name="타원 104" cx="20.414" cy="11.567" rx="20.414" ry="11.567" transform="rotate(-45 3746.925 -877.293)" style="fill:none;stroke:#ff6f0f;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+            <path data-name="패스 1556" d="m12.06 57.722 20.565 20.565L53.19 57.722" transform="translate(1693.4 2322.13)" style="fill:none;stroke:#ff6f0f;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+        </g>
+    </g>
+</svg>
