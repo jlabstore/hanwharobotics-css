@@ -3925,13 +3925,29 @@
 .products-detail-video {
   width: 100%;
   max-width: 1400px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 60px auto 0;
+  position: relative;
   padding-top: 1.13%;
   padding-bottom: 1.13%;
+}
+
+.products-detail-video-slider {
+  width: 100%;
+}
+
+.products-detail-video-slider-item {
+  cursor: pointer;
+  width: 100%;
+}
+
+.products-detail-video-slider-item > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .products-detail-video-bg {
@@ -3952,7 +3968,6 @@
   width: 100%;
   max-width: 1280px;
   aspect-ratio: 16 / 9;
-  border: 1px solid #707070;
   z-index: 1;
 }
 

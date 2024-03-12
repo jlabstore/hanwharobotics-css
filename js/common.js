@@ -428,6 +428,23 @@ $(document).ready(async function() {
     ]
   })
 
+  $('.products-detail-video-slider').slick({
+    arrows: false,
+    infinite: false,
+    autoplay: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    responsive: [
+      {
+        breakpoint: 765,
+        settings: {
+          swipeToSlide: true
+        }
+      },
+    ]
+  })
+
   if (win.outerWidth() <= 765) {
     $('.robots-section4-slider').slick({
       rows: 3,
