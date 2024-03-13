@@ -7833,11 +7833,11 @@
     padding-left: 15px;
   }
 
-  .mypage.main .mypage-contents .mypage-section:nth-child(9) h2 {
+  .mypage.main .mypage-contents .mypage-section.agency h2 {
     line-height: 1.38;
   }
 
-  .mypage.main .mypage-contents .mypage-section:nth-child(9) span {
+  .mypage.main .mypage-contents .mypage-section.agency span {
     line-height: 3.94;
   }
 
