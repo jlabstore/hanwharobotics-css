@@ -2775,6 +2775,13 @@
   min-width: 181px;
 }
 
+.mypage-contents .mypage-section h2 strong {
+  font-family: HanwhaGothicR_OTF;
+  font-size: 16px;
+  color: #ff6600;
+  padding-left: 3px;
+}
+
 .mypage-contents .mypage-section span {
   font-family: HanwhaGothicEL_OTF;
   font-size: 16px;
@@ -2848,12 +2855,17 @@
   cursor: pointer;
 }
 
+.mypage-edit-zipcode button {
+  min-width: 115px !important;
+  width: 115px !important;
+}
+
 .mypage-edit-email {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 11px;
+  gap: 9px;
 }
 
 .mypage-edit-email input {
@@ -3274,14 +3286,19 @@
   width: 115px !important;
 }
 
-.signup-main .mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper {
+.mypage.edit .signup-main-email-container button {
+  width: 115px !important;
+  min-width: 115px !important;
+}
+
+.mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper {
   display: flex;
   gap: 10px;
   align-items: center;
   width: 100%;
 }
 
-.signup-main .mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper .mypage-edit-email input {
+.mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper .mypage-edit-email input {
   width: 180px !important;
 }
 
@@ -6682,7 +6699,7 @@
     width: 100%;
   }
 
-  .signup-main .mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper .mypage-edit-email input {
+  .mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper .mypage-edit-email input {
     width: 100% !important;
   }
 
@@ -8031,13 +8048,13 @@
     padding: 0;
   }
 
-  .signup-main .mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper {
+  .mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
   }
 
-  .signup-main .mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper button {
+  .mypage-container .mypage-contents .mypage-section .signup-main-email-wrapper button {
     width: 100% !important;
   }
 

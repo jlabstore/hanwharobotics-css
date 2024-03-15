@@ -42,50 +42,57 @@
         <h1>회원정보 수정</h1>
         <section class="mypage-contents edit">
           <div class="mypage-section">
-            <h2>아이디</h2>
+            <h2>아이디<strong>*</strong></h2>
             <input name="id" id="id" type="text" readonly value="hanhwa" />
           </div>
           <div class="mypage-section">
-            <h2>비밀번호 변경</h2>
+            <h2>비밀번호 변경<strong>*</strong></h2>
             <button type="button" class="mypage-pwd-edit">비밀번호 변경</button>
           </div>
           <div class="mypage-section">
-            <h2>이메일</h2>
-            <div class="mypage-edit-email">
-              <input type="text" name="email-local" id="email-local" value="peterosea" required placeholder="이메일" />
-              <span>@</span>
-              <select name="email-domain" id="email-domain">
-                <option value="naver">naver.com</option>
-                <option value="gmail">gmail.com</option>
-                <option value="kakao">kakao.com</option>
-              </select>
+            <h2>이메일<strong>*</strong></h2>
+            <div class="signup-main-email-container">
+              <div class="signup-main-email-wrapper">
+                <div class="mypage-edit-email">
+                  <input type="text" name="email-local" id="email-local" value="" required />
+                  <span>@</span>
+                  <select name="email-domain" id="email-domain">
+                    <option value="naver">naver.com</option>
+                    <option value="gmail">gmail.com</option>
+                    <option value="kakao">kakao.com</option>
+                  </select>
+                </div>
+                <button type="button">중복확인</button>
+              </div>
+              <!-- 중복확인 결과 메시지 추가 -->
+              <!-- <label class="signup-message-warning">이미 가입되어 있는 이메일 주소입니다.</label> -->
             </div>
           </div>
           <div class="mypage-section">
-            <h2>업체명</h2>
+            <h2>업체명<strong>*</strong></h2>
             <input type="text" name="company_name" id="company_name" value="피터오세아" required placeholder="업체명" />
           </div>
           <div class="mypage-section">
-            <h2>우편번호</h2>
+            <h2>우편번호<strong>*</strong></h2>
             <div class="mypage-edit-zipcode">
               <input type="text" name="zipcode" id="zipcode" value="403332" required placeholder="우편번호" />
               <button type="button">우편번호 찾기</button>
             </div>
           </div>
           <div class="mypage-section">
-            <h2>주소</h2>
+            <h2>주소<strong>*</strong></h2>
             <input type="text" name="address" id="address" value="서울 성동구 뚝섬로1길 56" required placeholder="주소" />
           </div>
           <div class="mypage-section">
-            <h2>상세주소</h2>
+            <h2>상세주소<strong>*</strong></h2>
             <input type="text" name="address_detail" id="address_detail" value="SM엔터테인먼트 트레이닝 센터 5층" required placeholder="상세주소" />
           </div>
           <div class="mypage-section">
-            <h2>로봇구매처/대리점</h2>
+            <h2>로봇구매처/대리점<strong>*</strong></h2>
             <input type="text" name="agency" id="agency" value="OOO대리점" required placeholder="로봇구매처/대리점" />
           </div>
           <div class="mypage-section">
-            <h2>이름</h2>
+            <h2>이름<strong>*</strong></h2>
             <input type="text" name="name" id="name" value="김정인" required placeholder="이름" />
           </div>
           <div class="mypage-section">
@@ -93,7 +100,7 @@
             <input type="text" name="rank" id="rank" value="과장" required placeholder="직급" />
           </div>
           <div class="mypage-section">
-            <h2>연락처</h2>
+            <h2>연락처<strong>*</strong></h2>
             <div class="mypage-edit-phone">
               <select name="telecom" id="telecom">
                 <option value="+82">+82</option>
