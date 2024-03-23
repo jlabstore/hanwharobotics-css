@@ -1,0 +1,54 @@
+@font-face {
+	font-family: 'HanwhaGothicB_OTF';
+	font-weight: bold;
+	font-display: swap;
+	src: local('HanwhaGothicB_OTF'), url('../fonts/HanwhaGothicB_OTF.woff') format('woff'), url('../fonts/HanwhaGothicB_OTF.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'HanwhaGothicEL_OTF';
+	font-weight: 900;
+	font-display: swap;
+	src: local('HanwhaGothicEL_OTF'), url('../fonts/HanwhaGothicEL_OTF.woff') format('woff'), url('../fonts/HanwhaGothicEL_OTF.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'HanwhaGothicL_OTF';
+	font-weight: 900;
+	font-display: swap;
+	src: local('HanwhaGothicL_OTF'), url('../fonts/HanwhaGothicL_OTF.woff') format('woff'), url('../fonts/HanwhaGothicL_OTF.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'HanwhaGothicR_OTF';
+	font-weight: 900;
+	font-display: swap;
+	src: local('HanwhaGothicR_OTF'), url('../fonts/HanwhaGothicR_OTF.woff') format('woff'), url('../fonts/HanwhaGothicR_OTF.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'HanwhaGothicT_OTF';
+	font-weight: 900;
+	font-display: swap;
+	src: local('HanwhaGothicT_OTF'), url('../fonts/HanwhaGothicT_OTF.woff') format('woff'), url('../fonts/HanwhaGothicT_OTF.woff2') format('woff2');
+}
+
+
+/* ---------- css reset ---------- */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, button, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {box-sizing: border-box; margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline;box-sizing: border-box;word-break: keep-all;}
+body {
+	font-family: "Inter", "Pretendard", sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+	word-break: keep-all;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu,n av, section {display: block;word-break: keep-all;}
+ul li{list-style:none;}
+a {margin: 0; padding: 0; border: 0; vertical-align: baseline; background: transparent; text-decoration: none; color: inherit; display: inline-block; cursor: pointer;}
+input::-ms-clear, input::-ms-reveal{display: none;} input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-webkit-search-results-button, input::-webkit-search-results-decoration{display: none;}
+input, textarea, button {border: none; background-color: transparent; appearance: none; -moz-appearance: none; -webkit-appearance: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; }
+input:disabled {opacity: 1; -webkit-text-fill-color:inherit}
+select {-webkit-appearance: none; -moz-appearance: none;appearance: none;}
+select::-ms-expand {display: none;}
+
