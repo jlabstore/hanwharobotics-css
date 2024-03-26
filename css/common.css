@@ -1868,6 +1868,9 @@ footer select {
   .en header .gnb_right .selected_country {
     margin-left: 15px;
   }
+	.en .header__nav__items_sub > li > a {
+		font-size: 15px;
+	}
 	footer .address {
 		font-size: 15px;
 	}
@@ -2057,7 +2060,6 @@ footer select {
 	header .gnb_menu .header__nav__items a {
 		font-family: HanwhaGothicEL_OTF;
 		font-size: 20px !important;
-		line-height: 1.9;
 		color: #fff;
 		opacity: 1;
 	}
@@ -2076,8 +2078,10 @@ footer select {
 	header .gnb_menu .header__nav__items .header__nav__items_sub {
 		position: static;
 		display: flex;
-		gap: 0 !important;
 		margin-top: 18px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
 	}
   
   header .gnb_right .selected_country {
