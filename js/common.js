@@ -131,6 +131,37 @@ $(window).on("load resize", function (e) {
     $('.management-policy-certification').attr('open', 'true');
   }
 
+  if (win.outerWidth() <= 765) {
+    $('.products-detail-slider').slick('unslick');
+  } else {
+    $('.products-detail-slider').slick({
+      arrows: true,
+      infinite: false,
+      autoplay: false,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      draggable: false,
+      prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/products_detail_slider_prev.svg' alt='' /></button>",
+      nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/products_detail_slider_next.svg' alt='' /></button>",
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            draggable: true,
+            slidesToShow: 5,
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            draggable: true,
+            slidesToShow: 4,
+          }
+        },
+      ]
+    })
+  }
+
   // setTimeout(function() {
     // more_btn 요소를 선택합니다.
     // const moreBtn = $('#aside');
@@ -316,8 +347,8 @@ $(document).ready(async function() {
     infinite: false,
     autoplay: false,
     draggable: false,
-    prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
-    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
+    prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
     responsive: [
       {
         breakpoint: 1024,
@@ -346,8 +377,8 @@ $(document).ready(async function() {
     infinite: false,
     autoplay: false,
     draggable: false,
-    prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
-    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
+    prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
     responsive: [
       {
         breakpoint: 1024,
@@ -365,36 +396,6 @@ $(document).ready(async function() {
       }
     ]
   });
-
-  $('.products-detail-slider').slick({
-    arrows: true,
-    infinite: false,
-    autoplay: false,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    draggable: false,
-    prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/products_detail_slider_prev.svg' alt='' /></button>",
-    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/products_detail_slider_next.svg' alt='' /></button>",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          draggable: true,
-          slidesToShow: 4,
-        }
-      },
-      {
-        breakpoint: 765,
-        settings: {
-          arrows: false,
-          draggable: true,
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          swipeToSlide: true
-        }
-      },
-    ]
-  })
 
   $('.robots-detail-slider').slick({
     arrows: true,
@@ -454,8 +455,8 @@ $(document).ready(async function() {
       infinite: false,
       autoplay: false,
       draggable: false,
-      prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
-      nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/btn_paging_arrow_enabled.svg' alt='' /></button>",
+      prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+      nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
     });
   }
 

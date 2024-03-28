@@ -54,6 +54,12 @@ input, textarea, button {border: none; background-color: transparent; appearance
 input:disabled {opacity: 1; -webkit-text-fill-color:inherit}
 select {-webkit-appearance: none; -moz-appearance: none;appearance: none;}
 select::-ms-expand {display: none;}
+details > summary {
+	list-style: none;
+}
+details > summary::-webkit-details-marker {
+	display: none;
+}
 
 html.scroll-lock, html.scroll-lock body {
 	overflow: hidden;
@@ -174,14 +180,16 @@ header.active {
 	/* padding: 16px 15px; */
 	padding: 0;
 }
+
 .tablet header .header_inner {
-	padding: 20px 30px;
+	padding: 20px 60px;
 	/* padding: 0;	 */
 }
 
 header .header_inner {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width: 100%;
 	max-width: 1920px;
 	margin: 0 auto;
@@ -237,6 +245,11 @@ header .gnb_menu .header__nav__items a.on, header .gnb_menu .header__nav__items 
 	background: url('../images/pc/main_logo.svg') no-repeat 0 0;
 	object-fit: contain;
 }
+
+.main_header.scroll .logo > a {
+	background: url('../images/pc/sub_logo.svg') no-repeat 0 0;
+}
+
 .sub_header .logo > a {
 	display: block;
 	width: 194px;
@@ -323,8 +336,6 @@ header .btn_menu .icon-bottom {
 	top: 207px;
 	right: 63px;
 	z-index: 6;
-	max-width: 1920px;
-	margin: 0 auto;
 }
 #aside .more_btn {
 	display: flex;
@@ -467,6 +478,12 @@ header .gnb_menu .header__nav__items .header__nav__link {
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #fff;
+	opacity: 0.5;
+}
+
+header .gnb_menu .header__nav__items .header__nav__link.active {
+	opacity: 1;
+	color: #fff;
 }
 
 header .gnb_menu .header__nav__login {
@@ -572,7 +589,7 @@ header .gnb_right .login {
   align-items: center;
   width: 27px;
   height: 27px;
-  margin: -4px 0 0 20px;
+  margin: 0 0 0 60px;
 	/* opacity: 0.6; */
 	background: url('../images/pc/login.svg') no-repeat 0 0;
 	background-size: 27px 27px;
@@ -588,7 +605,7 @@ header .gnb_right .selected_country {
   align-items: center;
   width: 53px;
   height: 27px;
-  margin: -4px 0 0 15px;
+  margin: 0 0 0 15px;
 	padding: 4px 5px 4px 28px;  
 	opacity: 0.6;
   border-radius: 13.5px;
@@ -1669,13 +1686,11 @@ footer select {
 	footer .column {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
 		height: 100%;
 	}
 
 	footer .address {
 		display: none;
-		margin-top: 35px;
 		font-family: HanwhaGothicL_OTF;
 		font-size: 15px;
 		font-weight: normal;
@@ -1692,7 +1707,6 @@ footer select {
 	}
 
 	footer .copyright {
-		margin-top: 20px;
 		font-family: HanwhaGothicL_OTF;
 		font-size: 15px;
 		font-weight: normal;
@@ -1717,7 +1731,6 @@ footer select {
 	footer .column1 .sitemap {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
 	}
 	footer .column1 .sitemap button {
 		cursor: pointer;
@@ -1993,6 +2006,7 @@ footer select {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+		height: 100%;
   }
 
 	header {
@@ -2123,7 +2137,6 @@ footer select {
 		font-weight: normal;
 		font-stretch: normal;
 		font-style: normal;
-		line-height: 2.5;
 		letter-spacing: normal;
 		text-align: left;
 		color: #fff;
@@ -2230,7 +2243,6 @@ footer select {
 		font-weight: normal;
 		font-stretch: normal;
 		font-style: normal;
-		line-height: 2.5;
 		letter-spacing: normal;
 		text-align: left;
 		color: #fff;
@@ -2522,7 +2534,6 @@ footer select {
 		font-weight: normal;
 		font-stretch: normal;
 		font-style: normal;
-		line-height: 2.5;
 		letter-spacing: normal;
 		text-align: left;
 		color: #fff;
