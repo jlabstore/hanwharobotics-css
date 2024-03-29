@@ -168,9 +168,6 @@ header .gnb_menu .header__nav__items .header__nav__link {
 	color: #fff;
 }
 
-header .gnb_menu .header__nav__items .header__nav__link.on {
-	color:#fff;
-}
 header .gnb_menu .header__nav__items .header__nav__items_sub {
 	display: none;
 	flex-direction: column;

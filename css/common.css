@@ -478,12 +478,12 @@ header .gnb_menu .header__nav__items .header__nav__link {
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #fff;
-	opacity: 0.5;
+	opacity: 0.5 !important;
 }
 
 header .gnb_menu .header__nav__items .header__nav__link.active {
-	opacity: 1;
-	color: #fff;
+	opacity: 1 !important;
+	color: #fff !important;
 }
 
 header .gnb_menu .header__nav__login {
@@ -2078,17 +2078,11 @@ footer select {
 		opacity: 1;
 	}
 
-	header .gnb_menu .header__nav__items .header__nav__link.on {
-		font-size: 22px;
-		color: #f37321 !important;
-		opacity: 1 !important;
-	}
-
 	header .gnb_menu .header__nav__items .header__nav__link {
 		font-size: 22px;
 		color: #f37321;
-		opacity: 1 !important;
 	}
+	
 	header .gnb_menu .header__nav__items .header__nav__items_sub {
 		position: static;
 		display: flex;

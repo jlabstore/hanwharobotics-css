@@ -78,19 +78,6 @@ header .gnb_menu .header__nav__items .header__nav__link {
 	font-weight: bold;
 	/* color: #fff; */
 }
-
-header .gnb_menu .header__nav__items .header__nav__link.on {
-	color:#fff;
-}
-
-/* header .gnb_menu .header__nav__items .header__nav__link {
-	opacity: 0.5;
-} */
-
-/* header .gnb_menu .header__nav__items .header__nav__link.on {
-	color:#fff;
-  opacity: 1;
-} */
 header .gnb_menu .header__nav__items_right .sales-inquiry {
   background: transparent
 }
