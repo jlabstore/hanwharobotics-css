@@ -145,13 +145,6 @@ $(window).on("load resize", function (e) {
       nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/products_detail_slider_next.svg' alt='' /></button>",
       responsive: [
         {
-          breakpoint: 1200,
-          settings: {
-            draggable: true,
-            slidesToShow: 5,
-          }
-        },
-        {
           breakpoint: 1024,
           settings: {
             draggable: true,
