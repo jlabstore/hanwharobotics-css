@@ -5994,6 +5994,10 @@
   .robots-detail-other {
     margin-bottom: 100px;
   }
+
+  .products-detail-title {
+    padding-top: 50px;
+  }
   /* Robots */
 }
 
@@ -8691,6 +8695,10 @@
     margin: 0;
     padding: 20px 20px 65px;
     max-width: 100%;
+  }
+
+  .products-detail-title {
+    padding-top: 0;
   }
   /* AGV/AMR */
 
