@@ -9070,10 +9070,10 @@
   }
 
   .solutions-content-item:nth-child(2) .solutions-content-item-text {
-    gap: 80px;
+    gap: 20px;
   }
   .solutions-content-item:nth-child(3) .solutions-content-item-text {
-    gap: 80px;
+    gap: 20px;
   }
   /* Solutions */
 }
