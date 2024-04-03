@@ -426,11 +426,14 @@ $(document).ready(async function() {
   })
 
   $('.products-detail-video-slider').slick({
-    arrows: false,
-    infinite: false,
-    autoplay: false,
+    arrows: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 7000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    prevArrow: "<div></div>",
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/products_video_slider_arrow.svg' alt='' /></button>",
     draggable: true,
     responsive: [
       {
