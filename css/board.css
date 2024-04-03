@@ -8729,10 +8729,10 @@
   }
 
   .products-detail-video-slider .slick-next {
-    right: 20px; 
-    width: 56px;
-    height: 56px; 
-    top: calc(50% - 28px);
+    right: 15px; 
+    width: 34px;
+    height: 34px; 
+    top: calc(50% - 17px);
   }
   /* AGV/AMR */
 
