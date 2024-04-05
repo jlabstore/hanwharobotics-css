@@ -1097,6 +1097,7 @@ header .more_btn  a.distributor {
 		width: 100%;
 		max-width: 1920px;
 		margin: 0 auto;
+		padding: 0 60px;
 	}
 
 	footer .column {
@@ -1354,7 +1355,7 @@ header .more_btn  a.distributor {
 	footer .column1 .sitemap {
 		position: absolute;
 		top: 115px;
-		left: 50px;
+		left: 110px;
 		display: flex;
 		flex-direction: row;
 		gap: 20px;
@@ -1753,6 +1754,7 @@ header .more_btn  a.distributor {
 		display: flex;
 		flex-direction: row;
 		gap: 16px;
+		left: 50px;
 	}
 	footer .column1 .sitemap a {
 		font-family: HanwhaGothicR_OTF;

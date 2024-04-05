@@ -27,6 +27,14 @@ function showLayer(layerName, target, headerMinHeight, bgColor = '#fff', opacity
   $('#header').removeClass('active');
 }
 
+$(window).on('resize', function() {
+  const gnbTarget = $(document.body).data('gnb-target');
+
+  if (gnbTarget === 'robot' && win.outerWidth() <= 765) {
+    window.location.reload();
+  }
+});
+
 // pc, table, mobile 여부
 $(window).on("load resize", function (e) {
   $('#header .header__nav__items_sub').removeClass('active');
@@ -153,6 +161,20 @@ $(window).on("load resize", function (e) {
         },
       ]
     })
+  }
+
+  if (win.outerWidth() <= 765) {
+    $('.robots-section4-slider').slick({
+      rows: 3,
+      dots: true,
+      arrows: true,
+      slidesPerRow: 2,
+      infinite: false,
+      autoplay: false,
+      draggable: false,
+      prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+      nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+    });
   }
 
   // setTimeout(function() {
@@ -309,6 +331,29 @@ $(document).ready(async function() {
     $('.qna-list .search').css('display', 'none');
   });
 
+  $('#email-domain').change(function() {
+    $('#email-domain option:selected').each(function() {
+      if($(this).val() === 'manual') {
+        $('#email-domain').hide();
+        $('#email-domain-manual').show();
+        $('#email-domain-manual').focus();
+      } else {
+        $('#email-domain-manual').hide();
+      }
+    })
+  })
+
+  Array.from({ length: 10 }).forEach((_, i) => {
+    let currIndex = i + 1;
+    $(`input[name=software${currIndex}]`).keyup(function(e) {
+      if (currIndex === 1 || currIndex === 4 || currIndex === 7) {
+        $(this).next().next().focus();
+      } else {
+        $(this).next().focus();
+      }
+    });
+  });
+
   // $(document).on('click', 'button.sitemap_cookie', function(e) {
   //   e.stopPropagation();
 
@@ -337,8 +382,11 @@ $(document).ready(async function() {
 
   $('.products-section2-slider').slick({
     rows: 3,
-    dots: true,
-    arrows: true,
+    /** 추후 슬라이드 9개 초과하였을 시, 활성화 */
+    // dots: true,
+    // arrows: true,
+    dots: false,
+    arrows: false,
     slidesPerRow: 3,
     infinite: false,
     autoplay: false,
@@ -367,8 +415,11 @@ $(document).ready(async function() {
 
   $('.robots-section2-slider').slick({
     rows: 2,
-    dots: true,
-    arrows: true,
+    /** 추후 슬라이드 4개 초과하였을 시, 활성화 */
+    // dots: true,
+    // arrows: true,
+    dots: false,
+    arrows: false,
     slidesPerRow: 2,
     infinite: false,
     autoplay: false,
@@ -444,20 +495,6 @@ $(document).ready(async function() {
       },
     ]
   })
-
-  if (win.outerWidth() <= 765) {
-    $('.robots-section4-slider').slick({
-      rows: 3,
-      dots: true,
-      arrows: true,
-      slidesPerRow: 2,
-      infinite: false,
-      autoplay: false,
-      draggable: false,
-      prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
-      nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
-    });
-  }
 
   if (win.outerWidth() > 765) {
     $('#nav1-1-content').show();

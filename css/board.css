@@ -1265,11 +1265,12 @@
   color: #666;
 }
 
-.qna-write-des-box span strong {
+.qna-write-des-box span a {
   font-family: HanwaGothicR_OTF;
   color: #000;
   text-decoration: underline;
   text-underline-offset: 3px;
+  font-weight: bold;
 }
 
 .qna-write-custom-textarea {
@@ -1348,14 +1349,34 @@
   height: 9px;
 }
 
-.qna-write-submit {
+.qna-write-button-group {
   margin: -10px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  gap: 20px;
+}
+
+.qna-write-submit {
   width: 240px;
   height: 58px;
   border-radius: 29px;
   background-color: #f37321;
   color: #fff;
+  font-family: HanwhaGothicB_OTF;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.qna-write-cancel {
+  width: 240px;
+  height: 58px;
+  border-radius: 29px;
+  border: solid 1px #000;
+  background-color: #fff;
+  color: #000;
   font-family: HanwhaGothicB_OTF;
   font-size: 16px;
   line-height: 1.5;
@@ -4362,8 +4383,8 @@
 }
 
 .robots-section4-slider {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(216px, 1fr));
   gap: 20px;
 }
 
@@ -4373,6 +4394,7 @@
   padding: 30px 23px 35px;
   border-radius: 59px;
   background-color: #f0f0f0;
+  margin: 0 auto;
 }
 
 .robots-section4-slider-item > div {
@@ -5481,10 +5503,6 @@
     padding-left: 30px;
   }
 
-  .robots-section4-slider-item {
-    max-width: 200px;
-  }
-
   .robots-detail-application, .robots-detail-sepc, .robots-detail-other {
     max-width: calc(100% - 100px);
     width: calc(100% - 100px);
@@ -5930,12 +5948,12 @@
     gap: 50px;
   }
 
-  .robots-section4, .robots-section5 {
-    padding: 0 50px;
+  .robots-section4-slider {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
-  .robots-section4-slider-item {
-    max-width: 215px;
+  .robots-section4, .robots-section5 {
+    padding: 0 50px;
   }
 
   .robots-section4, .robots-section5 {
@@ -6638,130 +6656,15 @@
   }
   /* QnA */
 
-  /* 로그인 */
   .login-container {
-    gap: 30px;
-    padding: 70px 20px 250px;
     width: 100%;
-  }
-
-  .login-main form {
-    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .login-content {
     width: 100%;
-    height: 100%;
-    border: none;
   }
-
-  .login-container h1 {
-    font-size: 26px;
-  }
-
-  .login-info-wrapper {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .login-input-wrapper {
-    width: 100%;
-  }
-
-  .login-input-wrapper input {
-    width: 100%;
-  }
-
-  .login-info-submit {
-    width: 100%;
-    height: 50px;
-    font-size: 16px;
-  }
-
-  .login-action-group {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .login-action-group a {
-    background-color: #fff;
-    border: none;
-    border-radius: 0;
-    font-size: 15px;
-    color: #656565;
-    line-height: 1.6;
-    height: 100%;
-  }
-
-  .login-action-group a + a {
-    border-left: 1px solid #aaa;
-  }
-
-  .login-find-input-wrapper {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .login-find-input-wrapper input {
-    width: 100%;
-  }
-
-  .login-find-input-wrapper button {
-    width: 100%;
-  }
-
-  .login-main.find-complete {
-    padding-left: 0;
-    margin-top: 100px;
-  }
-
-  .login-main-container.find-id-complete {
-    align-items: flex-start;
-  }
-
-  .login-find-id-complete-btn-group {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .login-find-id-complete-btn-group a {
-    width: 100%;
-  }
-
-  .login-find-id-complete-msg {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .login-find-id-complete-msg h3 {
-    font-size: 20px;
-  }
-
-  .login-find-id-complete-msg p br {
-    display: none;
-  }
-
-  .login-main-container.re-complete {
-    margin-top: 100px;
-  }
-
-  .login-pwd-re-wrapper {
-    width: 100%;
-  }
-  
-  .login-pwd-re-wrapper input {
-    width: 100%;
-  }
-  
-  .login-pwd-re-btn-wrapper {
-    margin-top: 10px;
-  }
-
-  .login-pwd-re-submit {
-    width: 100%;
-  }
-  /* 로그인 */
 
   /* My Page */
   .mypage {
@@ -7905,10 +7808,17 @@
     padding: 15px;
   }
 
-  .qna-write-submit {
-    width: 190px;
-    height: 48px;
+  .qna-write-button-group {
     margin-top: -30px;
+    gap: 10px;
+  }
+
+  .qna-write-submit {
+    width: 100%;
+  }
+
+  .qna-write-cancel {
+    width: 100%;
   }
 
   .qna-write-form-section-content-wrapper {
@@ -7937,16 +7847,6 @@
     align-items: flex-start !important;
     justify-content: flex-start !important;
   }
-
-  /* 로그인 */
-  .login-action-group {
-    justify-content: space-between;
-  }
-
-  .login-action-group a {
-    width: 33.333%;
-  }
-  /* 로그인 */
 
   /* My Page */
   .mypage-container {
@@ -8484,6 +8384,12 @@
 
   .products .slick-dots {
     left: calc(50% - 57.5px);
+  }
+
+  .robots-section4-slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   .robots-section4-slider .slick-dots {
@@ -9144,6 +9050,165 @@
     gap: 20px;
   }
   /* Solutions */
+}
+
+@media (min-width: 431px) and (max-width: 743px) {
+  .en footer .column1 .sitemap {
+		top: 120px;
+	}
+
+  .login-find-id-complete-btn-group {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .login-pwd-re-wrapper {
+    width: 80%;
+  }
+
+  .login-pwd-re-btn-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 743px) {
+    /* 로그인 */
+    .login-container {
+      gap: 30px;
+      padding: 70px 20px 250px;
+      width: 100%;
+    }
+  
+    .login-main form {
+      width: 100%;
+    }
+  
+    .login-content {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  
+    .login-container h1 {
+      font-size: 26px;
+    }
+  
+    .login-info-wrapper {
+      flex-direction: column;
+      width: 80%;
+    }
+  
+    .login-input-wrapper {
+      width: 100%;
+    }
+  
+    .login-input-wrapper input {
+      width: 100%;
+    }
+  
+    .login-info-submit {
+      width: 100%;
+      height: 50px;
+      font-size: 16px;
+    }
+  
+    .login-action-group {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .login-action-group a {
+      background-color: #fff;
+      border: none;
+      border-radius: 0;
+      font-size: 15px;
+      color: #656565;
+      line-height: 1.6;
+      height: 100%;
+    }
+  
+    .login-action-group a + a {
+      border-left: 1px solid #aaa;
+    }
+  
+    .login-find-input-wrapper {
+      width: 80%;
+      flex-direction: column;
+    }
+  
+    .login-find-input-wrapper input {
+      width: 100%;
+    }
+  
+    .login-find-input-wrapper button {
+      width: 100%;
+    }
+  
+    .login-main.find-complete {
+      padding-left: 0;
+      margin-top: 100px;
+    }
+  
+    .login-main-container.find-id-complete {
+      align-items: flex-start;
+    }
+  
+    .login-find-id-complete-btn-group {
+      flex-direction: column;
+    }
+  
+    .login-find-id-complete-btn-group a {
+      width: 100%;
+    }
+  
+    .login-find-id-complete-msg {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .login-find-id-complete-msg h3 {
+      font-size: 20px;
+    }
+  
+    .login-find-id-complete-msg p br {
+      display: none;
+    }
+  
+    .login-main-container.re-complete {
+      margin-top: 100px;
+    }
+    
+    .login-pwd-re-wrapper input {
+      width: 100%;
+    }
+    
+    .login-pwd-re-btn-wrapper {
+      margin-top: 10px;
+    }
+  
+    .login-pwd-re-submit {
+      width: 100%;
+    }
+    /* 로그인 */
+}
+
+@media (max-width: 430px) {
+  .login-find-id-complete-btn-group {
+    width: 100%;
+  }
+
+  .login-pwd-re-wrapper {
+    width: 100%;
+  }
+
+  .login-info-wrapper {
+    width: 100%;
+  }
+
+  .login-find-input-wrapper {
+    width: 100%;
+  }
 }
 
 @media (min-width: 335px) and (max-width: 743px) {
