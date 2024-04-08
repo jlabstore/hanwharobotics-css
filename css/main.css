@@ -1097,7 +1097,6 @@ header .more_btn  a.distributor {
 		width: 100%;
 		max-width: 1920px;
 		margin: 0 auto;
-		padding: 0 60px;
 	}
 
 	footer .column {
@@ -1355,7 +1354,7 @@ header .more_btn  a.distributor {
 	footer .column1 .sitemap {
 		position: absolute;
 		top: 115px;
-		left: 110px;
+		left: 50px;
 		display: flex;
 		flex-direction: row;
 		gap: 20px;
@@ -1367,8 +1366,7 @@ header .more_btn  a.distributor {
 	}
 
 	footer .column1 .link {
-		/* margin-top: 72px; */
-		margin-top: 30px;
+		margin-top: 72px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -1754,7 +1752,6 @@ header .more_btn  a.distributor {
 		display: flex;
 		flex-direction: row;
 		gap: 16px;
-		left: 50px;
 	}
 	footer .column1 .sitemap a {
 		font-family: HanwhaGothicR_OTF;
@@ -1769,10 +1766,12 @@ header .more_btn  a.distributor {
 	}
 
 	footer .column1 .link {
+		margin-top: 30px; 
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 168px;
+		gap: 30px;
+		height: 100%;
 	}
 
 	footer .column1 .link .select_wrap {
@@ -1927,11 +1926,6 @@ header .more_btn  a.distributor {
 	footer .column1 .sitemap a {
 		font-size: 15px;
 	}
-
-	footer .column1 .link {
-		margin-top: 61px;
-	}
-
 }
 
 @media (max-width: 840px) {
@@ -2046,7 +2040,7 @@ header .more_btn  a.distributor {
 		display: flex;
 		flex-direction: row;
 		gap: 20px;
-		margin-top: 62px;
+		margin-top: 0;
 	}
 
 	.main-case-studies-content {
@@ -2326,37 +2320,40 @@ header .more_btn  a.distributor {
 		justify-content: flex-start;
 		width: 100%;
 		height: auto;
-		margin: 40px 0 0 0;
+		margin: 30px 0 0 0;
 	}
 
 	footer .column1 .link .select_wrap {
 		width: 210px;
+		max-height: 40px;
 		border: 1px solid #707070;
 	}
-
+	
 	footer .column1 .link .select_wrap select, footer .column1 .link .select_wrap div {
 		width: 100%;
+		height: 40px;
+		padding-top: 12px;
 		padding-right: 0;
 		font-family: HanwhaGothicR_OTF;
 		font-size: 16px;
 		font-weight: normal;
 		font-stretch: normal;
 		font-style: normal;
-		line-height: 1.5;
+		line-height: 1;
 		letter-spacing: normal;
 		text-align: left;
 		color: #fff;
 		outline: 0;
 		border: 0;
-		background: url('../images/pc/ic_plus.svg') no-repeat 90% 50%;
+		background: url('../images/pc/ic_plus.svg') no-repeat 90% 48%;
 		background-size: 12px;
+		box-sizing: border-box;
 	}
 
 	footer .column1 .sns {
 		display: flex;
 		flex-direction: row;
 		gap: 20px;
-		margin-top: 40px;
 	}
 
 }

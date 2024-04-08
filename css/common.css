@@ -2541,7 +2541,6 @@ footer select {
 		display: flex;
 		flex-direction: row;
 		gap: 20px;
-		margin-top: 62px;
 	}
 
 	.layer.cookie .btn_wrap {
