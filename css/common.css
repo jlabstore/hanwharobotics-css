@@ -1288,6 +1288,12 @@ footer select {
 	}
 }
 
+@media (max-width: 1660px) {
+	header .gnb_menu .header__nav__items {
+		gap: 40px;
+	}
+}
+
 
 @media (max-width: 1500px) {
 	.inquiry_more {
@@ -1368,9 +1374,6 @@ footer select {
 		display: none;
 	}
 
-	header .gnb_menu .header__nav__items {
-		/* gap: 78px; */
-	}
 	header .gnb_menu .header__nav__items_sub li {
 		width: 110px;
 	}
