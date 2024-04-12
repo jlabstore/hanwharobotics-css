@@ -1197,10 +1197,9 @@ header .more_btn  a.distributor {
 		flex-direction: row;
 		gap: 20px;
 	}
-
 }
 
-@media (min-width: 1550px) {
+@media (min-width: 1501px) {
 	header .logo {
 		width: auto;
 	}
@@ -1267,11 +1266,12 @@ header .more_btn  a.distributor {
 		background: url('../images/pc/ic_main_more.svg') no-repeat 0 0;
 		background-size: 10px 10px !important;
 	}
+}
 
+@media (min-width: 1550px) {
 	/* header .btn_menu {
 		display: none;
 	} */
-
 
 	header .gnb_menu .header__nav__items {
 		display: flex;
