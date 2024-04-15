@@ -8662,6 +8662,8 @@
 
   .robots-slider-item-wrapper {
     padding-left: 20px;
+    height: 156px;
+    align-items: normal;
   }
 
   .robots-slider-item-text span {
@@ -8925,6 +8927,7 @@
   .robots-detail-other-item {
     padding: 0;
     gap: 8px;
+    align-items: center;
   }
 
   .robots-detail-other-item img {
