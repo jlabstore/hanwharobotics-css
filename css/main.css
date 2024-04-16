@@ -924,11 +924,11 @@ header .more_btn  a.distributor {
 		padding: 0 15px 0 !important;
 	}
 	.section2 .primary_box .contents {
-		background: url('../images/mobile/thumb_1@3x.webp') no-repeat 100% 100%/contain !important;
+		background: url('../images/pc/thumb_1@3x.webp') no-repeat 100% 100%/contain !important;
 	}
 
 	.section2 .second_box .contents {
-		background: url('../images/mobile/thumb_2@3x.webp') no-repeat 100% 100%/contain !important;
+		background: url('../images/pc/thumb_2@3x.webp') no-repeat 100% 100%/contain !important;
 	}
 
 	.section2 .box .contents {
@@ -1428,7 +1428,7 @@ header .more_btn  a.distributor {
     background: url('../images/pc/thumb_1@3x.webp') no-repeat 90% 70%/45%;
 	}
 	.section2 .second_box .contents {
-		background: url('../images/mobile/thumb_2@3x.webp') no-repeat 90% 70%/45%;
+		background: url('../images/pc/thumb_2@3x.webp') no-repeat 90% 70%/45%;
 	}
 	.section2 .box a {
 		padding: 0 0 0 82px;
@@ -2088,7 +2088,6 @@ header .more_btn  a.distributor {
 		bottom: 0;
 		padding-right: 0;
 		min-width: none;
-		left: 40px;
 		right: none;
 	}
 	.section1 .update .title {

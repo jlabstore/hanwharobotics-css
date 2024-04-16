@@ -30,6 +30,12 @@
 	font-display: swap;
 	src: local('HanwhaGothicT_OTF'), url('../fonts/HanwhaGothicT_OTF.woff') format('woff'), url('../fonts/HanwhaGothicT_OTF.woff2') format('woff2');
 }
+@font-face {
+	font-family: 'HanwhaR_OTF';
+	font-weight: 900;
+	font-display: swap;
+	src: local('HanwhaR_OTF'), url('../fonts/HanwhaR_OTF.woff') format('woff'), url('../fonts/HanwhaR_OTF.woff2') format('woff2');
+}
 
 
 /* ---------- css reset ---------- */

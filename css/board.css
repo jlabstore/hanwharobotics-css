@@ -2126,6 +2126,10 @@
   margin-bottom: 55px;
 }
 
+.about-main-section-2-title > strong {
+  font-family: HanwhaR_OTF;
+}
+
 .about-main-section-2-desc {
   display: flex;
   justify-content: space-between;
@@ -2272,11 +2276,49 @@
   margin: 0 auto;
 }
 
+.about-main-section-3-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 90px;
+  gap: 30px;
+}
+
+.about-main-section-3-sub > p {
+  font-family: HanwhaGothicL_OTF;
+  font-size: 22px;
+  color: #000;
+  position: relative;
+}
+
+.about-main-section-3-sub p::before {
+  content: '';
+  width: 1px;
+  height: 18px;
+  background-color: #707070;
+  position: absolute;
+  right: -15px;
+  top: 3.5px;
+}
+
+.about-main-section-3-sub p:last-child::before {
+  display: none;
+}
+
+.about-main-section-3-sub > p > strong {
+  color: #ff7600;
+}
+
+.about-main-section-3-sub > p > br {
+  display: none;
+}
+
 .about-main-section-3 h2 {
   font-family: HanwhaGothicB_OTF;
   font-size: 60px;
   color: #000;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
   text-align: center;
 }
 
@@ -5387,12 +5429,23 @@
     width: 1024px;
   }
 
+  .about-main-section-3-sub {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+
+  .about-main-section-3-sub p::before {
+    display: none;
+  }
+
   .about-main-section-2-value-img img {
     max-width: 500px;
   }
 
   .about-main-section-3 h2 {
     font-size: 48px;
+    margin-bottom: 40px;
   }
 
   .about-main-section-3-img {
@@ -7160,7 +7213,22 @@
 
   .about-main-section-3 h2 {
     font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .about-main-section-3-sub {
     margin-bottom: 30px;
+    text-align: center;
+    gap: 0;
+  }
+
+  .about-main-section-3-sub p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .about-main-section-3-sub p br {
+    display: block;
   }
 
   .about-main-section-3-img {
