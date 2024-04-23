@@ -196,6 +196,16 @@ $(document).ready(async function() {
 
   $('#header').load('./includes/header.html', function() {
     const gnbTarget = $(document.body).data('gnb-target');
+    if (gnbTarget === 'main') {
+      $('.header__nav__link').addClass('active');
+      $('.header__nav__link').hover(function() {
+        $('.header__nav__link').removeClass('active');
+        $(this).addClass('active');
+      }, function() {
+        $('.header__nav__link').addClass('active');
+      });
+      return;
+    }
     $(`[data-gnb="${gnbTarget}"]`).addClass('active');
   });
   $('#aside').load('./includes/aside.html');

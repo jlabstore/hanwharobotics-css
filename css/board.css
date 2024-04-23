@@ -4702,7 +4702,7 @@
 
 .robots-detail-sepc {
   max-width: 1400px;
-  margin: 0 auto 20px;
+  margin: 0 auto 60px;
   border-radius: 45px;
   padding: 77px 100px 100px;
   background-color: #fff;
@@ -4874,6 +4874,7 @@
   width: 100%;
   background-color: #f8f8f8;
   padding: 13px 0;
+  min-height: 44px;
 }
 
 .robots-detail-spec-table-section-item-content2-content > span {
@@ -4971,10 +4972,38 @@
   min-height: 275px;
 }
 
+.robots-inquiry-link-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.robots-inquiry-link {
+  height: 88px;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  background: linear-gradient(45deg, rgba(255,151,65,1) 28%, rgba(255,80,21,1) 82%);
+}
+
+.robots-inquiry-link span {
+  font-family: HanwhaGothicB_OTF;
+  font-size: 26px;
+  color: #fff;
+}
+
+.robots-inquiry-link img {
+  width: 100%;
+  height: 100%;
+}
+
 .robots-detail-other {
   max-width: 1400px;
   width: 100%;
-  margin: 55px auto 150px;
+  margin: 100px auto 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5591,6 +5620,12 @@
     width: 100%;
     justify-content: space-between;
   }
+
+  .robots-inquiry-link {
+    max-width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
   /* Robots */
 }
 
@@ -5963,6 +5998,10 @@
   .products-inquiry-link {
     margin-bottom: 100px;
   }
+
+  .products-section2-slider-item {
+    width: 44% !important;
+  }
   /* AGV/AMR */
 
   /* Robots */
@@ -6064,6 +6103,10 @@
   }
   .robots-detail-spec-table-section-item-title > span {
     padding-left: 5px;
+  }
+
+  .robots-detail-spec-table-section-item-content2-content {
+    min-height: 42px;
   }
 
   .robots-detail-spec-table span {
@@ -8499,6 +8542,10 @@
     bottom: -55px;
   }
 
+  .products-section2-slider-item {
+    width: 100% !important;
+  }
+
   .products-section2-contents {
     margin-bottom: 127px;
   }
@@ -9002,6 +9049,22 @@
     height: 1px;
     background: #707070;
     opacity: 0.6;
+  }
+
+  .robots-inquiry-link-container {
+    background-color: #fff;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .robots-inquiry-link {
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .robots-inquiry-link span {
+    font-size: 16px;
   }
 
   .robots-detail-other {
