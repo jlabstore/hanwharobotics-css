@@ -115,7 +115,13 @@
             </ul>
           </li>
           <li class="header__nav__login">
-            <a href="#" class="header__nav__link">로그인/회원가입</a>
+
+            <!-- 로그인 -->
+            <a href="#" class="header__nav__link" style="margin-bottom: 23px;" data-gnb="mypage">마이페이지</a>
+            <a href="#" class="header__nav__link">로그아웃</a>
+        
+            <!-- 미로그인 -->
+            <!-- <a href="#" class="header__nav__link">로그인/회원가입</a> -->
           </li>
         </ul>
   
@@ -129,9 +135,14 @@
         </ul> -->
       </div>
             
-      <a href="#" class="login">
+      <div href="#" class="login">
         <span>login</span>
-      </a>
+        <div class="login-tooltip">
+          <a href="#">마이페이지</a>
+          <div></div>
+          <button onClick="" type="button">로그아웃</button>
+        </div>
+      </div>
             
       <a href="#" class="selected_country">
         <span>EN</span>

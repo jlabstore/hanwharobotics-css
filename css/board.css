@@ -4714,6 +4714,7 @@
   display: flex;
   align-items: center;
   min-width: 246px;
+  width: 246px !important;
   height: 58px;
   font-family: HanwhaGothicL_OTF;
   font-size: 16px;
@@ -4879,6 +4880,10 @@
 
 .robots-detail-spec-table-section-item-content2-content > span {
   padding-left: 25px;
+}
+
+.robots-detail-spec-table-section-item-content2-content .sans-serif {
+  font-family: sans-serif;
 }
 
 .robots-detail-spec-table-section-item-content2 + .robots-detail-spec-table-section-item-content2 {

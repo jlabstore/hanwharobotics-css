@@ -599,6 +599,88 @@ header .gnb_right .login {
 	/* opacity: 0.6; */
 	background: url('../images/pc/login.svg') no-repeat 0 0;
 	background-size: 27px 27px;
+	cursor: pointer;
+	position: relative;
+}
+
+header .gnb_right .login-tooltip {
+	position: absolute;
+	top: 45px;
+	left: -93px;
+	display: none;
+	align-items: center;
+	gap: 15px;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 11px 18px;
+	border-radius: 8px;
+}
+
+header .gnb_right .login-tooltip.active {
+	display: flex;
+}
+
+header .gnb_right .login-tooltip a {
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.6;
+	font-family: HanwhaGothicR_OTF;
+}
+
+header .gnb_right .login-tooltip button {
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.6;
+	font-family: HanwhaGothicR_OTF;
+	cursor: pointer;
+}
+
+header .gnb_right .login-tooltip div {
+	height: 15px;
+	width: 1px;
+	background-color: #fff;
+}
+
+header .gnb_right .login:hover {
+	background: url('../images/pc/login_active.svg') no-repeat 0 0;
+	background-size: 27px 27px;
+}
+
+header .gnb_right .login.active {
+	background: url('../images/pc/login_active.svg') no-repeat 0 0;
+	background-size: 27px 27px;
+}
+
+.main_header.scroll .gnb_right .login:hover {
+	background: url('../images/pc/login_scroll_active.svg') no-repeat 0 0;
+	background-size: 27px 27px;
+}
+
+.main_header.scroll .gnb_right .login.active {
+	background: url('../images/pc/login_scroll_active.svg') no-repeat 0 0;
+	background-size: 27px 27px;
+}
+
+.main_header.scroll.active .gnb_right .login:hover {
+	background: url('../images/pc/login_active.svg') no-repeat 0 0;
+	background-size: 27px 27px;
+}
+
+.main_header.scroll.active .gnb_right .login.active {
+	background: url('../images/pc/login_active.svg') no-repeat 0 0;
+	background-size: 27px 27px;
+}
+
+.main_header.scroll .gnb_right .login .login-tooltip {
+	background-color: #fff;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.main_header.scroll .gnb_right .login * {
+	color: #000;
+}
+
+.main_header.scroll .gnb_right .login div {
+	background-color: #000;
 }
 
 
@@ -1675,6 +1757,10 @@ footer select {
 	.layer .family li {
 		width: 50%;
 	}
+
+	header .gnb_right .login  {
+		display: none;
+	}
 }
 
 
@@ -2087,9 +2173,10 @@ footer select {
 		opacity: 1;
 	}
 
-	header .gnb_menu .header__nav__items .header__nav__link {
+	#header .gnb_menu .header__nav__items .header__nav__link {
 		font-size: 22px;
-		color: #f37321;
+		color: #f37321 !important;
+		opacity: 1 !important;
 	}
 	
 	header .gnb_menu .header__nav__items .header__nav__items_sub {

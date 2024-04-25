@@ -196,7 +196,7 @@ $(document).ready(async function() {
 
   $('#header').load('./includes/header.html', function() {
     const gnbTarget = $(document.body).data('gnb-target');
-    if (gnbTarget === 'main') {
+    if (gnbTarget === 'main' && win.outerWidth() > 1024) {
       $('.header__nav__link').addClass('active');
       $('.header__nav__link').hover(function() {
         $('.header__nav__link').removeClass('active');
@@ -225,6 +225,24 @@ $(document).ready(async function() {
     $('.layer.pwd-edit').load('./includes/layer_pwd-edit.html');
     $('.layer.pwd-edit-confirm').load('./includes/layer_pwd-edit-confirm.html');
     $('.layer.pwd-edit-complete').load('./includes/layer_pwd-edit-complete.html');
+  });
+
+  $(document).on('click', 'header .gnb_right .login', function(e) {
+    e.stopPropagation();
+    $('header .gnb_right .login').toggleClass('active');
+    $('header .gnb_right .login .login-tooltip').toggleClass('active');
+  });
+
+  $(document).on('mouseenter', 'header .gnb_right .login', function() {
+    $('header .gnb_right .login .login-tooltip').addClass('active');
+  });
+
+  $(document).on('mouseenter', 'header .gnb_right .login .login-tooltip', function() {
+    $('header .gnb_right .login .login-tooltip').addClass('active');
+  });
+
+  $(document).on('mouseleave', 'header .gnb_right .login .login-tooltip', function() {
+    $('header .gnb_right .login .login-tooltip').removeClass('active');
   });
 
   $(document).on('click', 'header .btn_menu button', function(e) {
