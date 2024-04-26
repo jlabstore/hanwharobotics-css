@@ -678,19 +678,30 @@ header .gnb_right .login.active {
 	background-size: 27px 27px;
 }
 
-.main_header.scroll .gnb_right .login .login-tooltip {
+.main_header.scroll .gnb_right .login .login-tooltip, .sub_header .gnb_right .login .login-tooltip {
 	background-color: #fff;
 	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
-.main_header.scroll .gnb_right .login * {
+.main_header.scroll .gnb_right .login *, .sub_header .gnb_right .login * {
 	color: #000;
 }
 
-.main_header.scroll .gnb_right .login .login-tooltip-content > div {
+.main_header.scroll .gnb_right .login .login-tooltip-content > div, .sub_header .gnb_right .login .login-tooltip-content > div  {
 	background-color: #000;
 }
 
+.sub_header.active .gnb_right .login .login-tooltip, .sub_header.active .gnb_right .login .login-tooltip {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sub_header.active .gnb_right .login * {
+	color: #fff;
+}
+
+.sub_header.active .gnb_right .login .login-tooltip-content > div {
+	background-color: #fff;
+}
 
 header .gnb_right .login span {
 	display: none;
