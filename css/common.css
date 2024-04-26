@@ -608,11 +608,19 @@ header .gnb_right .login-tooltip {
 	top: 45px;
 	left: -93px;
 	display: none;
-	align-items: center;
-	gap: 15px;
 	background-color: rgba(255, 255, 255, 0.3);
 	padding: 11px 18px;
 	border-radius: 8px;
+	-webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+header .gnb_right .login-tooltip .login-tooltip-content {
+	display: flex;
+	align-items: center;
+	gap: 15px;
 }
 
 header .gnb_right .login-tooltip.active {
@@ -634,7 +642,7 @@ header .gnb_right .login-tooltip button {
 	cursor: pointer;
 }
 
-header .gnb_right .login-tooltip div {
+header .gnb_right .login-tooltip > div > div {
 	height: 15px;
 	width: 1px;
 	background-color: #fff;
@@ -679,7 +687,7 @@ header .gnb_right .login.active {
 	color: #000;
 }
 
-.main_header.scroll .gnb_right .login div {
+.main_header.scroll .gnb_right .login .login-tooltip-content > div {
 	background-color: #000;
 }
 

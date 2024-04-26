@@ -58,9 +58,35 @@ $(window).on("load resize", function (e) {
   if(win.outerWidth() <= 1024) {
     headerMinHeight = '70px';
   } else {
-    headerMinHeight = '90px';
-    
+    headerMinHeight = '90px'; 
   }
+
+  if (win.outerWidth() <= 1024) {
+    $(document).on('click', 'header .gnb_right .login', function(e) {
+      e.stopPropagation();
+      $('header .gnb_right .login').toggleClass('active');
+      $('header .gnb_right .login .login-tooltip').toggleClass('active');
+    });
+  } else {
+    $(document).off('click', 'header .gnb_right .login');
+  };
+
+  if(win.outerWidth() > 1024) {
+    $(document).on('mouseenter', 'header .gnb_right .login', function() {
+      $('header .gnb_right .login .login-tooltip').fadeIn(100);
+      $('header .gnb_right .login .login-tooltip').addClass('active');
+    });
+  
+    $(document).on('mouseleave', 'header .gnb_right .login', function() {
+      $('header .gnb_right .login .login-tooltip').fadeOut(100);
+      $('header .gnb_right .login .login-tooltip').removeClass('active');
+    });
+  } else {
+    $(document).off('mouseenter', 'header .gnb_right .login');
+    $(document).off('mouseleave', 'header .gnb_right .login');
+    $('header .gnb_right .login').removeAttr('style');
+    $('header .gnb_right .login .login-tooltip').removeAttr('style');
+  };
 
   // if(win.width() <= 1550) {
   //   headerHeight = '450px';
@@ -225,24 +251,6 @@ $(document).ready(async function() {
     $('.layer.pwd-edit').load('./includes/layer_pwd-edit.html');
     $('.layer.pwd-edit-confirm').load('./includes/layer_pwd-edit-confirm.html');
     $('.layer.pwd-edit-complete').load('./includes/layer_pwd-edit-complete.html');
-  });
-
-  $(document).on('click', 'header .gnb_right .login', function(e) {
-    e.stopPropagation();
-    $('header .gnb_right .login').toggleClass('active');
-    $('header .gnb_right .login .login-tooltip').toggleClass('active');
-  });
-
-  $(document).on('mouseenter', 'header .gnb_right .login', function() {
-    $('header .gnb_right .login .login-tooltip').addClass('active');
-  });
-
-  $(document).on('mouseenter', 'header .gnb_right .login .login-tooltip', function() {
-    $('header .gnb_right .login .login-tooltip').addClass('active');
-  });
-
-  $(document).on('mouseleave', 'header .gnb_right .login .login-tooltip', function() {
-    $('header .gnb_right .login .login-tooltip').removeClass('active');
   });
 
   $(document).on('click', 'header .btn_menu button', function(e) {
