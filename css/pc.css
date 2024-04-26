@@ -726,7 +726,7 @@ main .main {
 }
 
 .sub.cookie .btn_wrap .btn_left button.save {
-	width: 135px;
+	min-width: 135px;
 	height: 43px;
 	padding: 14px 20px 13px 21px;
 	font-family: HanwhaGothicB_OTF;
@@ -738,12 +738,8 @@ main .main {
 	box-sizing: border-box;
 }
 
-.en .sub.cookie .btn_wrap .btn_left button.save {
-  width: 160px;
-}
-
 .sub.cookie .btn_wrap .btn_left button.deny {
-	width: 135px;
+	min-width: 135px;
 	height: 43px;
 	padding: 14px 20px 13px 21px;
 	font-family: HanwhaGothicB_OTF;
@@ -754,10 +750,6 @@ main .main {
   background-color: #fff;
 	border: 1px solid #000;
 	box-sizing: border-box;
-}
-
-.en .sub.cookie .btn_wrap .btn_left button.deny {
-  width: 160px;
 }
 
 .sub.cookie .btn_wrap .btn_right button.agree {

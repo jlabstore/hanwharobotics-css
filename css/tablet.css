@@ -545,7 +545,7 @@ main .main {
 }
 
 .sub.cookie .btn_wrap .btn_left button.save {
-	width: 135px;
+	min-width: 135px;
 	height: 43px;
 	padding: 14px 20px 13px 21px;
 	font-family: HanwhaGothicB_OTF;
@@ -558,7 +558,7 @@ main .main {
 }
 
 .sub.cookie .btn_wrap .btn_left button.deny {
-	width: 135px;
+	min-width: 135px;
 	height: 43px;
 	padding: 14px 20px 13px 21px;
 	font-family: HanwhaGothicB_OTF;
