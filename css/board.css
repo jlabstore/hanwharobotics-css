@@ -4777,7 +4777,7 @@
 .robots-detail-spec-table-title {
   background: #f8f8f8;
   min-width: 180px;
-  min-height: 1325px;
+  min-height: 1328px;
   display: flex;
   align-items: center;
 }
@@ -4883,7 +4883,7 @@
 }
 
 .robots-detail-spec-table-section-item-content2-content .sans-serif {
-  font-family: sans-serif;
+  font-family: Pretendard sans-serif;
 }
 
 .robots-detail-spec-table-section-item-content2 + .robots-detail-spec-table-section-item-content2 {
@@ -4891,7 +4891,7 @@
 }
 
 .robots-detail-spec-table-section-item-title.multiple {
-  min-height: 270px;
+  min-height: 275px;
   display: flex;
   align-items: center;
 }
@@ -6123,7 +6123,7 @@
   }
 
   .robots-detail-spec-table-section-item-title.multiple {
-    min-height: 257px;
+    min-height: 270px;
   }
 
   .robots-detail-spec-table-section-item-title.multiple2 {
