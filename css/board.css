@@ -4178,11 +4178,12 @@
 .products-detail-spec-table-item-cell > span {
   padding-top: 14px;
   padding-bottom: 13px;
+  padding-left: 25px;
   background-color: #f7f7f7;
   min-width: 230px;
   height: inherit;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 16px;
   font-family: HanwhaGothicEL_OTF;
