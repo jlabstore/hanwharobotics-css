@@ -2315,11 +2315,12 @@
 }
 
 .about-main-section-3 h2 {
-  font-family: HanwhaGothicB_OTF;
+  font-family: HanwhaR_OTF;
   font-size: 60px;
   color: #000;
   margin-bottom: 56px;
   text-align: center;
+  letter-spacing: -0.03em;
 }
 
 .about-main-section-3 h2 strong {
@@ -2370,11 +2371,12 @@
 }
 
 .about-main-section-4 h2 {
-  font-family: HanwhaGothicB_OTF;
+  font-family: HanwhaR_OTF;
   font-size: 60px;
   color: #000;
   margin-bottom: 75px;
   text-align: center;
+  letter-spacing: -0.03em;
 }
 
 .about-main-section-4 h2 strong {
