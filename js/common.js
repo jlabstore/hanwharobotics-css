@@ -532,6 +532,79 @@ $(document).ready(async function() {
     ]
   })
 
+  $('.ecosystem-main-slider1').slick({
+    dots: true,
+    arrows: true,
+    infinite: false,
+    autoplay: false,
+    slidesPerRow: 4,
+    rows: 3,
+    variableWidth: true,
+    prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: true,
+          draggable: true,
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 765,
+        settings: {
+          arrows: true,
+          draggable: true,
+          variableWidth: true,
+          slidesToShow: 1,
+          swipeToSlide: true
+        }
+      },
+    ]
+  })
+
+  $('.ecosystem-template-01-slider1').slick({
+    dots: true,
+    arrows: true,
+    infinite: false,
+    autoplay: false,
+    slidesPerRow: 4,
+    rows: 2,
+    variableWidth: true,
+    prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: true,
+          draggable: true,
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 765,
+        settings: {
+          arrows: true,
+          draggable: true,
+          variableWidth: true,
+          slidesToShow: 1,
+          swipeToSlide: true
+        }
+      },
+    ]
+  })
+
+  $('.ecosystem-template-01-info-slider').slick({
+    arrows: true,
+    infinite: true,
+    autoplay: false,
+    slidesToShow: 1,
+    prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/ecosystem_template_slider_left.svg' alt='' /></button>",
+    nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/ecosystem_template_slider_right.svg' alt='' /></button>",
+  })
+
   if (win.outerWidth() > 765) {
     $('#nav1-1-content').show();
   } else {
