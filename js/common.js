@@ -27,14 +27,6 @@ function showLayer(layerName, target, headerMinHeight, bgColor = '#fff', opacity
   $('#header').removeClass('active');
 }
 
-$(window).on('resize', function() {
-  const gnbTarget = $(document.body).data('gnb-target');
-
-  if (gnbTarget === 'robot' && win.outerWidth() <= 765) {
-    window.location.reload();
-  }
-});
-
 // pc, table, mobile 여부
 $(window).on("load resize", function (e) {
   $('#header .header__nav__items_sub').removeClass('active');
