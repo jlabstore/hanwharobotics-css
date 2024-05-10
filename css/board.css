@@ -5614,8 +5614,16 @@
   overflow-y: scroll;
 }
 
+.ecosystem-template-01-info-content p strong {
+  font-family: HanwhaGothicR_OTF;
+}
+
 .ecosystem-template-01.type2 .ecosystem-template-01-info-content p {
   height: 229px;
+}
+
+.ecosystem-template-01.type3 .ecosystem-template-01-info-content p {
+  height: 205px;
 }
 
 .ecosystem-template-01-info-arrow {
@@ -5623,6 +5631,17 @@
   bottom: -17px;
   right: calc(50% - 10px);
   transform: rotate(180deg);
+}
+
+.ecosystem-template-01-spec-item-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.ecosystem-template-01-spec-item-link.type2 {
+  gap: 10px;
 }
 
 .ecosystem-template-01-info-badge {
@@ -5636,6 +5655,11 @@
   font-size: 15px;
   font-family: HanwhaGothicEL_OTF;
   color: #000;
+  text-align: center;
+}
+
+.ecosystem-template-01-info-badge.type2 {
+  padding: 10px 20px;
 }
 
 .ecosystem-template-01-spec {
@@ -5653,6 +5677,132 @@
   width: 100%;
   gap: 25px;
   overflow: scroll;
+}
+
+.ecosystem-template-01-spec-item2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+
+.ecosystem-template-01-spec-item3 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ecosystem-template-01-spec-item4 {
+  border-top: 1px solid #cbcbcb;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.ecosystem-template-01-spec-item4 > p {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #000;
+
+}
+
+.ecosystem-template-01-spec-item5 {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.ecosystem-template-01-spec-item6 {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.ecosystem-template-01-spec-item6 > p {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #666;
+}
+
+.ecosystem-template-01-spec-item7 {
+  border-top: 1px solid #cbcbcb;
+  padding-top: 25px;
+}
+
+.ecosystem-template-01-spec-item7.type2 {
+  padding-bottom: 60px;
+}
+
+.ecosystem-template-01-spec-item7 > p {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.63;
+}
+
+.ecosystem-template-01-spec-item7 > p > strong {
+  font-family: HanwhaGothicR_OTF;
+}
+
+.ecosystem-template-01-spec-divider {
+  border-top: 1px solid #cbcbcb;
+  margin-bottom: 30px;
+}
+
+.ecosystem-template-01-spec-item1-table-content-imgs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ecosystem-template-01-spec-item-info {
+  text-align: center;
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #666;
+}
+
+.ecosystem-template-01-spec-item3-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ecosystem-template-01-spec-item3-section p {
+  font-family: HanwhaGothicR_OTF;
+  font-size: 18px;
+  color: #000;
+}
+
+.ecosystem-template-01-spec-item2-info {
+  width: 600px;
+  padding: 11px 16px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.ecosystem-template-01-spec-item2-info span {
+  font-family: HanwhaGothicR_OTF;
+  font-size: 16px;
+  color: #000;
+}
+
+.ecosystem-template-01-spec-item2-info img {
+  position: absolute;
+  top: 9px;
+  right: 14px;
 }
 
 .ecosystem-template-01-spec-item1 > h2 {
@@ -5714,6 +5864,31 @@
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.ecosystem-template-01-spec-item1-table-content.type3-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 45px;
+}
+
+.ecosystem-template-01-spec-item1-table-content.type4-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 84px;
+}
+
+.ecosystem-template-01-spec-item1-table-content.type3 {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.ecosystem-template-01-spec-item1-table-content.type3 > p {
+  font-family: HanwhaGothicR_OTF;
+  font-size: 18px;
+  color: #f60;
 }
 
 .ecosystem-template-01-spec-item1-table-content-img img {
