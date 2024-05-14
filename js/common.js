@@ -410,9 +410,6 @@ $(document).ready(async function() {
 
   $('.products-section2-slider').slick({
     rows: 3,
-    /** 추후 슬라이드 9개 초과하였을 시, 활성화 */
-    // dots: true,
-    // arrows: true,
     dots: false,
     arrows: false,
     slidesPerRow: 3,
@@ -427,12 +424,16 @@ $(document).ready(async function() {
         settings: {
           rows: 3,
           slidesPerRow: 2,
-          draggable: true
+          draggable: true,
+          dots: true,
+          arrows: true
         }
       },
       {
         breakpoint: 765,
         settings: {
+          dots: true,
+          arrows: true,
           rows: 3,
           slidesPerRow: 1,
           draggable: true
