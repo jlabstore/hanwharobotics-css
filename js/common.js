@@ -539,26 +539,21 @@ $(document).ready(async function() {
     autoplay: false,
     slidesPerRow: 4,
     rows: 3,
-    variableWidth: true,
     prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
     nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          arrows: true,
-          draggable: true,
-          slidesToShow: 2,
+          slidesPerRow: 3,
+          rows: 4,
         }
       },
       {
         breakpoint: 765,
         settings: {
-          arrows: true,
-          draggable: true,
-          variableWidth: true,
-          slidesToShow: 1,
-          swipeToSlide: true
+          slidesPerRow: 2,
+          rows: 3,
         }
       },
     ]
@@ -571,26 +566,21 @@ $(document).ready(async function() {
     autoplay: false,
     slidesPerRow: 4,
     rows: 2,
-    variableWidth: true,
     prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
     nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          arrows: true,
-          draggable: true,
-          slidesToShow: 2,
+          slidesPerRow: 3,
+          rows: 2,
         }
       },
       {
         breakpoint: 765,
         settings: {
-          arrows: true,
-          draggable: true,
-          variableWidth: true,
-          slidesToShow: 1,
-          swipeToSlide: true
+          slidesPerRow: 2,
+          rows: 3,
         }
       },
     ]
@@ -604,6 +594,14 @@ $(document).ready(async function() {
     prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/ecosystem_template_slider_left.svg' alt='' /></button>",
     nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/ecosystem_template_slider_right.svg' alt='' /></button>",
   })
+
+  if (win.outerWidth() <= 765) {
+    $('.tab-nav-mobile').change(function() {
+      let value = $('.tab-nav-mobile option:selected').val();
+      $('.nav-content').hide();
+      $(`#${value}-content`).show();
+    });
+  }
 
   if (win.outerWidth() > 765) {
     $('#nav1-1-content').show();
