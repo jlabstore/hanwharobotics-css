@@ -36,7 +36,7 @@
         <ul class="header__nav__items">
           <li>
             <!-- <a class="header__nav__link" href="/about.html" target="_blank">ABOUT</a> -->
-            <span class="header__nav__link active">ABOUT</span>
+            <span class="header__nav__link" data-gnb="about">ABOUT</span>
 
             <ul class="header__nav__items_sub">
               <li>
@@ -61,7 +61,7 @@
           </li>
           <li>
             <!-- <a class="header__nav__link on" href="https://o.hanwharobotics.com/" target="_blank">ROBOT</a> -->
-            <span class="header__nav__link on">ROBOT</span>
+            <span class="header__nav__link on" data-gnb="robot">ROBOT</span>
             <ul class="header__nav__items_sub">
               <li>
                 <a href="#" class="on" target="_blank">Products</a>
@@ -69,17 +69,17 @@
               <li>
                 <a href="#" target="_blank">Solutions</a>
               </li>
-              <!-- <li>
+              <li>
                 <a href="#" target="_blank">Ecosystem</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#" target="_blank">Case Study</a>
               </li> -->
             </ul>
           </li>
           <li>
             <!-- <a class="header__nav__link" href="https://www.hanwhacorp.co.kr/momentum/business/logistics.jsp" target="_blank">AGVS</a> -->
-            <span class="header__nav__link">AGV/AMR</span>
+            <span class="header__nav__link" data-gnb="agv/amr">AGV/AMR</span>
 
             <ul class="header__nav__items_sub">
               <li>
@@ -95,7 +95,7 @@
           </li>
           <li>
             <!-- <a class="header__nav__link" href="/newroom.html" target="_blank">NEWSROOM</a> -->
-            <span class="header__nav__link">NEWSROOM</span>
+            <span class="header__nav__link" data-gnb="newsroom">NEWSROOM</span>
           
             <ul class="header__nav__items_sub">
               <li>
@@ -111,13 +111,22 @@
           </li>
           <li>
             <!-- <a class="header__nav__link" href="/newroom.html" target="_blank">CONTACT</a> -->
-            <span class="header__nav__link">CONTACT</span>
+            <span class="header__nav__link" data-gnb="contact">CONTACT</span>
           
             <ul class="header__nav__items_sub">
               <li>
                 <a href="#" target="_blank">Sales Inquiry</a>
               </li>
             </ul>
+          </li>
+          <li class="header__nav__login">
+
+            <!-- 로그인 -->
+            <a href="#" class="header__nav__link" style="margin-bottom: 23px;" data-gnb="mypage">My Page</a>
+            <a href="#" class="header__nav__link">Logout</a>
+        
+            <!-- 미로그인 -->
+            <!-- <a href="#" class="header__nav__link">로그인/회원가입</a> -->
           </li>
         </ul>
 
