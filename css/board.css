@@ -944,6 +944,11 @@
   width: 92px;
   background-color: #ff6600;
 }
+.en .qna-list .board-type1 .board_list .tbody .td .qna_ing {
+  width: 100px;
+  font-size: 10px;
+}
+
 .qna-list .board-type1 .board_list .tbody .td .qna_complete {
   width: 80px;
   background-color: #888;
@@ -1016,12 +1021,20 @@
   height: 46px;
 }
 
+.en .qna-popup .btn-group .round-btn  {
+  width: 215px;
+}
+
 .qna-popup .btn-group .round-btn.inquiry {
   background-color: #f37321;
   border-color: #f37321;
   color: #fff;
   border: none;
   width: 132px;
+}
+
+.en .qna-popup .btn-group .round-btn.inquiry {
+  width: 160px;
 }
 
 .qna-view .board-type1 h1 span {
@@ -1265,6 +1278,12 @@
   color: #666;
 }
 
+.en .qna-write-des-box span {
+  line-height: 1.5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .qna-write-des-box span a {
   font-family: HanwaGothicR_OTF;
   color: #000;
@@ -1317,7 +1336,12 @@
   font-size: 16px;
   line-height: 3.88;
   color: #666;
+}
 
+.en .qna-write-form-file-wrapper > span {
+  line-height: 1.5;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .qna-write-file-list {
@@ -1460,6 +1484,10 @@
   grid-template-columns: 155px 1fr 1fr;
 }
 
+.en .qna-view-section-content ul li {
+  gap: 29px;
+}
+
 .qna-view-section-content ul li div {
   display: flex;
   gap: 10px;
@@ -1478,6 +1506,10 @@
   min-width: 110px;
   display: flex;
   gap: 10px;
+}
+
+.en .qna-view-section-title {
+  line-height: 1.2;
 }
 
 .qna-view-section-title h4 {
@@ -1661,6 +1693,10 @@
   width: 100%;
 }
 
+.en .qna-view-answer-wrapper {
+  padding-top: 20px;
+}
+
 .qna-view-answer-text {
   height: 145px;
   resize: none;
@@ -1697,6 +1733,10 @@
   font-family: HanwhaGothicB_OTF;
   font-size: 16px;
   color: #000;
+}
+
+.en .qna-view-nav h4 {
+  min-width: 100px;
 }
 
 .qna-view-nav > div {
