@@ -3877,6 +3877,10 @@
   text-align: center;
 }
 
+.products .nav3-content-text > p {
+  max-width: 640px;
+}
+
 .nav1-1-divider {
   height: inherit;
   width: 1px;
@@ -4433,7 +4437,7 @@
 }
 
 .en .robots-section3-certi-top > h5 {
-  word-break: break-all;
+  word-break: keep-all;
 }
 
 .robots-section3-certi-top {
