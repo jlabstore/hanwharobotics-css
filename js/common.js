@@ -525,7 +525,7 @@ $(document).ready(async function() {
     ]
   })
 
-  $('.ecosystem-main-slider1').slick({
+  $('#ecosystem-main-slider1').slick({
     dots: true,
     arrows: true,
     infinite: false,
@@ -552,7 +552,131 @@ $(document).ready(async function() {
     ]
   })
 
-  $('.ecosystem-template-01-slider1').slick({
+  $('.ecosystem-section .tab-nav #nav2').change(function() {
+    if ($(this).is(':checked')) {
+      $('#ecosystem-main-slider2').slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        slidesPerRow: 4,
+        rows: 3,
+        prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesPerRow: 3,
+              rows: 4,
+            }
+          },
+          {
+            breakpoint: 765,
+            settings: {
+              slidesPerRow: 2,
+              rows: 3,
+            }
+          },
+        ]
+      })
+    }
+  })
+  
+  $('.ecosystem-section .tab-nav #nav3').change(function() {
+    if ($(this).is(':checked')) {
+      $('#ecosystem-main-slider3').slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        slidesPerRow: 4,
+        rows: 3,
+        prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesPerRow: 3,
+              rows: 4,
+            }
+          },
+          {
+            breakpoint: 765,
+            settings: {
+              slidesPerRow: 2,
+              rows: 3,
+            }
+          },
+        ]
+      })
+    }
+  })
+
+  $('.ecosystem-section .tab-nav #nav4').change(function() {
+    if ($(this).is(':checked')) {
+      $('#ecosystem-main-slider4').slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        slidesPerRow: 4,
+        rows: 3,
+        prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesPerRow: 3,
+              rows: 4,
+            }
+          },
+          {
+            breakpoint: 765,
+            settings: {
+              slidesPerRow: 2,
+              rows: 3,
+            }
+          },
+        ]
+      })
+    }
+  })
+
+  $('.ecosystem-section .tab-nav #nav5').change(function() {
+    if ($(this).is(':checked')) {
+      $('#ecosystem-main-slider5').slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        slidesPerRow: 4,
+        rows: 3,
+        prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesPerRow: 3,
+              rows: 4,
+            }
+          },
+          {
+            breakpoint: 765,
+            settings: {
+              slidesPerRow: 2,
+              rows: 3,
+            }
+          },
+        ]
+      })
+    }
+  })
+
+  $('#ecosystem-template-01-slider1').slick({
     dots: true,
     arrows: true,
     infinite: false,
@@ -579,6 +703,130 @@ $(document).ready(async function() {
     ]
   })
 
+  $('.ecosystem-template-01-section .tab-nav #nav2').change(function() {
+    if ($(this).is(':checked')) {
+      $('#ecosystem-template-01-slider2').slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        slidesPerRow: 4,
+        rows: 2,
+        prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesPerRow: 3,
+              rows: 2,
+            }
+          },
+          {
+            breakpoint: 765,
+            settings: {
+              slidesPerRow: 2,
+              rows: 3,
+            }
+          },
+        ]
+      })
+    }
+  })
+
+  $('.ecosystem-template-01-section .tab-nav #nav3').change(function() {
+    if ($(this).is(':checked')) {
+      $('#ecosystem-template-01-slider3').slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        slidesPerRow: 4,
+        rows: 2,
+        prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesPerRow: 3,
+              rows: 2,
+            }
+          },
+          {
+            breakpoint: 765,
+            settings: {
+              slidesPerRow: 2,
+              rows: 3,
+            }
+          },
+        ]
+      })
+    }
+  })
+
+  $('.ecosystem-template-01-section .tab-nav #nav4').change(function() {
+    if ($(this).is(':checked')) {
+      $('#ecosystem-template-01-slider4').slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        slidesPerRow: 4,
+        rows: 2,
+        prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesPerRow: 3,
+              rows: 2,
+            }
+          },
+          {
+            breakpoint: 765,
+            settings: {
+              slidesPerRow: 2,
+              rows: 3,
+            }
+          },
+        ]
+      })
+    }
+  })
+
+  $('.ecosystem-template-01-section .tab-nav #nav5').change(function() {
+    if ($(this).is(':checked')) {
+      $('#ecosystem-template-01-slider5').slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        slidesPerRow: 4,
+        rows: 2,
+        prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesPerRow: 3,
+              rows: 2,
+            }
+          },
+          {
+            breakpoint: 765,
+            settings: {
+              slidesPerRow: 2,
+              rows: 3,
+            }
+          },
+        ]
+      })
+    }
+  })
+
   $('.ecosystem-template-01-info-slider').slick({
     arrows: true,
     infinite: true,
@@ -593,6 +841,46 @@ $(document).ready(async function() {
       let value = $('.tab-nav-mobile option:selected').val();
       $('.nav-content').hide();
       $(`#${value}-content`).show();
+
+      $(`#${value}-content .ecosystem-main-slider1`).slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        slidesPerRow: 4,
+        rows: 3,
+        prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+        responsive: [
+          {
+            breakpoint: 765,
+            settings: {
+              slidesPerRow: 2,
+              rows: 3,
+            }
+          },
+        ]
+      })
+
+      $(`#${value}-content .ecosystem-template-01-slider1`).slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        slidesPerRow: 4,
+        rows: 2,
+        prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+        responsive: [
+          {
+            breakpoint: 765,
+            settings: {
+              slidesPerRow: 2,
+              rows: 3,
+            }
+          },
+        ]
+      })
     });
   }
 
