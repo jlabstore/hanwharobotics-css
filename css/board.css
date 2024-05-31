@@ -10686,6 +10686,11 @@
     margin-bottom: 35px;
   }
 
+  .ecosystem-template-01-spec-item-link.type2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .ecosystem-template-01-spec-item-link > div > img {
     width: 100%;
   }
