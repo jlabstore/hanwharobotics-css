@@ -1926,6 +1926,10 @@
   align-items: center;
 }
 
+.en .login-action-group a br {
+  display: none;
+}
+
 .login-find-txt {
   font-family: HanwhaGothicEL_OTF;
   font-size: 16px;
@@ -2906,6 +2910,14 @@
   display: none;
 }
 
+.en .mypage.main .mypage-contents .mypage-section br {
+  display: block;
+}
+
+.en .mypage.main .mypage-contents .mypage-section.agency h2 {
+  line-height: 1.5;
+}
+
 .mypage-btn-group {
   display: flex;
   justify-content: space-between;
@@ -3006,6 +3018,11 @@
 
 .mypage-contents.edit .mypage-section h2 {
   min-width: 160px;
+}
+
+.en .mypage-contents.edit .mypage-section.multi h2 {
+  line-height: 2;
+  max-width: 160px;
 }
 
 .mypage-edit-zipcode {
@@ -3213,6 +3230,10 @@
   cursor: pointer;
 }
 
+.pwd-edit-confirm-popup.en .btn-group .round-btn {
+  width: 200px;
+}
+
 .layer.pwd-edit-complete .btn-group {
   padding-bottom: 0;
 }
@@ -3248,6 +3269,10 @@
   word-break: break-all;
 }
 
+.en .signup-terms-text p {
+  word-break: keep-all;
+}
+
 .signup-terms-text p strong {
   font-family: HanwhaGothicR_OTF;
   font-size: 18px;
@@ -3277,6 +3302,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.en .signup-terms-btngroup button {
+  width: 300px;
 }
 
 .signup-terms-btngroup .checkbox-common span {
@@ -3445,6 +3474,10 @@
 
 .signup-done {
   width: 240px !important;
+}
+
+.en .signup-done {
+  width: 280px !important;
 }
 
 .signup-message-warning {
@@ -7930,6 +7963,10 @@
   .signup-terms-btngroup button {
     width: 100%;
   }
+
+  .en .signup-terms-btngroup button {
+    width: 100%;
+  }
   /* My Page */
 
   .products-detail-spec-table-item-cell > p {
@@ -9102,8 +9139,20 @@
     padding-left: 15px;
   }
 
+  .en .mypage-section input::placeholder {
+    font-size: 12px;
+  }
+
+  .en .mypage-contents.edit .mypage-section.multi h2 {
+    max-width: none;
+  }
+
   .mypage.main .mypage-contents .mypage-section.agency h2 {
     line-height: 1.38;
+  }
+
+  .en .mypage.main .mypage-contents .mypage-section.agency h2 {
+    font-size: 12px;
   }
 
   .mypage.main .mypage-contents .mypage-section.agency span {
@@ -10801,6 +10850,14 @@
       color: #656565;
       line-height: 1.6;
       height: 100%;
+    }
+
+    .en .login-action-group a {
+      font-size: 13px;
+    }
+
+    .en .login-action-group a br {
+      display: block;
     }
   
     .login-action-group a + a {
