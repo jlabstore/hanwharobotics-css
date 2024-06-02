@@ -5723,7 +5723,7 @@
   color: #000;
   line-height: 1.63;
   height: 184px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .ecosystem-template-01-info-content p strong {
@@ -5743,6 +5743,7 @@
   bottom: -17px;
   right: calc(50% - 10px);
   transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .ecosystem-template-01-spec-item-link {
@@ -5788,7 +5789,7 @@
   flex-direction: column;
   width: 100%;
   gap: 25px;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .ecosystem-template-01-spec-item2 {

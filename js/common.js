@@ -934,6 +934,10 @@ $(document).ready(async function() {
     })
   }
 
+  $('.ecosystem-template-01-info-arrow').click(function() {
+    $('.ecosystem-template-01-info-content p').animate({scrollTop: '+=100px'}, 300);
+  })
+
   $(".nav1-content-mobile-title").click(function() {
     $(this).next(".nav1-content-mobile-content").stop().slideToggle(300);
     $(this).toggleClass('on').siblings().removeClass('on');
