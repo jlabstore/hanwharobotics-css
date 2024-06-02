@@ -926,6 +926,14 @@ $(document).ready(async function() {
     $('.nav1-content-mobile-title').first().toggleClass('on').next('.nav1-content-mobile-content').slideToggle(300);
   }
 
+
+  if (win.outerWidth() <= 765) {
+    $('.robots-detail-spec-mobile-scroll').click(function() {
+      $(this).hide();
+      $(this).parent().css('overflow-x', 'scroll');
+    })
+  }
+
   $(".nav1-content-mobile-title").click(function() {
     $(this).next(".nav1-content-mobile-content").stop().slideToggle(300);
     $(this).toggleClass('on').siblings().removeClass('on');
