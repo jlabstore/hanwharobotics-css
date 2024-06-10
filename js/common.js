@@ -525,7 +525,7 @@ $(document).ready(async function() {
     ]
   })
 
-  $('#ecosystem-main-slider1').slick({
+  $('#ecosystem-main-slider1').not('.slick-initialized').slick({
     dots: true,
     arrows: true,
     infinite: false,
@@ -554,7 +554,7 @@ $(document).ready(async function() {
 
   $('.ecosystem-section .tab-nav #nav2').change(function() {
     if ($(this).is(':checked')) {
-      $('#ecosystem-main-slider2').slick({
+      $('#ecosystem-main-slider2').not('.slick-initialized').slick({
         dots: true,
         arrows: true,
         infinite: false,
@@ -585,7 +585,7 @@ $(document).ready(async function() {
   
   $('.ecosystem-section .tab-nav #nav3').change(function() {
     if ($(this).is(':checked')) {
-      $('#ecosystem-main-slider3').slick({
+      $('#ecosystem-main-slider3').not('.slick-initialized').slick({
         dots: true,
         arrows: true,
         infinite: false,
@@ -616,7 +616,7 @@ $(document).ready(async function() {
 
   $('.ecosystem-section .tab-nav #nav4').change(function() {
     if ($(this).is(':checked')) {
-      $('#ecosystem-main-slider4').slick({
+      $('#ecosystem-main-slider4').not('.slick-initialized').slick({
         dots: true,
         arrows: true,
         infinite: false,
@@ -647,7 +647,7 @@ $(document).ready(async function() {
 
   $('.ecosystem-section .tab-nav #nav5').change(function() {
     if ($(this).is(':checked')) {
-      $('#ecosystem-main-slider5').slick({
+      $('#ecosystem-main-slider5').not('.slick-initialized').slick({
         dots: true,
         arrows: true,
         infinite: false,
@@ -676,7 +676,7 @@ $(document).ready(async function() {
     }
   })
 
-  $('#ecosystem-template-01-slider1').slick({
+  $('#ecosystem-template-01-slider1').not('.slick-initialized').slick({
     dots: true,
     arrows: true,
     infinite: false,
@@ -703,9 +703,9 @@ $(document).ready(async function() {
     ]
   })
 
-  $('.ecosystem-template-01-section .tab-nav #nav2').change(function() {
+  $('.ecosystem-template-01-section .tab-nav #nav1').change(function() {
     if ($(this).is(':checked')) {
-      $('#ecosystem-template-01-slider2').slick({
+      $('#ecosystem-template-01-slider2').not('.slick-initialized').slick({
         dots: true,
         arrows: true,
         infinite: false,
@@ -732,11 +732,46 @@ $(document).ready(async function() {
         ]
       })
     }
+
+    $('#ecosystem-template-01-slider1').slick('slickGoTo', 0);
+  })
+
+  $('.ecosystem-template-01-section .tab-nav #nav2').change(function() {
+    if ($(this).is(':checked')) {
+      $('#ecosystem-template-01-slider2').not('.slick-initialized').slick({
+        dots: true,
+        arrows: true,
+        infinite: false,
+        autoplay: false,
+        slidesPerRow: 4,
+        rows: 2,
+        prevArrow: "<button type='button' class='slick-prev'><img src='../images/pc/robots_slider_arrow_left.svg' alt='' /></button>",
+        nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesPerRow: 3,
+              rows: 2,
+            }
+          },
+          {
+            breakpoint: 765,
+            settings: {
+              slidesPerRow: 2,
+              rows: 3,
+            }
+          },
+        ]
+      })
+    }
+
+    $('#ecosystem-template-01-slider2').slick('slickGoTo', 0);
   })
 
   $('.ecosystem-template-01-section .tab-nav #nav3').change(function() {
     if ($(this).is(':checked')) {
-      $('#ecosystem-template-01-slider3').slick({
+      $('#ecosystem-template-01-slider3').not('.slick-initialized').slick({
         dots: true,
         arrows: true,
         infinite: false,
@@ -767,7 +802,7 @@ $(document).ready(async function() {
 
   $('.ecosystem-template-01-section .tab-nav #nav4').change(function() {
     if ($(this).is(':checked')) {
-      $('#ecosystem-template-01-slider4').slick({
+      $('#ecosystem-template-01-slider4').not('.slick-initialized').slick({
         dots: true,
         arrows: true,
         infinite: false,
@@ -793,12 +828,14 @@ $(document).ready(async function() {
           },
         ]
       })
+
+      $('#ecosystem-template-01-slider4').slick('slickGoTo', 0);
     }
   })
 
   $('.ecosystem-template-01-section .tab-nav #nav5').change(function() {
     if ($(this).is(':checked')) {
-      $('#ecosystem-template-01-slider5').slick({
+      $('#ecosystem-template-01-slider5').not('.slick-initialized').slick({
         dots: true,
         arrows: true,
         infinite: false,
@@ -824,6 +861,8 @@ $(document).ready(async function() {
           },
         ]
       })
+
+      $('#ecosystem-template-01-slider5').slick('slickGoTo', 0);
     }
   })
 
@@ -842,7 +881,7 @@ $(document).ready(async function() {
       $('.nav-content').hide();
       $(`#${value}-content`).show();
 
-      $(`#${value}-content .ecosystem-main-slider1`).slick({
+      $(`#${value}-content .ecosystem-main-slider1`).not('.slick-initialized').slick({
         dots: true,
         arrows: true,
         infinite: false,
@@ -862,7 +901,9 @@ $(document).ready(async function() {
         ]
       })
 
-      $(`#${value}-content .ecosystem-template-01-slider1`).slick({
+      $(`#${value}-content .ecosystem-main-slider1`).slick('slickGoTo', 0);
+
+      $(`#${value}-content .ecosystem-template-01-slider1`).not('.slick-initialized').slick({
         dots: true,
         arrows: true,
         infinite: false,
@@ -881,8 +922,18 @@ $(document).ready(async function() {
           },
         ]
       })
+
+      $(`#${value}-content .ecosystem-template-01-slider1`).slick('slickGoTo', 0);
     });
   }
+
+  // $(document).on('click', '.ecosystem-template-01-section input[type=radio]', function(e) {
+  //   $('.ecosystem-template-01-slider1').slick('slickGoTo', 0);
+  // });
+
+  // $(document).on('click', '.ecosystem-section input[type=radio]', function(e) {
+  //   $('.ecosystem-main-slider1').slick('slickGoTo', 0);
+  // });
 
   if (win.outerWidth() > 765) {
     $('#nav1-1-content').show();

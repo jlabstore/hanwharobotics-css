@@ -20,6 +20,8 @@ header.active .header_inner{
 }
 header .header_wrapper {
 	background-color: #f60;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 header.active .header_wrapper {
 	background-color: #000;

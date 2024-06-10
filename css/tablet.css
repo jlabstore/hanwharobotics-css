@@ -20,7 +20,8 @@ header {
 
 header .header_inner {
 	max-width: 1500px;
-
+  padding-left: 50px;
+  padding-right: 50px;
   background-color: #f60;
 }
 
