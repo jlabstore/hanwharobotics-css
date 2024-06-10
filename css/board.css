@@ -5816,8 +5816,20 @@
   text-align: center;
 }
 
+.en .ecosystem-template-01-info-badge {
+  padding: 10px 20px;
+}
+
 .ecosystem-template-01-info-badge.type2 {
   padding: 10px 20px;
+}
+
+.en .ecosystem-template-01-info-badge.type2 {
+  width: 110px;
+}
+
+.en .ecosystem-template-01-info-badge.type3 {
+  width: 165px;
 }
 
 .ecosystem-template-01-spec {
@@ -7244,6 +7256,14 @@
   .ecosystem-template-01-info-badge {
     top: 60px;
     right: calc(50% - 100px - 60px);
+  }
+
+  .en .ecosystem-template-01-info-badge.type2 {
+    right: calc(50% - 110px - 60px);
+  }
+
+  .en .ecosystem-template-01-info-badge.type3 {
+    right: calc(50% - 165px - 60px);
   }
 
   .ecosystem-template-01-info-content h3 {
