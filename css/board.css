@@ -1478,6 +1478,7 @@
   align-items: flex-start;
   gap: 40px;
   grid-template-columns: 155px 1fr 1fr;
+  width: 100%;
 }
 
 .en .qna-view-section-content ul li {
@@ -1541,7 +1542,7 @@
 .qna-view-product-list span {
   line-height: 1.5;
   max-width: 135px;
-  word-break: break-all;
+  white-space: nowrap;
 }
 
 .qna-viw-qna-wrapper {
@@ -1572,6 +1573,10 @@
   font-size: 16px;
   color: #000;
   line-height: 1.88;
+}
+
+.en .qna-view-question div h4 {
+  min-width: 60px;
 }
 
 .qna-view-question div p {
@@ -1611,10 +1616,18 @@
   gap: 25px;
 }
 
+.en .qna-view-answer div {
+  gap: 20px;
+}
+
 .qna-view-answer-my-btngroup {
   display: flex;
   gap: 5px !important;
   margin-left: 55px;
+}
+
+.en .qna-view-answer-my-btngroup {
+  margin-left: 75px;
 }
 
 .qna-view-answer-my-btngroup .qna-view-answer-my-btn {
@@ -1651,6 +1664,11 @@
   color: #000;
   line-height: 1.88;
 }
+
+.en .qna-view-answer div h4  {
+  min-width: 60px;
+}
+
 
 .qna-view-answer div p {
   font-family: HanwhaGothicEL_OTF;
@@ -5397,6 +5415,10 @@
   display: none;
 }
 
+.en .ecosystem-nav3 > span > br {
+  display: none;
+}
+
 .ecosystem-section > .tab-nav #nav1:checked ~ .tab-content-wrapper #nav1-content,
 .ecosystem-section > .tab-nav #nav3:checked ~ .tab-content-wrapper #nav3-content,
 .ecosystem-section > .tab-nav #nav4:checked ~ .tab-content-wrapper #nav4-content,
@@ -6723,6 +6745,12 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .en .ecosystem-section > .tab-nav > .tab-nav-wrapper {
+    padding: 22px 0 23px;
+  }
+}
+
 @media (max-width: 1024px) {
   .qna-view {
     padding: 190px 30px 0;
@@ -7309,6 +7337,14 @@
     overflow: hidden;
     padding-bottom: 0;
   }
+
+  .en .ecosystem-nav3 > span > br {
+    display: block;
+  }
+
+  .en .ecosystem-section > .tab-nav > .tab-nav-wrapper {
+    border-radius: 48.5px;
+  }
   /* Ecosystem */
 }
 
@@ -7743,6 +7779,10 @@
     display: flex;
   }
 
+  .en .qna-view .qna-view-container .qna-view-section.mobile .qna-view-writer-mobile {
+    gap: 10px;
+  }
+
   .qna-view-section-title {
     min-width: 50px;
   }
@@ -7757,6 +7797,11 @@
   }
 
   .qna-view .qna-view-container .qna-view-section:nth-child(3) {
+    align-items: flex-start;
+  }
+
+  .qna-view .qna-view-container .qna-view-section:nth-child(3) {
+    flex-direction: column;
     align-items: flex-start;
   }
 
@@ -7785,6 +7830,7 @@
   .qna-view-section-content ul {
     padding-top: 27px;
     padding-bottom: 12px;
+    width: 100%;
   }
 
   .qna-view-section-content ul li {
