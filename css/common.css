@@ -36,6 +36,12 @@
 	font-display: swap;
 	src: local('HanwhaR_OTF'), url('../fonts/HanwhaR_OTF.woff') format('woff'), url('../fonts/HanwhaR_OTF.woff2') format('woff2');
 }
+@font-face {
+	font-family: 'HanwhaB_OTF';
+	font-weight: 900;
+	font-display: swap;
+	src: local('HanwhaB_OTF'), url('../fonts/HanwhaB_OTF.woff') format('woff'), url('../fonts/HanwhaB_OTF.woff2') format('woff2');
+}
 
 
 /* ---------- css reset ---------- */

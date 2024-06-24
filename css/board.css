@@ -2395,6 +2395,10 @@
   color: #ff7600;
 }
 
+.en .about-main-section-3 h2 b {
+  font-family: HanwhaB_OTF;
+}
+
 .about-main-section-3-container {
   display: flex;
   justify-content: space-between;
