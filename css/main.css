@@ -1539,6 +1539,11 @@ header .more_btn  a.distributor {
 		max-width: 90%;
 	}
 
+	.en .main-case-studies-item-text {
+		left: 20px;
+		top: calc(50% - 60.5px);
+	}
+
 	.main-case-studies-title > h2 {
 		font-size: 50px;
 	}
@@ -1923,6 +1928,10 @@ header .more_btn  a.distributor {
 	footer .column1 .sitemap a {
 		font-size: 15px;
 	}
+
+	.en .main-case-studies-item-text {
+		top: calc(50% - 73.5px);
+	}
 }
 
 @media (max-width: 840px) {
@@ -2051,6 +2060,11 @@ header .more_btn  a.distributor {
 	}
 
 	.main-case-studies-item-text {
+		left: 33px;
+	}
+
+	.en .main-case-studies-item-text {
+		top: calc(50% - 57.5px);
 		left: 33px;
 	}
 
