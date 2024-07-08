@@ -3456,7 +3456,7 @@
   font-size: 13px;
 }
 
-.en .signup-main .mypage-container .mypage-contents .mypage-section:first-child input::placeholder, .signup-main .mypage-container .mypage-contents .mypage-section:nth-child(2) input::placeholder {
+.en .signup-main .mypage-container .mypage-contents .mypage-section:first-child input::placeholder, .en .signup-main .mypage-container .mypage-contents .mypage-section:nth-child(2) input::placeholder {
   font-size: 10px;
 }
 
