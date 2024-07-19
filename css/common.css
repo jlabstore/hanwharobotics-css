@@ -2332,6 +2332,14 @@ footer select {
 		color: #fff;
 	}
 
+	.en footer .column1 .sitemap button {
+		line-height: 1;
+	}
+
+	.en footer .column1 .sitemap {
+		margin-top: 15px;
+	}
+
 	footer .column1 .link {
 		display: flex;
 		flex-direction: column;
@@ -2745,6 +2753,9 @@ footer select {
 		margin-top: 0;
 	}
 
+	.en footer .column1 .sitemap {
+		margin-top: 0;
+	}
 
 	footer .column1 .sitemap button {
 		font-family: HanwhaGothicR_OTF;

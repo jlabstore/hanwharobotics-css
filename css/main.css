@@ -1755,6 +1755,11 @@ header .more_btn  a.distributor {
 		flex-direction: row;
 		gap: 16px;
 	}
+
+	.en footer .column1 .sitemap {
+		flex-wrap: wrap;
+	}
+
 	footer .column1 .sitemap a {
 		font-family: HanwhaGothicR_OTF;
 		font-size: 15px;
@@ -1908,7 +1913,7 @@ header .more_btn  a.distributor {
 		display: block;
 	}
 	.en footer .mobile1.address {
-		margin-top: 35px;
+		margin-top: 120px;
 		display: block;
 	}
 	footer .pc.address {
@@ -1984,7 +1989,7 @@ header .more_btn  a.distributor {
 		display: block;
 	}
 	.en footer .mobile2.address {
-		margin-top: 35px;
+		margin-top: 120px;
 		display: block;
 	}
 	footer .pc.address {

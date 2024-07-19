@@ -536,7 +536,7 @@ $(document).ready(async function() {
     nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesPerRow: 3,
           rows: 4,
@@ -565,7 +565,7 @@ $(document).ready(async function() {
         nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
               slidesPerRow: 3,
               rows: 4,
@@ -600,7 +600,7 @@ $(document).ready(async function() {
         nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
               slidesPerRow: 3,
               rows: 4,
@@ -633,7 +633,7 @@ $(document).ready(async function() {
         nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
               slidesPerRow: 3,
               rows: 4,
@@ -666,7 +666,7 @@ $(document).ready(async function() {
         nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
               slidesPerRow: 3,
               rows: 4,
@@ -699,7 +699,7 @@ $(document).ready(async function() {
         nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
               slidesPerRow: 3,
               rows: 4,
@@ -730,7 +730,7 @@ $(document).ready(async function() {
     nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesPerRow: 3,
           rows: 2,
@@ -759,7 +759,7 @@ $(document).ready(async function() {
         nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
               slidesPerRow: 3,
               rows: 2,
@@ -792,7 +792,7 @@ $(document).ready(async function() {
         nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
               slidesPerRow: 3,
               rows: 2,
@@ -825,7 +825,7 @@ $(document).ready(async function() {
         nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
               slidesPerRow: 3,
               rows: 2,
@@ -856,7 +856,7 @@ $(document).ready(async function() {
         nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
               slidesPerRow: 3,
               rows: 2,
@@ -889,7 +889,7 @@ $(document).ready(async function() {
         nextArrow: "<button type='button' class='slick-next'><img src='../images/pc/robots_slider_arrow_right.svg' alt='' /></button>",
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
               slidesPerRow: 3,
               rows: 2,
