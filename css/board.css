@@ -3542,6 +3542,13 @@
   color: #f00;
 }
 
+.signup-message-info-mobile {
+  display: none;
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 16px;
+  color: #000;
+}
+
 .signup-main-email-container {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -9408,6 +9415,14 @@
   .login.signup-complete .login-container {
     gap: 40px;
     padding-bottom: 40px;
+  }
+
+  .signup-message-info-mobile {
+    display: block;
+  }
+
+  .signup-main .mypage-container .mypage-contents .mypage-section #id::placeholder {
+    visibility: hidden;
   }
 
   .signup-complete-text {
