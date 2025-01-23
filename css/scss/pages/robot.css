@@ -1,0 +1,100 @@
+.robot-introduce {
+  padding: 158px 60px 50px;
+}
+
+.robot-introduce .title h2 {
+  font-family: HanwhaGothicB_OTF;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.robot-introduce .title h1 {
+  font-family: HanwhaGothicB_OTF;
+  font-size: 100px;
+  margin-bottom: 35px;
+}
+
+.robot-introduce .title p {
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 26px;
+  line-height: 1.54;
+}
+
+
+.circle {
+  width: 31px;
+  height: 31px;
+  margin: 0 0 0 48px;
+  padding: 10px;
+  border: solid 2px #f60;
+  border-radius: 50%;
+
+  position: relative;
+  
+}
+
+.horizontal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 20px; /* 십자가 가로 부분 두께 */
+  background-color: black;
+  transform: translateY(-50%); /* 수직 중앙 정렬 */
+}
+
+.vertical {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px; /* 십자가 세로 부분 두께 */
+  height: 100%;
+  background-color: black;
+  transform: translateX(-50%); /* 수평 중앙 정렬 */
+}
+
+
+
+@media (max-width: 1024px) {
+  .robot-introduce {
+    padding: 168px 50px 50px;
+  }
+  
+  .robot-introduce .title h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .robot-introduce .title h1 {
+    font-size: 79px;
+    margin-bottom: 27px;
+  }
+  
+  .robot-introduce .title p {
+    font-size: 20px;
+    line-height: 1.55;
+  
+  }
+}
+
+@media (max-width: 764px) {
+  .robot-introduce {
+    padding: 100px 20px 50px;
+  }
+  
+  .robot-introduce .title h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .robot-introduce .title h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+  }
+  
+  .robot-introduce .title p {
+    font-size: 16px;
+    line-height: 1.63;
+  
+  }
+}

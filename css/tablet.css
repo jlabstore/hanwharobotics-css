@@ -15,7 +15,7 @@
 }
 header {
 	align-items: center;
-	background-color: #f60;
+  background-color: #f60;
 }
 
 header .header_inner {
@@ -541,7 +541,7 @@ main .main {
 	display: flex;
 	justify-content: space-between;
   margin-top: 30px;
-	padding-top: 30px;	
+	padding-top: 30px;
 	border-top: solid 1px #707070;
 }
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slick Playground</title>
+  <meta charset="UTF-8">
+  <style>
+   .container {
+  position: relative; /* 부모 div에 relative 위치 설정 */
+}
+
+.container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  /* 높이는 이미지의 비율이나 동적 크기 유지 */
+}
+
+.footer {
+  clear: both; /* 이미지 아래로 footer를 강제로 위치시킴 */
+  padding-top: 20px; /* footer와 다른 요소 사이에 간격을 추가 */
+  background-color: #ccc;
+  height: 100px; /* 높이를 적절히 지정 */
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="../images/pc/ecosystem_main_03_thumb.png" alt="Image" style="width: 200px" />
+    <div class="footer">footer</div>
+  </div>
+  
+
+</body>
+</html>
