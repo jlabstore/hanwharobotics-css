@@ -1,9 +1,10 @@
 .robot-introduce {
-  padding: 158px 60px 50px;
+  padding: 158px 0 50px;
 }
 
 .robot-introduce .title {
   position: relative;
+  padding: 0 60px;
 }
 
 .robot-introduce .title h2 {
@@ -36,7 +37,7 @@
   color: #fff;
   cursor: pointer;
   position: absolute;
-  right: 0;
+  right: 60px;
   bottom: 0;
 }
 
@@ -57,6 +58,8 @@
 
 .robot-introduce .visual {
   margin-top: 105px;
+  margin-left: -60px;
+  margin-right: -60px;
 }
 
 .robot-introduce .visual img {
@@ -458,7 +461,7 @@
 
 @media (max-width: 1024px) {
   .robot-introduce {
-    padding: 178px 50px 50px;
+    padding: 178px 0 50px;
   }
   
   .robot-introduce .title h2 {
@@ -482,7 +485,7 @@
   
   .robot-introduce .contents {
     margin-top: 70px;
-    padding: 0;
+    padding: 0 50px;
   }
   
   
@@ -548,11 +551,26 @@
   .robot-introduce .box-app .app-button {
     margin-bottom: 80px;
   }
+
+  .robot-slide .slick-dots {
+    margin-top: 70px;
+    width: auto;
+    margin: 70px -50px 0;
+
+    font-size: 22px;
+    height: 76px;
+    border-radius: 0;
+    
+  }
 }
 
 @media (max-width: 764px) {
   .robot-introduce {
-    padding: 170px 20px 50px;
+    padding: 170px 0 50px;
+  }
+
+  .robot-introduce .title {
+    padding: 0 20px;
   }
   
   .robot-introduce .title h2 {
@@ -582,16 +600,19 @@
     border-radius: 29px;
     position: inherit;
     margin-top: 20px;
+    right: 0;
   }
 
   .robot-introduce .visual {
     margin: 40px -20px 0;
-    
   }
 
+  .robot-introduce .visual img {
+    min-height: 120px;
+  }
   .robot-introduce .contents {
     margin-top: 40px;
-    padding: 0;
+    padding: 0 20px;
   }
 
   .robot-introduce .desc > div h2 {
@@ -633,7 +654,7 @@
   }
 
   .robot-slide .slick-dots {
-    margin-top: 15px;
+    margin: 15px 0 0;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -717,7 +738,7 @@
   }
 
   .robot-introduce .box-app > ul > li {
-    width: calc(49% - 4px);
+    width: calc(50% - 10px);
   }
   
   .robot-introduce .box-app .app-button {
