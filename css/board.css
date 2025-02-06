@@ -7632,7 +7632,7 @@
   }
 
   .ecosystem-main-slider-item {
-    width: calc(50% - 22px) !important;
+    width: calc(50% - 25px) !important;
     max-width: 100%;
     padding: 53px;
   }
