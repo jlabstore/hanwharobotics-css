@@ -5,6 +5,37 @@ header {
 header .header_wrapper {
 	background: transparent;
 }
+
+.section1 .visual-contents {
+  position: absolute;
+  z-index: 6;
+  
+}
+
+.section1 .visual-contents .main_txt {
+  padding-left: 120px;
+  padding-top: 300px;
+}
+
+.section1 .visual-contents .main_txt .sub-title{
+  font-family: HanwhaGothicB_OTF;
+  font-size: 70px;
+  color: #fff;
+}
+
+.section1 .visual-contents .main_txt .title{
+  font-family: HanwhaGothicB_OTF;
+  font-size: 130px;
+  color: #f37321;
+}
+
+.section1 .visual-contents .main_txt .txt{
+  font-family: HanwhaGothicEL_OTF;
+  font-size: 28px;
+  color: #eaeaea;
+
+}
+
 @media (min-width: 1024px) {
 	header.main_header .header_wrapper {
 		padding-left: 50px;
@@ -156,7 +187,7 @@ header .more_btn  a.distributor {
 
 
 .section1 .contents .main_txt .title{
-	font-family: HanwhaGothicB_OTF;
+	/* font-family: HanwhaGothicB_OTF;
 	font-size: 218px;
 	font-weight: normal;
 	font-stretch: normal;
@@ -164,11 +195,11 @@ header .more_btn  a.distributor {
 	line-height: 1.41;
 	letter-spacing: normal;
 	text-align: left;
-	color: #f37321;
+	color: #f37321; */
 }
 
 .section1 .contents .main_txt .txt {
-	font-family: HanwhaGothicB_OTF;
+	/* font-family: HanwhaGothicB_OTF;
 	font-size: 97px;
 	font-weight: normal;
 	font-stretch: normal;
@@ -176,7 +207,7 @@ header .more_btn  a.distributor {
 	line-height: 1.18;
 	letter-spacing: normal;
 	text-align: left;
-	color: #eaeaea;
+	color: #eaeaea; */
 }
 
 .section1 .contents .main_txt .move_to_intro a {
@@ -622,7 +653,7 @@ header .more_btn  a.distributor {
 
 @media (max-width: 1600px) {
 
-	.section1 .contents .main_txt .title {
+	/* .section1 .contents .main_txt .title {
 		font-size: 95px !important;
 	}
 	.en .section1 .contents .main_txt .txt {
@@ -635,7 +666,7 @@ header .more_btn  a.distributor {
 		width: 104px;
 		height: 104px;
 		background-size: 104px;
-	}
+	} */
 	.section3 .recruit a {
 		display: flex;
 		flex-direction: column;
@@ -1026,7 +1057,7 @@ header .more_btn  a.distributor {
 		align-items: center;
 	}
 
-	.section1 .contents .main_txt .title{
+	/* .section1 .contents .main_txt .title{
 		font-family: HanwhaGothicB_OTF;
 		font-size: 178px;
 		font-weight: normal;
@@ -1072,7 +1103,7 @@ header .more_btn  a.distributor {
 		letter-spacing: normal;
 		text-align: left;
 		color: #eaeaea;
-	}
+	} */
 
 	.section1 .contents .main_txt .move_to_intro a {
 		display: flex;
@@ -1425,7 +1456,7 @@ header .more_btn  a.distributor {
 	}
 
 
-	.section1 .contents .main_txt .title{
+	/* .section1 .contents .main_txt .title{
 		font-size: 158px;
 	}
 
@@ -1435,7 +1466,7 @@ header .more_btn  a.distributor {
 
 	.section1 .contents .main_txt .move_to_intro a {
 		font-size: 28px;
-	}
+	} */
 
 	.section1 .update .title {
 		font-size: 30px;
@@ -1664,7 +1695,7 @@ header .more_btn  a.distributor {
 		justify-content: center;
 	}
 
-	.section1 .contents .main_txt .title {
+	/* .section1 .contents .main_txt .title {
 		font-size: 106px !important;
 		line-height: 1.42;
 	}
@@ -1682,7 +1713,7 @@ header .more_btn  a.distributor {
 	.en .section1 .contents .main_txt .txt {
 		font-size: 40px;
 		line-height: 1.18;
-	}
+	} */
 
 	.section1 .contents .main_txt .move_to_intro a {
 		margin-top: 60px;
@@ -1992,13 +2023,13 @@ header .more_btn  a.distributor {
 		display: none;
 	}
 
-	.section1 .contents .main_txt .title {
+	/* .section1 .contents .main_txt .title {
 		font-size: 48px !important;
 		line-height: 1.42;
 	}
 	.section1 .contents .main_txt .txt {
 		font-size: 26px !important;
-	}
+	} */
 
 	.section1 .update {
 		left: 20px;
