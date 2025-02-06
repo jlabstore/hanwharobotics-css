@@ -8,13 +8,12 @@ header .header_wrapper {
 
 .section1 .visual-contents {
   position: absolute;
+  width: 100%;
   z-index: 6;
-  
-}
-
-.section1 .visual-contents .main_txt {
-  padding-left: 120px;
-  padding-top: 300px;
+  top: 50%;
+  left: 120px;
+  transform: translateY(-50%);
+  margin-top: 90px;
 }
 
 .section1 .visual-contents .main_txt .sub-title{
@@ -33,8 +32,22 @@ header .header_wrapper {
   font-family: HanwhaGothicEL_OTF;
   font-size: 28px;
   color: #eaeaea;
+  margin-top: 61px;
+} 
 
+.section1 .contents .main_txt span.button {
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  background: url(../images/pc/ic_round_arrow.svg) no-repeat 0 0;
+  background-size: 110px;
+  position: absolute;
+  top: 50%;
+  right: 240px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
+
 
 @media (min-width: 1024px) {
 	header.main_header .header_wrapper {
@@ -47,12 +60,6 @@ header .header_wrapper {
 	padding: 16px 40px !important;
 }
 
-@media (max-width: 765px) {
-	.mobile header {
-		padding: 16px 20px !important;
-    /* position: absolute; */
-	}
-}
 
 header .menu {
 	display: none;
@@ -1614,8 +1621,8 @@ header .more_btn  a.distributor {
 	}
 
 	.en .main-case-studies-item-text {
-		left: 20px;
 		top: calc(50% - 60.5px);
+		left: 20px;
 	}
 
 	.main-case-studies-title > h2 {
@@ -1646,14 +1653,51 @@ header .more_btn  a.distributor {
 		max-height: 870px;
 	}
 
+  
+  .section1 .visual-contents {
+    position: absolute;
+    z-index: 6;
+    /* top: 50%; 
+    transform: translate(90px, -50%);  */
+    top: 50%;
+    left: 90px;
+    transform: translateY(-50%);
+    margin-top: 70px;
+  }
+  
+  .section1 .visual-contents .main_txt .sub-title{
+    font-size: 47px;
+  }
+  
+  .section1 .visual-contents .main_txt .title{
+    font-size: 88px;
+  }
+  
+  .section1 .visual-contents .main_txt .txt{
+    font-size: 20px;
+    margin-top: 45px;
+    line-height: 1.6;
+  }
+
+  .section1 .contents .main_txt span.button {
+    position: relative;
+    transform: inherit;
+    right: inherit;
+    margin-top: 50px;
+    width: 80px;
+    height: 80px;
+    background-size: 80px;
+  }
+
+
 	.section2 {
 		padding: 0 40px;
 	}
 
-	.section3 .board_wrap .board.news .title {
+	/* .section3 .board_wrap .board.news .title {
 		background: none;
 		padding-left: 0;
-	}
+	} */
 
 	.section3 .board_wrap .board .list {
 		padding-left: 0;
@@ -2169,10 +2213,46 @@ header .more_btn  a.distributor {
 	}
 }
 
+
 @media (max-width: 765px) {
-	.section1 .contents {
-		max-height: none;
+	.mobile header {
+		padding: 16px 20px !important;
+    /* position: absolute; */
 	}
+
+  .section1 .visual-contents {
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+    margin-top: 70px;
+  }
+  
+  .section1 .visual-contents .main_txt .sub-title{
+    font-size: 22px;
+  }
+  
+  .section1 .visual-contents .main_txt .title{
+    font-size: 42px;
+  }
+  
+  .section1 .visual-contents .main_txt .txt{
+    font-size: 16px;
+    margin-top: 32px;
+    line-height: 1.5;
+  }
+
+  .section1 .contents .main_txt span.button {
+    position: relative;
+    transform: inherit;
+    right: inherit;
+    margin-top: 30px;
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+  }
+
 	.section1 .update {
 		position: fixed;
 		bottom: 0;
@@ -2238,10 +2318,10 @@ header .more_btn  a.distributor {
 
 	.fixed {display:none;}
 
-	.section1 .contents .main_txt .txt br {
+	/* .section1 .contents .main_txt .txt br {
 		display: none;
-
-	}
+	} */
+  
 	.section_bottom {
 		position: relative;
 		z-index: 2;
