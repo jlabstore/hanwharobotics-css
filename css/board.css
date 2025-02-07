@@ -3931,7 +3931,10 @@
 }
 .tab-nav .nav-content {
   width: 100%;
-  /* display: none; */
+}
+
+.sub.products .tab-nav .nav-content {
+  display: none;
 }
 .tab-nav #nav1:checked ~ #nav1-content,
 .tab-nav #nav3:checked ~ #nav3-content,

@@ -932,6 +932,7 @@ $(document).ready(async function() {
 
     $('.tab-nav-mobile').change(function() {
       let value = $('.tab-nav-mobile option:selected').val();
+      
       $('.nav-content').hide();
       $(`#${value}-content`).show();
 
