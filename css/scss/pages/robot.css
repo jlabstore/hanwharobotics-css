@@ -74,14 +74,16 @@
 
 .robot-introduce .contents {
   margin-top: 110px;
-  /* padding: 0 200px; */
-  width: 1400px;
+  width: 100%;
+  padding: 0 50px;
 }
 
 .robot-introduce .desc {
   display: flex;
   flex-direction: row;
   gap: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .robot-introduce .desc > div {
@@ -113,7 +115,8 @@
 .robot-slide {
   margin-top: 110px;
   width: 100%;
-  /* height: 730px; */
+  max-width: 1400px;
+  margin: 110px auto 0;
 }
 
 .robot-slide .slide-item {
@@ -280,10 +283,11 @@
 }
 
 .robot-introduce .box-why {
-  margin-top: 69px;
   display: flex;
   flex-direction: row;
   gap: 25px;
+  max-width: 1400px;
+  margin: 70px auto 0;
 }
 
 .robot-introduce .box-why .box-col {
@@ -403,6 +407,10 @@
   font-size: 20px;
 }
 
+.robot-introduce .box-app {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 .robot-introduce .box-app h2 {
   margin-top: 140px;
   font-family: HanwhaGothic-R_OTF;
