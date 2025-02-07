@@ -1,8 +1,14 @@
 .robot-introduce {
   padding: 158px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.robot-introduce .title {
+.robot-introduce section.title {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
   padding: 0 60px;
 }
@@ -68,7 +74,8 @@
 
 .robot-introduce .contents {
   margin-top: 110px;
-  padding: 0 200px;
+  /* padding: 0 200px; */
+  width: 1400px;
 }
 
 .robot-introduce .desc {
@@ -461,7 +468,14 @@
 
 @media (max-width: 1024px) {
   .robot-introduce {
-    padding: 178px 0 50px;
+    padding: 178px 0 0 0;
+    width: 100%;
+  }
+
+  .robot-introduce section.title {
+    /* max-width: 925px; */
+    margin: 0 auto;
+    padding: 0 50px;
   }
   
   .robot-introduce .title h2 {
@@ -479,6 +493,10 @@
     line-height: 1.55;
   }
 
+  .robot-introduce .btn_question {
+    right: 50px;
+  }
+
   .robot-introduce .visual {
     margin-top: 70px;
   }
@@ -486,8 +504,8 @@
   .robot-introduce .contents {
     margin-top: 70px;
     padding: 0 50px;
+    width: 100%;
   }
-  
   
   .robot-introduce .desc {
     flex-direction: column;
@@ -556,11 +574,13 @@
     margin-top: 70px;
     width: auto;
     margin: 70px -50px 0;
-
     font-size: 22px;
     height: 76px;
     border-radius: 0;
-    
+  }
+
+  .robot-slide .slick-dots li {
+    margin: 0 30px;
   }
 }
 
@@ -731,6 +751,8 @@
 
   .robot-introduce .box-reason .reasons .reason-col .tit {
     margin-bottom: 30px;
+    border-right: none;
+    width: 70%;
   }
 
   .robot-introduce .box-app h2 {

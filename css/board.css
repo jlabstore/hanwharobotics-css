@@ -2,6 +2,11 @@
   height: unset !important;
 }
 
+.slick-track {
+  margin-left: inherit !important;
+  margin-right: inherit !important;
+}
+
 .qna-view {
   padding: 180px 60px 0;
 }
@@ -6374,6 +6379,7 @@
   height: 600px;
   padding: 0;
   margin-top: 80px;
+  text-align: center;
 }
 
 .product-image img {
