@@ -6376,7 +6376,7 @@
 .casestudies .product-image {
   background-color: transparent;
   max-width: 1200px;
-  height: 600px;
+  height: 100%;
   padding: 0;
   margin-top: 80px;
   text-align: center;
