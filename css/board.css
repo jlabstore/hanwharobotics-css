@@ -5516,6 +5516,7 @@
 
 .ecosystem-section > .tab-nav .nav-content {
   width: 100%;
+  text-align: left;
   /* display: none; */
 }
 
@@ -6367,6 +6368,7 @@
   padding: 75px;
   position: relative;
   margin-top: 62px;
+  text-align: center;
 }
 
 .casestudies.ecosystem-template-01 {
@@ -6383,7 +6385,7 @@
 }
 
 .product-image img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: contain;
 }
@@ -6510,6 +6512,7 @@
   font-family: HanwhaGothicEL_OTF;
   font-size: 18px;
   color: #666;
+  display: inline-block;
 }
 
 .casestudies-main-slider1 .slick-prev, .casestudies-main-slider1 .slick-next {

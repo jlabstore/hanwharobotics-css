@@ -6,14 +6,34 @@ header .header_wrapper {
 	background: transparent;
 }
 
+.main-bottom-banner {
+  overflow: hidden;
+  margin: 50px;
+  text-align: center;
+}
+
+.main-bottom-banner img {
+  transform: scale(1); 
+  transition: transform 0.3s ease; 
+  width: 100%;
+}
+
+.main-bottom-banner img:hover {
+  transform: scale(1.2); 
+}
+
 .section1 .visual-contents {
   position: absolute;
-  width: 100%;
+  max-width: 1920px;
   z-index: 6;
   top: 50%;
-  left: 120px;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin-top: 90px;
+  margin-left: 75px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .section1 .visual-contents .main_txt .sub-title{
@@ -403,7 +423,7 @@ header .more_btn  a.distributor {
 	display: flex;
 	flex-direction: row;
 	max-width: 1920px;
-	margin: 150px auto 0;
+	margin: 50px auto 0;
 	padding: 0 60px;
 
 	gap: 45px;
@@ -1663,6 +1683,7 @@ header .more_btn  a.distributor {
     left: 90px;
     transform: translateY(-50%);
     margin-top: 70px;
+    margin-left: 0;
   }
   
   .section1 .visual-contents .main_txt .sub-title{
@@ -1682,6 +1703,7 @@ header .more_btn  a.distributor {
   .section1 .contents .main_txt span.button {
     position: relative;
     transform: inherit;
+    top: 0;
     right: inherit;
     margin-top: 50px;
     width: 80px;
